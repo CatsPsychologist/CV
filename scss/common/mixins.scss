@@ -1,0 +1,6 @@
+@mixin btn1($bg,$color){
+
+  background-color:$bg;
+  color:$color;
+  @extend %btn1;
+}

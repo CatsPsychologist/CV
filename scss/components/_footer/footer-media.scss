@@ -1,0 +1,30 @@
+@media (max-width: 767px ) {
+
+  footer {
+    .footer-wrapper{
+      p{
+        font-size: 10pt;
+      }
+      nav{
+
+      }
+    }
+  }
+}
+@media (max-width: 576px ) {
+  footer{
+    .footer-wrapper{
+      display: block;
+      text-align: center;
+      p{
+
+      }
+      nav{
+        ul{
+          justify-content: center;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

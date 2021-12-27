@@ -1,0 +1,25 @@
+header{
+  background-color: $main_background;
+  padding-top: 25px;
+.header_wrapper{
+  background-color: $header_background_color;
+  nav{
+    display: flex;
+    justify-content: center;
+      li{
+        list-style: none;
+        padding: 40px 20px 30px;
+        &:hover{
+          transition: 0.7s;
+          background-color: $header_hover_color;
+        }
+        a{
+          text-decoration: none;
+          color: $header_color;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
