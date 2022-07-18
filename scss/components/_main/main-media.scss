@@ -308,6 +308,7 @@
   }
 
 }
+
 @media (max-width: 767px ) {
   .video_article {
     .video_article_wrapper {
@@ -659,6 +660,7 @@
             display: block;
             margin-bottom: 25px;
             input[type=text]{
+              margin-right: 0;
               width: 100%;
               margin-bottom: 25px;
             }

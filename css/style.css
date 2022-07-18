@@ -861,6 +861,7 @@ header .header_wrapper nav li a {
     margin-bottom: 25px;
   }
   .get_in_touch .get_in_touch_wrapper .inform .left_wrapper .input input[type=text] {
+    margin-right: 0;
     width: 100%;
     margin-bottom: 25px;
   }
