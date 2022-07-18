@@ -333,6 +333,7 @@ header .header_wrapper nav li a {
 .feature .feature_wrapper .link-img .pictures {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
 }
 .feature .feature_wrapper .link-img .pictures .img {
   width: 25%;
