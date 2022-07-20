@@ -8,7 +8,7 @@ header{
     justify-content: center;
       li{
         list-style: none;
-        padding: 40px 20px 30px;
+        padding: 40px 0 30px;
         &:hover{
           transition: 0.7s;
           background-color: $header_hover_color;
@@ -18,6 +18,7 @@ header{
           color: $header_color;
           font-size: 13px;
           font-weight: 600;
+          padding: 40px 20px 30px;
         }
       }
     }
