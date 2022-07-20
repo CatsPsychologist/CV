@@ -189,6 +189,7 @@ header .header_wrapper nav li a {
   }
   header .header_wrapper nav li a {
     font-size: 10px;
+    padding: 30px 5px 20px;
   }
 }
 @media (max-width: 320px) {
