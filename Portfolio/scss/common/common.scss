@@ -5,3 +5,9 @@
 html{
   scroll-behavior: smooth;
 }
+
+%shadow{
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+}

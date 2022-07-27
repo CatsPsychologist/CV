@@ -50,7 +50,21 @@
       }
     }
   }
+}
 
+.hide{
+  @extend %shadow;
+  background: $header_bg;
+  .header_wrapper{
+    nav{
+      ul{
+        li{
+          a{
+            color: black;
 
-
+          }
+        }
+      }
+    }
+  }
 }

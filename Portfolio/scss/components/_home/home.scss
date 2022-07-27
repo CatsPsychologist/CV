@@ -8,6 +8,7 @@
   color: $home_color;
   background-color: rgba($home_bg, 0.3);
   background-blend-mode: multiply;
+  @extend %shadow;
   &_wrapper{
     display: flex;
     flex-direction: column;

@@ -86,6 +86,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.home, .hide {
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+  -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 1024px;
@@ -157,6 +163,13 @@ html {
 }
 .header_wrapper nav ul li:not(:last-child) {
   padding-right: 35px;
+}
+
+.hide {
+  background: white;
+}
+.hide .header_wrapper nav ul li a {
+  color: black;
 }
 
 .home {
@@ -277,7 +290,7 @@ html {
   border-radius: 15px;
 }
 .about_title {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .about_info {
   display: flex;
