@@ -1,0 +1,47 @@
+@media (max-width: 1250px ) {
+
+}
+@media (max-width: 1024px) {
+
+  .home{
+    &_photo{
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 767px ) {
+  .home{
+    &_name{
+      font-size: 35px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home{
+    &_photo{
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  .home{
+    &_name{
+      font-size: 30px;
+      letter-spacing: 2px
+    }
+  }
+
+  .home{
+    &_changeText{
+      font-size: 17px
+    }
+  }
+}

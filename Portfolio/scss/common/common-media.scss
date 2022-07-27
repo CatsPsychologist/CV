@@ -1,0 +1,23 @@
+@media (max-width: 1250px ) {
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container{
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px ) {
+  .container{
+    max-width: 567px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container{
+    width: 100%;
+    padding: 0 10px;
+  }
+}

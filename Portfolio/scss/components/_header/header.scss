@@ -1,0 +1,56 @@
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 1.5s;
+  &:hover{
+    background: rgba($header_bg, 0.4);
+  }
+
+  &_logo{
+    display: flex;
+    align-items: center;
+    a{
+      padding: 20px 0;
+      img{
+        width: 30px;
+      }
+    }
+  }
+
+  &_wrapper{
+    display: flex;
+    justify-content: space-between;
+    nav{
+      display: flex;
+      align-items: center;
+      ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li{
+          list-style: none;
+          a{
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: $text_color;
+            padding: 20px 0;
+            transition: 1s;
+            &:hover{
+              color: $hover_color;
+              font-size: 18px;
+            }
+          }
+        }
+        li:not(:last-child){
+          padding-right: 35px;
+        }
+      }
+    }
+  }
+
+
+
+}
