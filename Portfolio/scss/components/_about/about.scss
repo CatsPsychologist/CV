@@ -19,11 +19,11 @@
       color: black;
       transition: 1.5s;
       &:hover{
+        padding: 5px 8px;
         color:$home_color ;
         font-weight: 300;
         border-radius: 15px;
         background:$main_page_color ;
-        padding: 5px 8px;
       }
     }
   }

@@ -162,7 +162,6 @@ html {
 }
 .header_wrapper nav ul li a:hover {
   color: #4169e1;
-  font-size: 18px;
 }
 .header_wrapper nav ul li:not(:last-child) {
   padding-right: 35px;
@@ -185,7 +184,6 @@ html {
 }
 .hide .header_wrapper nav ul li a:hover {
   color: #4169e1;
-  font-size: 18px;
 }
 
 .home {
@@ -308,11 +306,11 @@ html {
   transition: 1.5s;
 }
 .about .right_info a:hover {
+  padding: 5px 8px;
   color: white;
   font-weight: 300;
   border-radius: 15px;
   background: #4169e1;
-  padding: 5px 8px;
 }
 .about .right_download {
   background: #4169e1;
