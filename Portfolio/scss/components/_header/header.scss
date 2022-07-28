@@ -7,7 +7,9 @@
   &:hover{
     background: rgba($header_bg, 0.4);
   }
-
+  .logo_black{
+    display: none;
+  }
   &_logo{
     display: flex;
     align-items: center;
@@ -53,6 +55,15 @@
 }
 
 .hide{
+  .logo_white{
+    display: none;
+  }
+  .logo_black{
+    display: block;
+  }
+  &:hover{
+    background: $header_bg;
+  }
   @extend %shadow;
   background: $header_bg;
   .header_wrapper{
@@ -61,7 +72,10 @@
         li{
           a{
             color: black;
-
+            &:hover{
+              color: $hover_color;
+              font-size: 18px;
+            }
           }
         }
       }

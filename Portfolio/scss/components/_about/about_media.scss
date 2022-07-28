@@ -1,6 +1,16 @@
 @media (max-width: 1250px ) {
 
   .about{
+    .left{
+      width: 330px;
+
+    }
+    .right{
+      height: 440px;
+    }
+  }
+
+  .about{
     span{
       padding-left: 15px;
       font-size: 17px;
@@ -22,6 +32,7 @@
     .right{
       padding: 0;
       margin-top: 50px;
+      height: 100%;
     }
     .about_title{
       margin-bottom: 50px;
@@ -36,7 +47,15 @@
   }
 
   .right_download{
-    text-align: center;
+    margin: 0 auto;
+  }
+
+  .right_name{
+    margin-bottom: 30px;
+  }
+
+  .right_info{
+    margin: 30px 0;
   }
 
 }

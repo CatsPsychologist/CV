@@ -123,6 +123,9 @@ html {
 .header:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+.header .logo_black {
+  display: none;
+}
 .header_logo {
   display: flex;
   align-items: center;
@@ -168,8 +171,21 @@ html {
 .hide {
   background: white;
 }
+.hide .logo_white {
+  display: none;
+}
+.hide .logo_black {
+  display: block;
+}
+.hide:hover {
+  background: white;
+}
 .hide .header_wrapper nav ul li a {
   color: black;
+}
+.hide .header_wrapper nav ul li a:hover {
+  color: #4169e1;
+  font-size: 18px;
 }
 
 .home {
@@ -277,17 +293,35 @@ html {
 }
 .about .right {
   padding-left: 50px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about .right_info {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 0;
 }
-.about .right_download a {
+.about .right_info a {
+  text-decoration: none;
+  color: black;
+  transition: 1.5s;
+}
+.about .right_info a:hover {
+  color: white;
+  font-weight: 300;
+  border-radius: 15px;
+  background: #4169e1;
+  padding: 5px 8px;
+}
+.about .right_download {
   background: #4169e1;
   color: white;
-  padding: 20px 60px;
+  padding: 20px 0;
   border-radius: 15px;
+  text-decoration: none;
+  width: 250px;
+  text-align: center;
 }
 .about_title {
   margin-bottom: 80px;
@@ -316,7 +350,6 @@ html {
 .about h4 {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 .about span {
   padding-left: 20px;
@@ -331,18 +364,6 @@ html {
 .about #email_copy {
   cursor: pointer;
 }
-.about a {
-  text-decoration: none;
-  color: black;
-  transition: 1.5s;
-}
-.about a:hover {
-  color: white;
-  font-weight: 300;
-  border-radius: 15px;
-  background: #4169e1;
-  padding: 5px 8px;
-}
 .about .right_item {
   display: flex;
   width: 50%;
@@ -351,6 +372,13 @@ html {
 }
 
 @media (max-width: 1250px) {
+  .about .left {
+    width: 330px;
+  }
+  .about .right {
+    height: 440px;
+  }
+
   .about span {
     padding-left: 15px;
     font-size: 17px;
@@ -367,6 +395,7 @@ html {
   .about .right {
     padding: 0;
     margin-top: 50px;
+    height: 100%;
   }
   .about .about_title {
     margin-bottom: 50px;
@@ -377,7 +406,15 @@ html {
   }
 
   .right_download {
-    text-align: center;
+    margin: 0 auto;
+  }
+
+  .right_name {
+    margin-bottom: 30px;
+  }
+
+  .right_info {
+    margin: 30px 0;
   }
 }
 @media (max-width: 767px) {
