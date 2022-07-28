@@ -1,15 +1,14 @@
 // my email is so long so its not enough space to fit in one string
 // this function will copy my email after clicking and you don't need to copy by yourself
-let email = document.getElementById('email_copy')
-
-email.onclick = () => {
-    navigator.clipboard.writeText('artem.cherednychenko.k@gmail.com')
-}
+// let email = document.getElementById('email_copy')
+//
+// email.onclick = () => {
+//     navigator.clipboard.writeText('artem.cherednychenko.k@gmail.com')
+// }
 
 // header feature that attaches header to the page after making a scroll that equals to headers height
 // and returning it back if you get to the top of the page
 const header = document.querySelector('.header')
-console.log(header.clientHeight)
 let lastScroll = 0;
 const defaultOffset = header.clientHeight;
 

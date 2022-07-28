@@ -167,9 +167,11 @@ html {
 .header_wrapper {
   display: flex;
   justify-content: space-between;
+  height: 65px;
 }
 .header_wrapper nav {
-  display: none;
+  transition: 1.5s;
+  display: flex;
   align-items: center;
 }
 .header_wrapper nav ul {
@@ -198,9 +200,6 @@ html {
 .hide {
   background: white;
 }
-.hide .header_hamb .bar {
-  background: black;
-}
 .hide .logo_white {
   display: none;
 }
@@ -216,20 +215,103 @@ html {
 .hide .header_wrapper nav ul li a:hover {
   color: #4169e1;
 }
-
-.header_hamb {
+.hide .menu-button,
+.hide .menu-button::before,
+.hide .menu-button::after {
+  background: black;
   transition: 1.5s;
-  display: flex;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
   flex-direction: column;
   justify-content: center;
-}
-.header_hamb .bar {
-  width: 30px;
-  height: 3px;
-  margin: 4px;
-  background: white;
+  align-items: center;
 }
 
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0;
+  transform: rotate(-405deg);
+}
+
+#menu-toggle:checked + .header_wrapper nav {
+  display: flex;
+}
+
+#menu-toggle:checked ~ nav {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .hide .header_wrapper nav {
+    background: white;
+  }
+
+  .header_wrapper nav {
+    text-align: center;
+    display: none;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    margin-top: 65px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
+  }
+  .header_wrapper nav ul {
+    justify-content: space-around;
+    min-height: 20vh;
+    height: 35vh;
+    flex-direction: column;
+  }
+  .header_wrapper nav ul li {
+    padding-right: 0 !important;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+}
 .home {
   height: 100vh;
   min-height: 650px;
