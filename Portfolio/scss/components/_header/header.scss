@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     nav{
-      display: flex;
+      display: none;
       align-items: center;
       ul{
         padding: 0;
@@ -55,6 +55,13 @@
 }
 
 .hide{
+
+  .header_hamb{
+    .bar{
+      background: $bar_bg;
+    }
+  }
+
   .logo_white{
     display: none;
   }
@@ -82,3 +89,17 @@
     }
   }
 }
+
+.header_hamb{
+  transition:1.5s ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .bar{
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    background: $header_bg;
+  }
+}
+

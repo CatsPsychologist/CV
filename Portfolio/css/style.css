@@ -169,7 +169,7 @@ html {
   justify-content: space-between;
 }
 .header_wrapper nav {
-  display: flex;
+  display: none;
   align-items: center;
 }
 .header_wrapper nav ul {
@@ -198,6 +198,9 @@ html {
 .hide {
   background: white;
 }
+.hide .header_hamb .bar {
+  background: black;
+}
 .hide .logo_white {
   display: none;
 }
@@ -212,6 +215,19 @@ html {
 }
 .hide .header_wrapper nav ul li a:hover {
   color: #4169e1;
+}
+
+.header_hamb {
+  transition: 1.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_hamb .bar {
+  width: 30px;
+  height: 3px;
+  margin: 4px;
+  background: white;
 }
 
 .home {
