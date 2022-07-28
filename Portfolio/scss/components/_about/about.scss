@@ -18,12 +18,23 @@
       text-decoration: none;
       color: black;
       transition: 1.5s;
+      //-ms-user-select: none;
+      //-moz-user-select: none;
+      //-webkit-user-select: none;
+      //user-select: none;
       &:hover{
         padding: 5px 8px;
         color:$home_color ;
         font-weight: 300;
         border-radius: 15px;
-        background:$main_page_color ;
+        background:$main_page_color;
+        &:active{
+          padding: 5px 8px;
+          color:$home_color ;
+          font-weight: 300;
+          border-radius: 15px;
+          background:$main_page_color;
+        }
       }
     }
   }
