@@ -126,7 +126,7 @@ html {
 }
 
 #preloader.hide-preloader {
-  animation: hidePreloader 1s;
+  animation: hidePreloader 3s;
 }
 
 #preloader.preloader-hidden {
