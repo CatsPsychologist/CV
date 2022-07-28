@@ -188,6 +188,7 @@ html {
 
 .home {
   height: 100vh;
+  min-height: 650px;
   background-image: url("../images/1142015.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,6 +204,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 650px;
 }
 .home_photo {
   -ms-user-select: none;
