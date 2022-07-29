@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     lastScroll = scrollPosition();
 })
 
-//preloader
+//preloader feature
 
 window.onload = function() {
     let preloader = document.getElementById('preloader');
@@ -40,5 +40,4 @@ const header_nav = document.getElementById('header_nav')
 header_nav.addEventListener('click', () => {
     document.getElementById('menu-toggle').checked = false
 })
-
 

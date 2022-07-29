@@ -1,0 +1,97 @@
+.portfolio{
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+
+  h2{
+    @extend %h2;
+  }
+  h3{
+    @extend %h3;
+  }
+
+  &_works{
+    .portfolio_navigation{
+      margin: 80px 0;
+      ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        li{
+          padding-right: 30px;
+          list-style: none;
+          &:last-child{
+            padding-right: 0;
+          }
+          a{
+            color: $portfolio_color_nav;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            transition: 1.5s;
+            &:hover{
+              color: $hover_color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .portfolio_item_wrapper{
+      margin-bottom: 1%;
+      position: relative;
+      width: 24%;
+      &:before{
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-decoration: none;
+        color: $portfolio_color;
+        p{
+
+        }
+      }
+    }
+  }
+
+  .item_1{
+    background: #ff6fa4;
+  }
+  .item_2{
+    background: #fca972;
+  }
+  .item_3{
+    background: #2FA1DA;
+  }
+  .item_4{
+    background: #75c3bb;
+  }
+  .item_5{
+    background: #ADDCCA;
+  }
+  .item_6{
+    background: #AADE87;
+  }
+  .item_7{
+    background: #F9C4BA;
+  }
+  .item_8{
+    background: #fdcf77;
+  }
+}
