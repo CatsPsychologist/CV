@@ -24,11 +24,12 @@
 @media (max-width: 1024px) {
 
   .about_info{
+    margin-bottom: 50px;
     display: block;
   }
 
   .about{
-    padding: 50px 0;
+    padding-top: 50px;
     .right{
       padding: 0;
       margin-top: 50px;
@@ -37,15 +38,10 @@
     .about_title{
       margin-bottom: 50px;
     }
-  }
-
-  .about{
     .left{
       width: 40%;
-
     }
   }
-
   .right_download{
     margin: 0 auto;
   }

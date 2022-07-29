@@ -26,7 +26,17 @@ window.addEventListener('scroll', () => {
 window.onload = function() {
     let preloader = document.getElementById('preloader');
     preloader.classList.add('hide-preloader');
+
     setInterval(function() {
+
+        // document.onmousewheel = function () {
+        //     document.body.style.overflow = 'visible';
+        // };
+
+    }, 1500);
+    setInterval(function() {
+
+
         preloader.classList.add('preloader-hidden');
     }, 2990);
 }
@@ -39,5 +49,57 @@ const header_nav = document.getElementById('header_nav')
 
 header_nav.addEventListener('click', () => {
     document.getElementById('menu-toggle').checked = false
-})
+});
+
+// portfolio sort
+
+
+const all = document.querySelector('.all')
+const port = document.querySelector('.port')
+const layouts = document.querySelector('.layouts')
+const js_proj = document.querySelector('.js_proj')
+
+const allElements = document.querySelectorAll('.portfolio_item_wrapper')
+const allJs = document.querySelectorAll('.js')
+const allLayouts = document.querySelectorAll('.lay')
+
+
+const removeClass = () =>{
+    allElements.forEach(value => {
+        value.classList.remove('hide_it')
+    })
+}
+
+all.addEventListener('click', () => {
+
+    removeClass()
+
+});
+
+port.addEventListener('click', () => {
+
+    removeClass()
+
+});
+
+layouts.addEventListener('click', () => {
+
+    removeClass()
+
+    allJs.forEach(value => {
+        value.classList.add('hide_it')
+    })
+});
+
+js_proj.addEventListener('click', () => {
+
+    removeClass()
+
+    allLayouts.forEach(value => {
+        value.classList.add('hide_it')
+    })
+});
+
+
+
 

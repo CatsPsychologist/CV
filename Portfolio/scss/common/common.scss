@@ -1,3 +1,6 @@
+//body{
+//  overflow: hidden;
+//}
 .container{
   max-width: 1250px;
   margin: 0 auto;
@@ -21,4 +24,11 @@ html{
 %h3{
   font-size: 40px;
   font-weight: 800;
+}
+
+%line{
+  width: 80%;
+  height: 2px;
+  background: $main_page_color;
+  margin: 0 auto;
 }

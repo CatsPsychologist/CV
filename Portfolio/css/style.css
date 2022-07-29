@@ -103,6 +103,13 @@ html {
   font-weight: 800;
 }
 
+.about .line {
+  width: 80%;
+  height: 2px;
+  background: #4169e1;
+  margin: 0 auto;
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 1024px;
@@ -439,7 +446,7 @@ a:active ~ nav {
   }
 }
 .about {
-  padding: 80px 0;
+  padding-top: 80px;
   font-family: "Poppins", sans-serif;
 }
 .about .right {
@@ -485,6 +492,7 @@ a:active ~ nav {
   margin-bottom: 80px;
 }
 .about_info {
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,7 +527,6 @@ a:active ~ nav {
   padding-bottom: 20px;
   align-items: center;
 }
-
 @media (max-width: 1250px) {
   .about .left {
     width: 330px;
@@ -535,11 +542,12 @@ a:active ~ nav {
 }
 @media (max-width: 1024px) {
   .about_info {
+    margin-bottom: 50px;
     display: block;
   }
 
   .about {
-    padding: 50px 0;
+    padding-top: 50px;
   }
   .about .right {
     padding: 0;
@@ -549,7 +557,6 @@ a:active ~ nav {
   .about .about_title {
     margin-bottom: 50px;
   }
-
   .about .left {
     width: 40%;
   }
@@ -611,13 +618,11 @@ a:active ~ nav {
   justify-content: center;
 }
 .portfolio_works .portfolio_navigation ul li {
-  padding-right: 30px;
   list-style: none;
 }
-.portfolio_works .portfolio_navigation ul li:last-child {
-  padding-right: 0;
-}
 .portfolio_works .portfolio_navigation ul li a {
+  cursor: pointer;
+  padding: 15px 20px;
   color: black;
   text-decoration: none;
   font-size: 25px;
@@ -679,6 +684,24 @@ a:active ~ nav {
   background: #fdcf77;
 }
 
+.hide_it {
+  display: none;
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
 @media (max-width: 1024px) {
   .portfolio {
     padding: 50px 0;
@@ -709,7 +732,8 @@ a:active ~ nav {
     padding: 20px 0;
   }
   .portfolio .portfolio_navigation ul li a {
-    margin: 20px 0;
+    padding: 12px 7px;
+    font-size: 20px;
   }
   .portfolio h2 {
     font-size: 20px;
