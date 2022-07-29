@@ -65,14 +65,11 @@
     border-radius: 30px;
   }
   h2{
-    font-size: 25px;
-    font-weight: 500;
-    color: $main_page_color;
+    @extend %h2;
   }
 
   h3{
-    font-size: 40px;
-    font-weight: 800;
+    @extend %h3;
   }
   h4{
     font-size: 30px;

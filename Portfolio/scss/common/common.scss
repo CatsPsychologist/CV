@@ -11,3 +11,14 @@ html{
   -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
   box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
 }
+
+%h2{
+  font-size: 25px;
+  font-weight: 500;
+  color: $main_page_color;
+}
+
+%h3{
+  font-size: 40px;
+  font-weight: 800;
+}

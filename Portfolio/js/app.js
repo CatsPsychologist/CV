@@ -23,10 +23,22 @@ window.addEventListener('scroll', () => {
 
 //preloader
 
-window.onload = function() {
-    let preloader = document.getElementById('preloader');
-    preloader.classList.add('hide-preloader');
-    setInterval(function() {
-        preloader.classList.add('preloader-hidden');
-    }, 2990);
-}
+// window.onload = function() {
+//     let preloader = document.getElementById('preloader');
+//     preloader.classList.add('hide-preloader');
+//     setInterval(function() {
+//         preloader.classList.add('preloader-hidden');
+//     }, 2990);
+// }
+
+
+// Once my IT teacher said "Everything you can do without using js do it using css"
+// and I did a "burger" menu with only css but I have to hide a pop up after pushing an anchor link so lets do it
+
+const header_nav = document.getElementById('header_nav')
+
+header_nav.addEventListener('click', () => {
+    document.getElementById('menu-toggle').checked = false
+})
+
+

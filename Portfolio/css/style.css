@@ -92,6 +92,17 @@ html {
   box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.47);
 }
 
+.about h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #4169e1;
+}
+
+.about h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 1024px;
@@ -280,6 +291,14 @@ html {
   display: flex;
 }
 
+a:active ~ nav {
+  display: none;
+}
+
+.hide_nav {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .hide .header_wrapper nav {
     background: white;
@@ -308,6 +327,10 @@ html {
   .header_wrapper nav ul li {
     padding-right: 0 !important;
   }
+  .header_wrapper nav ul li a {
+    padding: 20px 70px;
+  }
+
   .menu-button-container {
     display: flex;
   }
@@ -354,6 +377,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
+  display: flex;
 }
 .home_anchor {
   margin: 60px 30px;
@@ -470,15 +494,6 @@ html {
 .about .left {
   width: 30%;
   border-radius: 30px;
-}
-.about h2 {
-  font-size: 25px;
-  font-weight: 500;
-  color: #4169e1;
-}
-.about h3 {
-  font-size: 40px;
-  font-weight: 800;
 }
 .about h4 {
   font-size: 30px;

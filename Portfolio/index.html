@@ -34,19 +34,19 @@
                 </label>
 
 
-            <nav>
+            <nav id="header_nav">
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#home" class="anchor" >Home</a>
+                    </li >
+                    <li>
+                        <a href="#about" class="anchor" >About</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="" class="anchor" >Portfolio</a>
                     </li>
                     <li>
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
+                        <a href="" class="anchor" >Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -62,9 +62,9 @@
 
 <main>
 
-    <div id="preloader">
-        <img src="images/preLoader/load.gif" alt="preloader">
-    </div>
+<!--    <div id="preloader">-->
+<!--        <img src="images/preLoader/load.gif" alt="preloader">-->
+<!--    </div>-->
 
     <div class="home" id="home">
         <div class="container">
@@ -75,9 +75,10 @@
                 <h1 class="home_name" >
                     Artem Cherednychenko
                 </h1>
-                <p class="home_changeText">
-                    Trainee front end developer
-                </p>
+                <div class="home_changeText">
+                    <p class="change">Trainee&nbsp</p>
+                    front end developer
+                </div>
                 <a href="#about" class="home_anchor">
                     <span></span>
                     <span></span>
@@ -135,10 +136,10 @@
                                 <p><a href="https://t.me/catspsychologist">@catspsychologist</a></p>
                             </div>
                             <div class="right_item">
-                                <img src="images/about_mail.svg" alt="mail image" class="icon"  href="mailto:artem.cherednychenko.k@gmail.com">
+                                <img src="images/about_mail.svg" alt="mail image" class="icon" >
                                 <span>Email</span>
                                 <p id="email_copy">
-                                    <a>copy email</a>
+                                    <a href="mailto:artem.cherednychenko.k@gmail.com">redirect to email</a>
                                 </p>
                             </div>
                             <div class="right_item">
