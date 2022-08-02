@@ -909,6 +909,24 @@ a:active ~ nav {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
+.contact_left input:active {
+  background-color: #fff;
+  border-color: #4169e1;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.contact_left input:visited {
+  background-color: #fff;
+  border-color: #4169e1;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.contact_left input:focus-visible {
+  background-color: #fff;
+  border-color: #4169e1;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
 .contact_right {
   width: 35%;
 }
