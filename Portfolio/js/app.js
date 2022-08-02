@@ -23,23 +23,14 @@ window.addEventListener('scroll', () => {
 
 //preloader feature
 
-window.onload = function() {
-    let preloader = document.getElementById('preloader');
-    preloader.classList.add('hide-preloader');
-
-    setInterval(function() {
-
-        // document.onmousewheel = function () {
-        //     document.body.style.overflow = 'visible';
-        // };
-
-    }, 1500);
-    setInterval(function() {
-
-
-        preloader.classList.add('preloader-hidden');
-    }, 2990);
-}
+// window.onload = function() {
+//     let preloader = document.getElementById('preloader');
+//     preloader.classList.add('hide-preloader');
+//
+//     setInterval(function() {
+//         preloader.classList.add('preloader-hidden');
+//     }, 2990);
+// }
 
 
 // Once my IT teacher said "Everything you can do without using js do it using css"
@@ -99,6 +90,66 @@ js_proj.addEventListener('click', () => {
         value.classList.add('hide_it')
     })
 });
+
+//swiper
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+        type: 'progressbar',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    grabCursor: true,
+    touchRatio: 1.25,
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+
+    mousewheel: {
+        invert: true,
+    },
+
+    slidesPerView: 3,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: true,
+    },
+    speed: 800,
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            // spaceBetween: 20
+        },
+        // when window width is >= 576px
+        576: {
+            slidesPerView: 2,
+            // spaceBetween: 30
+        },
+        // when window width is >= 640px
+        767: {
+            slidesPerView: 3,
+            // spaceBetween: 40
+        },
+        1024: {
+            slidesPerView: 3,
+            // spaceBetween: 40
+        }
+    }
+});
+
+
 
 
 

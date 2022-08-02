@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -44,10 +45,10 @@
                         <a href="#portfolio" class="anchor" >Portfolio</a>
                     </li>
                     <li>
-                        <a href="" class="anchor" >Experience</a>
+                        <a href="#experience" class="anchor">Experience</a>
                     </li>
                     <li>
-                        <a href="" class="anchor" >Contact</a>
+                        <a href="" class="anchor">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -58,9 +59,9 @@
 
 <main>
 
-    <div id="preloader">
-        <img src="images/preLoader/load.gif" alt="preloader">
-    </div>
+<!--    <div id="preloader">-->
+<!--        <img src="images/preLoader/load.gif" alt="preloader">-->
+<!--    </div>-->
 
     <div class="home" id="home">
         <div class="container">
@@ -100,8 +101,8 @@
                             </h4>
                         </div>
                         <div class="right_article">
-                            <p>Thanks for visiting my website! My name is Artem and I am a web developer at my 18. I won't be wasting your time
-                            telling about my experience just scroll a little bit down. Except IT sphere I have something to show you like
+                            <p>Thank you for visiting my website! My name is Artem and I am Front End developer at my 18.
+                                My goal is to
                             </p>
                         </div>
                         <div class="right_info">
@@ -164,6 +165,7 @@
                 <div class="portfolio_title">
                     <h2>Portfolio</h2>
                     <h3>Featured Works</h3>
+                    <div class="portfolio_line"></div>
                 </div>
                 <div class="portfolio_works">
                     <nav class="portfolio_navigation">
@@ -175,7 +177,7 @@
                                 <a class="port a">Portfolio</a>
                             </li>
                             <li>
-                                <a class="layouts a">Layout</a>
+                                <a class="layouts a">Layouts</a>
                             </li>
                             <li>
                                 <a class="js_proj a">JS Projects</a>
@@ -185,42 +187,50 @@
                     <div class="portfolio_items">
                         <div class="portfolio_item_wrapper item_1 lay">
                             <a href="" class="item">
-                                <p>Layout</p>
+                                <p class="show_item">Layout</p>
+                                <p class="hide_item">Layout made with : HTML,CSS,SCSS</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_2 lay">
                             <a href="" class="item">
-                                <p>Bootstrap</p>
+                                <p class="show_item">Bootstrap</p>
+                                <p class="hide_item">Layout made with : Bootstrap,HTML,CSS,SCSS</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_3 lay">
                             <a href="" class="item">
-                                <p>Interview Task</p>
+                                <p class="show_item">Interview Task</p>
+                                <p class="hide_item">Simple layout I made within 6 hours as an interview task</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_4 js">
                             <a href="" class="item">
-                                <p>Calculator</p>
+                                <p class="show_item">Calculator</p>
+                                <p class="hide_item">Calculator using JS</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_5 js">
                             <a href="" class="item">
-                                <p>ToDo List</p>
+                                <p class="show_item">ToDo List</p>
+                                <p class="hide_item">ToDo List I made as a course final project</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_6 js">
                             <a href="" class="item">
-                                <p>Slider</p>
+                                <p class="show_item">Slider</p>
+                                <p class="hide_item">Slider made using "Swiper" technology</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_7 js">
                             <a href="" class="item">
-                                <p>Form to send</p>
+                                <p class="show_item">Form to send</p>
+                                <p class="hide_item">Form that sends text message to your email</p>
                             </a>
                         </div>
                         <div class="portfolio_item_wrapper item_8 js">
                             <a href="" class="item">
-                                <p>Web Api</p>
+                                <p class="show_item">Web Api</p>
+                                <p class="hide_item">Funny Web Api with random cats images</p>
                             </a>
                         </div>
 <!--                        <div class="portfolio_item_wrapper item_9">-->
@@ -228,17 +238,70 @@
 <!--                                <p>Layout</p>-->
 <!--                            </a>-->
 <!--                        </div>-->
-<!--                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="experience" id="experience">
+        <div class="container">
+            <div class="experience_wrapper">
+                <div class="experience_title">
+                    <h2>Experience</h2>
+                    <h3>Charity Foundation</h3>
+                    <p>I am proud to be a part of a <a href="https://instagram.com/bude.ua?igshid=YmMyMTA2M2Y=">charity organisation</a> that we
+                        established together with my friends and partners</p>
+                </div>
+                <div class="experience_slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+<!--                            <div class="swiper-slide">-->
+<!--                                <img src="images/charity_1.jpg" alt="tesla image">-->
+<!--                            </div>-->
+                            <div class="swiper-slide">
+                                <img src="images/charity_2.jpg" alt="tesla image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/charity_3.jpg" alt="tesla image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/charity_4.jpg" alt="tesla image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/charity_2.jpg" alt="tesla image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/charity_3.jpg" alt="tesla image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/charity_4.jpg" alt="tesla image">
+                            </div>
+<!--                            <div class="swiper-slide">-->
+<!--                                <img src="images/charity_5.jpg" alt="tesla image">-->
+<!--                            </div>-->
+<!--                            <div class="swiper-slide">-->
+<!--                                <img src="images/image%20(2).jpg" alt="tesla image">-->
+<!--                            </div>-->
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev btn"></div>
+                        <div class="swiper-button-next btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </main>
 
 
 
-
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

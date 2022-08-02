@@ -33,7 +33,8 @@ dd {
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  //text-rendering: optimizeSpeed;
+  //slider btns don't work
   line-height: 1.5;
 }
 

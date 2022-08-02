@@ -24,6 +24,14 @@
 
 @media (max-width: 567px) {
   .portfolio{
+    &_title{
+      width: 80%;
+      margin: 0 auto;
+      .portfolio_line{
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
     .portfolio_navigation{
       margin: 30px 0;
       ul{
@@ -44,7 +52,7 @@
       font-size: 20px;
     }
     h3{
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 

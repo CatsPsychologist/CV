@@ -26,9 +26,14 @@ html{
   font-weight: 800;
 }
 
-%line{
+%about_line{
   width: 80%;
+  background: $about_line_color;
+  margin: 0 auto;
+  height: 3px;
+}
+
+%portfolio_line{
   height: 2px;
   background: $main_page_color;
-  margin: 0 auto;
 }
