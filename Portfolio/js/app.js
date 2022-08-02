@@ -23,14 +23,14 @@ window.addEventListener('scroll', () => {
 
 //preloader feature
 
-// window.onload = function() {
-//     let preloader = document.getElementById('preloader');
-//     preloader.classList.add('hide-preloader');
-//
-//     setInterval(function() {
-//         preloader.classList.add('preloader-hidden');
-//     }, 2990);
-// }
+window.onload = function() {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide-preloader');
+
+    setInterval(function() {
+        preloader.classList.add('preloader-hidden');
+    }, 2990);
+}
 
 
 // Once my IT teacher said "Everything you can do without using js do it using css"
