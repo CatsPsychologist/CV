@@ -871,7 +871,7 @@ a:active ~ nav {
 }
 .contact {
   font-family: "Poppins", sans-serif;
-  padding-bottom: 60px;
+  padding: 30px 0 60px;
 }
 .contact_title {
   width: 60%;
@@ -879,6 +879,10 @@ a:active ~ nav {
 }
 .contact p {
   font-size: 22px;
+}
+.contact p a {
+  color: #4169e1;
+  text-decoration: none;
 }
 .contact_input_group {
   display: flex;
@@ -920,6 +924,10 @@ a:active ~ nav {
 @media (max-width: 1024px) {
   .contact_left {
     width: 60%;
+  }
+
+  .contact {
+    padding-top: 0;
   }
 
   .contact_right {

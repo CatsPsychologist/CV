@@ -1,15 +1,16 @@
 .contact{
   font-family: "Poppins", sans-serif;
-  padding-bottom: 60px;
-  &_wrapper{
-
-  }
+  padding: 30px 0 60px;
   &_title{
     width: 60%;
     padding-bottom: 50px;
   }
   p{
     font-size: 22px;
+    a{
+      color: $main_page_color;
+      text-decoration: none;
+    }
   }
   h2{
     @extend %h2;
