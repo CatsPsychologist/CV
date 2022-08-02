@@ -37,3 +37,19 @@ html{
   height: 2px;
   background: $main_page_color;
 }
+%btn{
+  background: $main_page_color;
+  color: $btn_color;
+  padding: 17px 0;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: 1.5s;
+  cursor: pointer;
+  border: 2px solid $main_page_color;
+}
+
+%btn_hover{
+  color:$main_page_color;
+  background:$btn_color;
+}

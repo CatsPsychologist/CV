@@ -1,18 +1,21 @@
 .contact{
   font-family: "Poppins", sans-serif;
-  padding: 60px 0;
+  padding-bottom: 60px;
   &_wrapper{
 
   }
   &_title{
     width: 60%;
+    padding-bottom: 50px;
+  }
+  p{
+    font-size: 22px;
   }
   h2{
     @extend %h2;
   }
   h3{
     @extend %h3;
-    padding-bottom: 30px;
   }
 
   &_input_group{
@@ -23,10 +26,33 @@
   &_left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
+    input{
+      transition: 1.5s;
+      padding: 15px 0 15px 25px;
+      border-radius: 5px;
+      background: $input_bg;
+      border: none;
+      &:focus{
+        background-color: $input_bg_focus;
+        border-color: $main_page_color;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+      }
+    }
+    a{
+      @extend %btn;
+      &:hover{
+        @extend %btn_hover;
+      }
+    }
   }
   &_right{
-
+    width: 35%;
+    img{
+      height: 380px;
+      border-radius: 5px;
+    }
   }
 }

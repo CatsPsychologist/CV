@@ -36,13 +36,11 @@
     }
   }
   .right_download{
-      background: $main_page_color;
-      color: white;
-      padding: 20px 0;
-      border-radius: 15px;
-      text-decoration: none;
-      width: 250px;
-      text-align: center;
+    @extend %btn;
+    width: 250px;
+    &:hover{
+      @extend %btn_hover;
+    }
   }
 
   &_title{

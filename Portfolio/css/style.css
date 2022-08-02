@@ -114,6 +114,23 @@ html {
   background: #4169e1;
 }
 
+.contact_left a, .about .right_download {
+  background: #4169e1;
+  color: white;
+  padding: 17px 0;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: 1.5s;
+  cursor: pointer;
+  border: 2px solid #4169e1;
+}
+
+.contact_left a:hover, .about .right_download:hover {
+  color: #4169e1;
+  background: white;
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 1024px;
@@ -485,13 +502,7 @@ a:active ~ nav {
   background: #4169e1;
 }
 .about .right_download {
-  background: #4169e1;
-  color: white;
-  padding: 20px 0;
-  border-radius: 15px;
-  text-decoration: none;
   width: 250px;
-  text-align: center;
 }
 .about_title {
   margin-bottom: 80px;
@@ -787,7 +798,7 @@ a:active ~ nav {
   }
 }
 .experience {
-  padding: 60px 0;
+  padding-top: 60px;
   font-family: "Poppins", sans-serif;
 }
 .experience_title {
@@ -840,7 +851,7 @@ a:active ~ nav {
   }
 
   .experience {
-    padding: 30px 0;
+    padding-top: 30px;
   }
   .experience p {
     max-width: 100%;
@@ -853,16 +864,21 @@ a:active ~ nav {
   .experience_slider .swiper .swiper-wrapper .swiper-slide img {
     max-width: 75%;
   }
+
+  .experience p {
+    font-size: 16px;
+  }
 }
 .contact {
   font-family: "Poppins", sans-serif;
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 .contact_title {
   width: 60%;
+  padding-bottom: 50px;
 }
-.contact h3 {
-  padding-bottom: 30px;
+.contact p {
+  font-size: 22px;
 }
 .contact_input_group {
   display: flex;
@@ -871,8 +887,58 @@ a:active ~ nav {
 .contact_left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 60%;
+}
+.contact_left input {
+  transition: 1.5s;
+  padding: 15px 0 15px 25px;
+  border-radius: 5px;
+  background: #efefef;
+  border: none;
+}
+.contact_left input:focus {
+  background-color: #fff;
+  border-color: #4169e1;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.contact_right {
+  width: 35%;
+}
+.contact_right img {
+  height: 380px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .contact_left {
+    width: 60%;
+  }
+
+  .contact_right {
+    width: 35%;
+  }
+}
+@media (max-width: 767px) {
+  .contact_title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 567px) {
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact_right {
+    display: none;
+  }
+
+  .contact_left {
+    width: 100%;
+    height: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
