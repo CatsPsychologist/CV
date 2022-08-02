@@ -1,0 +1,62 @@
+@media (max-width: 1250px){
+
+  .experience_slider{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            max-width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px){
+
+}
+
+
+@media (max-width: 767px){
+  .experience_slider{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            max-width: 60%;
+          }
+        }
+      }
+    }
+  }
+  .experience{
+    padding: 30px 0;
+    p{
+      max-width: 100%;
+    }
+    h3{
+      font-size: 28px;
+    }
+  }
+}
+
+
+@media (max-width: 567px){
+  .experience_slider{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            max-width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px){
+
+}

@@ -93,7 +93,7 @@ js_proj.addEventListener('click', () => {
 
 //swiper
 const swiper = new Swiper('.swiper', {
-    spaceBetween: 20,
+    // spaceBetween: 40,
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -134,12 +134,12 @@ const swiper = new Swiper('.swiper', {
         },
         // when window width is >= 576px
         576: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             // spaceBetween: 30
         },
         // when window width is >= 640px
         767: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             // spaceBetween: 40
         },
         1024: {

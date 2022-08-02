@@ -1,5 +1,5 @@
 .experience{
-  padding: 80px 0;
+  padding: 60px 0;
   font-family: "Poppins", sans-serif;
   &_wrapper{
 
@@ -17,7 +17,7 @@
   }
   p{
     font-size: 21px;
-    width: 50%;
+    max-width: 70%;
     margin: 0 auto;
     a{
       color: $main_page_color;
@@ -37,8 +37,7 @@
           justify-content: center;
           align-items: center;
           img{
-            //max-width: 70%;
-            max-height: 95%;
+            max-width: 80%;
             border-radius: 20px;
             //border: 1px solid black;
           }
