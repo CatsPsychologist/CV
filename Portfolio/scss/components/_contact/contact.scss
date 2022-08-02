@@ -1,0 +1,32 @@
+.contact{
+  font-family: "Poppins", sans-serif;
+  padding: 60px 0;
+  &_wrapper{
+
+  }
+  &_title{
+    width: 60%;
+  }
+  h2{
+    @extend %h2;
+  }
+  h3{
+    @extend %h3;
+    padding-bottom: 30px;
+  }
+
+  &_input_group{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+  }
+  &_right{
+
+  }
+}

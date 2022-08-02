@@ -32,7 +32,6 @@ window.onload = function() {
     }, 2990);
 }
 
-
 // Once my IT teacher said "Everything you can do without using js do it using css"
 // and I did a "burger" menu with only css but I have to hide a pop up after pushing an anchor link so lets do it
 
@@ -43,7 +42,7 @@ header_nav.addEventListener('click', () => {
 });
 
 // portfolio sort
-
+// test model!!! sorting is still in process
 
 const all = document.querySelector('.all')
 const port = document.querySelector('.port')
@@ -93,7 +92,6 @@ js_proj.addEventListener('click', () => {
 
 //swiper
 const swiper = new Swiper('.swiper', {
-    // spaceBetween: 40,
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -101,50 +99,34 @@ const swiper = new Swiper('.swiper', {
         dynamicBullets: true,
         type: 'progressbar',
     },
-
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
     grabCursor: true,
     touchRatio: 1.25,
-
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     },
-
     mousewheel: {
         invert: true,
     },
-
     slidesPerView: 3,
     autoplay: {
         delay: 1500,
         disableOnInteraction: true,
     },
     speed: 800,
-
     breakpoints: {
-        // when window width is >= 320px
-        320: {
+        0: {
             slidesPerView: 1,
-            // spaceBetween: 20
         },
-        // when window width is >= 576px
-        576: {
-            slidesPerView: 1,
-            // spaceBetween: 30
-        },
-        // when window width is >= 640px
         767: {
             slidesPerView: 2,
-            // spaceBetween: 40
         },
         1024: {
             slidesPerView: 3,
-            // spaceBetween: 40
         }
     }
 });

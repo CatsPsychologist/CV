@@ -44,8 +44,12 @@
         }
       }
       .btn{
-        color: $slider_btn;
+        color:$main_page_color;
       }
     }
   }
+  .swiper-pagination-progressbar-fill{
+    background: $main_page_color;
+  }
+
 }
