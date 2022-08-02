@@ -46,24 +46,6 @@
         outline: 0;
         box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
       }
-      &:active{
-        background-color: $input_bg_focus;
-        border-color: $main_page_color;
-        outline: 0;
-        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-      }
-      &:visited{
-        background-color: $input_bg_focus;
-        border-color: $main_page_color;
-        outline: 0;
-        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-      }
-      &:focus-visible{
-        background-color: $input_bg_focus;
-        border-color: $main_page_color;
-        outline: 0;
-        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
-      }
     }
     a{
       @extend %btn;
