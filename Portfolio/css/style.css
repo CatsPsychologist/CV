@@ -903,7 +903,7 @@ a:active ~ nav {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.contact_left input:active {
+.contact_left input:hover {
   background-color: #fff;
   border-color: #4169e1;
   outline: 0;
