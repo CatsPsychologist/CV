@@ -1,7 +1,6 @@
 .portfolio{
   padding: 80px 0;
   font-family: "Poppins", sans-serif;
-
   &_title{
     margin: 0 auto;
     text-align: center;
@@ -18,7 +17,6 @@
     @extend %portfolio_line;
     width: inherit;
   }
-
   &_works{
     .portfolio_navigation{
       margin: 50px 0;
@@ -45,8 +43,6 @@
       }
     }
   }
-
-
   &_items{
     display: flex;
     flex-wrap: wrap;

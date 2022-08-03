@@ -368,7 +368,7 @@ a:active ~ nav {
 .home {
   height: 100vh;
   min-height: 650px;
-  background-image: url("../images/1142015.png");
+  background-image: url("../images/home_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -955,6 +955,7 @@ a:active ~ nav {
   }
 }
 footer {
+  background: #f4f4f4;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
 }

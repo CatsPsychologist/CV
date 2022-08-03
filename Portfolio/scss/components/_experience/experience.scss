@@ -1,9 +1,6 @@
 .experience{
   padding-top: 60px;
   font-family: "Poppins", sans-serif;
-  &_wrapper{
-
-  }
   &_title{
     text-align: center;
     padding-bottom: 50px;
@@ -31,7 +28,6 @@
     .swiper{
       height: 90%;
       .swiper-wrapper{
-        //padding-top: 50px;
         .swiper-slide{
           display: flex;
           justify-content: center;
@@ -39,7 +35,6 @@
           img{
             max-width: 80%;
             border-radius: 20px;
-            //border: 1px solid black;
           }
         }
       }

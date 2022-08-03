@@ -1,13 +1,6 @@
-// my email is so long so its not enough space to fit in one string
-// this function will copy my email after clicking and you don't need to copy by yourself
-// let email = document.getElementById('email_copy')
-//
-// email.onclick = () => {
-//     navigator.clipboard.writeText('artem.cherednychenko.k@gmail.com')
-// }
-
 // header feature that attaches header to the page after making a scroll that equals to headers height
 // and returning it back if you get to the top of the page
+
 const header = document.querySelector('.header')
 let lastScroll = 0;
 const defaultOffset = header.clientHeight;
@@ -42,53 +35,46 @@ header_nav.addEventListener('click', () => {
 });
 
 // portfolio sort
-// test model!!! sorting is still in process
 
-const all = document.querySelector('.all')
-const port = document.querySelector('.port')
-const layouts = document.querySelector('.layouts')
-const js_proj = document.querySelector('.js_proj')
-
-const allElements = document.querySelectorAll('.portfolio_item_wrapper')
-const allJs = document.querySelectorAll('.js')
-const allLayouts = document.querySelectorAll('.lay')
+const list = document.querySelectorAll('.list')
+const items = document.querySelectorAll('.portfolio_item_wrapper')
+const listItems = document.querySelector('.list_items')
 
 
-const removeClass = () =>{
-    allElements.forEach(value => {
-        value.classList.remove('hide_it')
-    })
-}
+listItems.addEventListener('click', e => {
+    const targetId = e.target.id
 
-all.addEventListener('click', () => {
-
-    removeClass()
-
-});
-
-port.addEventListener('click', () => {
-
-    removeClass()
-
-});
-
-layouts.addEventListener('click', () => {
-
-    removeClass()
-
-    allJs.forEach(value => {
-        value.classList.add('hide_it')
-    })
-});
-
-js_proj.addEventListener('click', () => {
-
-    removeClass()
-
-    allLayouts.forEach(value => {
-        value.classList.add('hide_it')
-    })
-});
+    switch (targetId){
+        case 'js':
+            items.forEach(value => {
+            if(value.classList.contains('js')){
+                value.style.display = 'block'
+            }else{
+                value.style.display = 'none'
+            }
+        })
+            break
+        case 'lay':
+            items.forEach(value => {
+                if(value.classList.contains('lay')){
+                    value.style.display = 'block'
+                }else{
+                    value.style.display = 'none'
+                }
+            })
+            break
+        case 'all' :
+            items.forEach(value => {
+                value.style.display = 'block'
+            })
+            break
+        case 'port' :
+            items.forEach(value => {
+                value.style.display = 'block'
+            })
+            break
+    }
+})
 
 //swiper
 const swiper = new Swiper('.swiper', {

@@ -1,8 +1,4 @@
-@media (max-width: 1250px ) {
-
-}
 @media (max-width: 1024px) {
-
   .home{
     &_photo{
       img {
@@ -10,10 +6,7 @@
       }
     }
   }
-
-
 }
-
 @media (max-width: 767px ) {
   .home{
     &_name{
@@ -22,7 +15,6 @@
     }
   }
 }
-
 @media (max-width: 576px) {
   .home{
     &_photo{
@@ -31,14 +23,12 @@
       }
     }
   }
-
   .home{
     &_name{
       font-size: 30px;
       letter-spacing: 2px
     }
   }
-
   .home{
     &_changeText{
       font-size: 17px

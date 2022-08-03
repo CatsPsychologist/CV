@@ -15,10 +15,6 @@
       text-decoration: none;
       color: black;
       transition: 1.5s;
-      //-ms-user-select: none;
-      //-moz-user-select: none;
-      //-webkit-user-select: none;
-      //user-select: none;
       &:hover{
         padding: 5px 8px;
         color:$home_color ;
@@ -44,7 +40,6 @@
   }
 
   &_title{
-    //font-family: 'Poppins', sans-serif;
     margin-bottom: 80px;
   }
   &_info{
@@ -90,7 +85,6 @@
     padding-bottom: 20px;
     align-items: center;
   }
-
   .line{
     @extend %about_line;
   }
