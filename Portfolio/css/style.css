@@ -832,6 +832,7 @@ a:active ~ nav {
 .experience_slider .swiper .swiper-wrapper .swiper-slide img {
   max-width: 80%;
   border-radius: 20px;
+  height: 70%;
 }
 .experience_slider .swiper .btn {
   color: #4169e1;
@@ -843,6 +844,7 @@ a:active ~ nav {
 @media (max-width: 1250px) {
   .experience_slider .swiper .swiper-wrapper .swiper-slide img {
     max-width: 75%;
+    height: 65%;
   }
 }
 @media (max-width: 767px) {
@@ -863,6 +865,7 @@ a:active ~ nav {
 @media (max-width: 567px) {
   .experience_slider .swiper .swiper-wrapper .swiper-slide img {
     max-width: 75%;
+    height: 65%;
   }
 
   .experience p {
