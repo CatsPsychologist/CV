@@ -749,6 +749,11 @@ a:active ~ nav {
     border: 0;
   }
 }
+@media (min-width: 1025px) {
+  .portfolio_items .hide {
+    width: 32%;
+  }
+}
 @media (max-width: 1024px) {
   .portfolio {
     padding: 50px 0;
@@ -832,7 +837,7 @@ a:active ~ nav {
 .experience_slider .swiper .swiper-wrapper .swiper-slide img {
   max-width: 80%;
   border-radius: 20px;
-  height: 70%;
+  height: 80%;
 }
 .experience_slider .swiper .btn {
   color: #4169e1;

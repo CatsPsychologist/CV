@@ -137,3 +137,14 @@
     border: 0;
   }
 }
+
+
+
+@media (min-width: 1025px) {
+  .portfolio_items{
+    .hide{
+      width: 32%;
+    }
+  }
+}
+

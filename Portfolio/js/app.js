@@ -36,10 +36,14 @@ header_nav.addEventListener('click', () => {
 
 // portfolio sort
 
-const list = document.querySelectorAll('.list')
 const items = document.querySelectorAll('.portfolio_item_wrapper')
 const listItems = document.querySelector('.list_items')
 
+function removeHide (){
+    return  items.forEach(value => {
+        value.classList.remove('hide')
+    })
+}
 
 listItems.addEventListener('click', e => {
     const targetId = e.target.id
@@ -47,6 +51,7 @@ listItems.addEventListener('click', e => {
     switch (targetId){
         case 'js':
             items.forEach(value => {
+                removeHide ()
             if(value.classList.contains('js')){
                 value.style.display = 'block'
             }else{
@@ -57,6 +62,7 @@ listItems.addEventListener('click', e => {
         case 'lay':
             items.forEach(value => {
                 if(value.classList.contains('lay')){
+                    value.classList.add('hide')
                     value.style.display = 'block'
                 }else{
                     value.style.display = 'none'
@@ -65,11 +71,13 @@ listItems.addEventListener('click', e => {
             break
         case 'all' :
             items.forEach(value => {
+                removeHide ()
                 value.style.display = 'block'
             })
             break
         case 'port' :
             items.forEach(value => {
+                removeHide ()
                 value.style.display = 'block'
             })
             break
