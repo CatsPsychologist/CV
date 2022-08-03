@@ -1,0 +1,40 @@
+
+@media (max-width: 1024px ) {
+ .middle_part{
+   img{
+     width: 80%!important;
+     margin: 0 auto;
+   }
+ }
+}
+
+@media (max-width: 767px) {
+
+    .left_part{
+        width: 20%!important;
+    }
+    .middle_part{
+      width: 80% !important;
+    }
+    .right_part{
+      margin-top: 50px;
+      width: 100%!important;
+    }
+}
+
+@media (max-width: 576px) {
+  .purchase_info_wrapper{
+    .navigation{
+      p{
+        display: none;
+      }
+    }
+
+    ul{
+      flex-direction: column;
+      li:last-child{
+        padding: 17px;
+      }
+    }
+  }
+}

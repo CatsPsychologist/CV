@@ -1,0 +1,56 @@
+header{
+  .header_top{
+    font-family: 'Duru Sans', sans-serif;
+    background-color:$header_background;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+    padding: 8px 0;
+    a{
+      text-decoration: none;
+      color: $header_color;
+      position: absolute;
+      left: 1rem;
+    }
+    p{
+      color: $header_color;
+    }
+  }
+  .header_bottom{
+    padding: 20px 0;
+    .header_bottom_wrapper{
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      .logo{
+
+      }
+      .navigation{
+        display: flex;
+        .item{
+          padding-left: 25px;
+          a {
+            text-decoration: none;
+            img {
+              margin: 0 auto;
+              //width: 20px;
+              padding-bottom: 10px;
+              height: 35px;
+            }
+            p {
+              font-weight: 500;
+              font-size: 8px;
+
+              color: black;
+            }
+          }
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -907,12 +907,6 @@ a:active ~ nav {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.contact_left input:hover {
-  background-color: #fff;
-  border-color: #4169e1;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
 .contact_right {
   width: 35%;
 }
@@ -988,7 +982,9 @@ footer nav ul li a img {
 
 @media (max-width: 567px) {
   footer .footer_wrapper {
+    height: 100%;
     display: block;
+    padding: 15px 0;
     text-align: center;
   }
   footer .footer_wrapper p {

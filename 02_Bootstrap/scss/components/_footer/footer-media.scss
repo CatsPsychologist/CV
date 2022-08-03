@@ -1,0 +1,22 @@
+@media (max-width: 767px ) {
+  footer{
+    .footer-top{
+      margin-bottom: 30px;
+      .nav-bar{
+        ul{
+          flex-direction: column;
+          li{
+            padding-right: 0!important;
+          }
+          li:not(:last-child) {
+            padding-bottom: 10px!important;
+          }
+        }
+      }
+    }
+
+    .footer-bottom{
+      text-align: center;
+    }
+  }
+}

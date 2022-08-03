@@ -1,0 +1,43 @@
+@media (max-width: 1250px ) {
+
+}
+
+@media (max-width: 1024px) {
+
+  .header_bottom_wrapper{
+    .logo{
+      img{
+        width: 150px;
+      }
+    }
+    p{
+      display: none;
+    }
+    img{
+      height: 25px!important;
+      padding-bottom: 0!important;
+    }
+  }
+}
+@media (max-width: 767px ) {
+  header{
+    .header_top{
+      justify-content: space-around;
+      a{
+        position: relative;
+        left: 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .header_bottom_wrapper{
+    flex-direction: column;
+    .logo{
+      padding-bottom: 30px;
+    }
+  }
+}
