@@ -112,6 +112,7 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: true,
     },
     speed: 800,
+
     breakpoints: {
         0: {
             slidesPerView: 1,

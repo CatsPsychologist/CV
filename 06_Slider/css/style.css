@@ -1,7 +1,10 @@
 @import "reset.css";
-
+.container{
+    font-family: Arial, sans-serif;
+    max-width: 1250px;
+    margin: 0 auto;
+}
 .swiper {
-    width: 80%;
     height: 80%;
 }
 
@@ -10,16 +13,21 @@
     justify-content: center;
     align-items: center;
 }
-
-img{
+.main_part img {
     max-width: 80%;
     max-height: 80%;
     border-radius: 20px;
     border: 1px solid;
 }
 
+
+.img{
+    width: 25px;
+    margin-right: 20px;
+}
+
 .main_part{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -28,10 +36,52 @@ img{
     color: black;
 }
 
+@media (max-width: 1250px ) {
+    .container{
+        max-width: 1024px;
+    }
+}
 
-/*.swiper-pagination-bullet{*/
-/*    width: 15px;*/
-/*    height: 15px;*/
-/*    background-color: black;*/
-/*}*/
+@media (max-width: 1024px) {
+    .container{
+        max-width: 767px;
+    }
+}
+@media (max-width: 767px ) {
+    .container{
+        max-width: 567px;
+    }
+}
 
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+
+    }
+    .title p{
+        font-size: 14px;
+    }
+
+}
+
+.title{
+
+    text-align: center;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
