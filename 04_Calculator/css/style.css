@@ -1,0 +1,84 @@
+@import "reset.css";
+.calc{
+    min-height: 500px;
+    background: #1C1C1C;
+    min-width: 320px;
+    /*margin: 0 auto;*/
+    color: white;
+    font-family: Arial;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.calc-wrapper{
+    height: 100%;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-areas:
+    "ac plMin per divis"
+    "seven eight nine mlt"
+    "four five six min"
+    "one two three plus"
+    "zero zero pt eq";
+    justify-content: center;
+    grid-gap: 10px 10px;
+    /*height: 75%;*/
+}
+
+.screen{
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    user-select: none;
+    box-sizing: border-box;
+    font-size: 50px;
+    padding: 35px;
+}
+.btn{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+.zero {
+    grid-area: zero;
+    width: 100% ;
+    border-radius: 32px;
+}
+
+.lt_grey{
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+}
+
+.grey{
+    background-color: #505050;
+}
+
+.orange{
+    background-color: #FF9500;
+}

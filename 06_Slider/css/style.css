@@ -1,0 +1,37 @@
+@import "reset.css";
+
+.swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.main_part{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    color: black;
+}
+
+
+/*.swiper-pagination-bullet{*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    background-color: black;*/
+/*}*/
+
