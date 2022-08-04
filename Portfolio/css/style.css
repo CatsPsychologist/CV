@@ -915,6 +915,9 @@ a:active ~ nav {
   border-color: #4169e1;
   outline: 0;
 }
+.contact_left .btn {
+  height: 62px;
+}
 .contact_right {
   width: 35%;
 }
