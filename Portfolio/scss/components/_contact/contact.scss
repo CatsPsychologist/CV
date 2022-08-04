@@ -43,6 +43,7 @@
     }
     .btn{
       @extend %btn;
+      height: 62px;
       &:hover{
         @extend %btn_hover;
       }
