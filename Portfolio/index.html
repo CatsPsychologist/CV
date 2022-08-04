@@ -58,9 +58,9 @@
 
 <main>
 
-    <div id="preloader">
-        <img src="images/preLoader/load.gif" alt="preloader">
-    </div>
+<!--    <div id="preloader">-->
+<!--        <img src="images/preLoader/load.gif" alt="preloader">-->
+<!--    </div>-->
 
     <div class="home" id="home">
         <div class="container">
@@ -292,16 +292,20 @@
                 <div class="contact_title">
                     <h2>Contact</h2>
                     <h3>Get in touch</h3>
-                    <p>You can either find me in <a href="https://t.me/catspsychologist">telegram</a>  or leave your information below and I will response you as fast as it possible </p>
+                    <p>You can either find me in <a href="https://t.me/catspsychologist">telegram</a>  or leave your information below and I will respond to you as fast as it possible </p>
                 </div>
                 <div class="contact_input_group">
-                    <div class="contact_left">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone (Telegram)">
-                        <input type="text" placeholder="Message (Optional)">
-                        <a class="btn">Send Job Offer</a>
-                    </div>
+                    <form class="contact_left" id="contact_inputs" name="contact_inputs">
+                        <input type="text" id="name" name="name" data-reg="^^[a-zA-Z0-9]"  placeholder="Name">
+
+                        <input type="email" id="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{1,4}$" placeholder="Email" >
+
+                        <input type="text" id="telegram" name="telegram" data-reg="^@([A-z0-9][-A-z0-9])+[A-z]{2,4}$" placeholder="Telegram">
+
+                        <input type="text" id="message" name="message"  placeholder="Message (Optional)">
+
+                        <a class="btn" id="button" name="button">Send Job Offer</a>
+                    </form>
                     <div class="contact_right">
                         <img src="images/contact_cat.gif" alt="">
                     </div>

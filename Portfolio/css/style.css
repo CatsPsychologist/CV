@@ -114,7 +114,7 @@ html {
   background: #4169e1;
 }
 
-.contact_left a, .about .right_download {
+.contact_left .btn, .about .right_download {
   background: #4169e1;
   color: white;
   padding: 17px 0;
@@ -126,7 +126,7 @@ html {
   border: 2px solid #4169e1;
 }
 
-.contact_left a:hover, .about .right_download:hover {
+.contact_left .btn:hover, .about .right_download:hover {
   color: #4169e1;
   background: white;
 }
@@ -914,7 +914,6 @@ a:active ~ nav {
   background-color: #f6fbff;
   border-color: #4169e1;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .contact_right {
   width: 35%;
@@ -922,6 +921,7 @@ a:active ~ nav {
 .contact_right img {
   height: 380px;
   border-radius: 5px;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {

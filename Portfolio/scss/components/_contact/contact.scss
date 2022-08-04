@@ -39,10 +39,10 @@
         background-color: $input_bg_focus;
         border-color: $main_page_color;
         outline: 0;
-        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+        //box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
       }
     }
-    a{
+    .btn{
       @extend %btn;
       &:hover{
         @extend %btn_hover;
@@ -54,6 +54,7 @@
     img{
       height: 380px;
       border-radius: 5px;
+      width: 100%;
     }
   }
 }

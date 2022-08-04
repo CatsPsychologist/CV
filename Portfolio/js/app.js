@@ -16,14 +16,14 @@ window.addEventListener('scroll', () => {
 
 //preloader feature
 
-window.onload = function() {
-    let preloader = document.getElementById('preloader');
-    preloader.classList.add('hide-preloader');
-
-    setInterval(function() {
-        preloader.classList.add('preloader-hidden');
-    }, 2990);
-}
+// window.onload = function() {
+//     let preloader = document.getElementById('preloader');
+//     preloader.classList.add('hide-preloader');
+//
+//     setInterval(function() {
+//         preloader.classList.add('preloader-hidden');
+//     }, 2990);
+// }
 
 // Once my IT teacher said "Everything you can do without using js do it using css"
 // and I did a "burger" menu with only css but I have to hide a pop up after pushing an anchor link so lets do it
@@ -125,8 +125,70 @@ const swiper = new Swiper('.swiper', {
     }
 });
 
+// contact validation and sending to email
 
+const inputs = document.forms["contact_inputs"];
+const button = document.getElementById("button");
 
+const inputArr = Array.from(inputs)
+const validInputArr = [];
+
+console.log(inputArr)
+
+inputArr.forEach(value => {
+    if(value.hasAttribute("data-reg")){
+        value.setAttribute("is-valid", '0');
+        validInputArr.push(value);
+    }
+})
+
+console.log(1)
+
+inputs.addEventListener("input", inputHandler);
+button.addEventListener("click", buttonHandler);
+
+function inputHandler({target}){
+    if(target.hasAttribute("data-reg")){
+        inputCheck(target);
+    }
+}
+
+function inputCheck(el){
+    const inputValue = el.value;
+    const inputReg = el.getAttribute("data-reg");
+    const reg = new RegExp(inputReg);
+    if(reg.test(inputValue)){
+        el.style.boxShadow = '0 0 0 0.25rem rgb(13 110 253 / 25%)';
+        el.style.background = 'rgb(232, 240, 254)';
+        el.setAttribute("is-valid", '1');
+    }else {
+        el.style.boxShadow = '0 0 0 0.25rem rgb(255 0 0 / 25%)';
+        el.style.background = 'rgb(248 213 217)';
+        el.setAttribute("is-valid", '0');
+    }
+}
+
+function buttonHandler(e) {
+    const isAllValid = [];
+    validInputArr.forEach(value => {
+        isAllValid.push(value.getAttribute("is-valid"))
+    })
+
+    const isValid = isAllValid.reduce((a, b) =>{
+        return +a + +b;
+    })
+
+    if(isValid === 3){
+        console.log("все заебаись")
+    }else {
+        return;
+    }
+
+    // if(Boolean(Number(isValid))){
+    //     e.preventDefault()
+    // }
+    // console.log(e)
+}
 
 
 
