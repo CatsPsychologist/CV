@@ -142,7 +142,7 @@ inputArr.forEach(value => {
     }
 })
 
-console.log(1)
+console.log(2)
 
 inputs.addEventListener("input", inputHandler);
 button.addEventListener("click", buttonHandler);
@@ -161,11 +161,19 @@ function inputCheck(el){
         el.style.boxShadow = '0 0 0 0.25rem rgb(13 110 253 / 25%)';
         el.style.background = 'rgb(232, 240, 254)';
         el.setAttribute("is-valid", '1');
-    }else {
+    }else if(inputValue === ''){
+        el.style.boxShadow = 'none';
+        el.style.background = '#efefef';
+    }
+    else {
         el.style.boxShadow = '0 0 0 0.25rem rgb(255 0 0 / 25%)';
         el.style.background = 'rgb(248 213 217)';
         el.setAttribute("is-valid", '0');
     }
+    // console.log(inputValue)
+    // if(inputValue === ''){
+    //
+    // }
 }
 
 function buttonHandler(e) {
@@ -181,7 +189,7 @@ function buttonHandler(e) {
     if(isValid === 3){
         console.log("все заебаись")
     }else {
-        return;
+        console.log("хуйгя")
     }
 
     // if(Boolean(Number(isValid))){
