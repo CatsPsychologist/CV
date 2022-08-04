@@ -170,10 +170,6 @@ function inputCheck(el){
         el.style.background = 'rgb(248 213 217)';
         el.setAttribute("is-valid", '0');
     }
-    // console.log(inputValue)
-    // if(inputValue === ''){
-    //
-    // }
 }
 
 function buttonHandler(e) {
@@ -186,16 +182,9 @@ function buttonHandler(e) {
         return +a + +b;
     })
 
-    if(isValid === 3){
-        console.log("все заебаись")
-    }else {
-        console.log("хуйгя")
+    if(isValid !== 3){
+        e.preventDefault()
     }
-
-    // if(Boolean(Number(isValid))){
-    //     e.preventDefault()
-    // }
-    // console.log(e)
 }
 
 
