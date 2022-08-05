@@ -35,17 +35,21 @@
       border-radius: 5px;
       background: $input_bg;
       border: none;
-      &:focus{
+      &:focus:not(:last-child){
         background-color: $input_bg_focus;
         border-color: $main_page_color;
         outline: 0;
       }
     }
-    .btn{
+    .btn {
       @extend %btn;
       height: 62px;
-      &:hover{
+      &:hover {
         @extend %btn_hover;
+      }
+      &:focus {
+        color: $main_page_color;
+        background: white;
       }
     }
   }
@@ -58,10 +62,10 @@
     }
   }
 }
-
-#message{
-  &:focus{
-    box-shadow: rgb(13 110 253 / 25%) 0px 0px 0px 0.25rem;
-    background: rgb(232, 240, 254);
-  }
-}
+//
+//#message{
+//  &:focus{
+//    box-shadow: rgb(13 110 253 / 25%) 0 0 0 0.25rem;
+//    background: rgb(232, 240, 254);
+//  }
+//}

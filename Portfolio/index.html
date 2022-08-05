@@ -295,14 +295,14 @@
                     <p>You can either find me in <a href="https://t.me/catspsychologist">telegram</a>  or leave your information below and I will respond to you as fast as it possible </p>
                 </div>
                 <div class="contact_input_group">
-                    <form action="php/send_mail.php" method="post" class="contact_left" id="contact_inputs" name="contact_inputs">
+                    <form method="POST" action="php/mail.php" class="contact_left" id="contact_inputs" name="contact_inputs">
                         <input type="text" id="name" name="name" data-reg="^^[a-zA-Z0-9]"  placeholder="Name">
 
                         <input type="email" id="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{1,4}$" placeholder="Email" >
 
                         <input type="text" id="telegram" name="telegram" data-reg="^@([A-z0-9][-A-z0-9])+[A-z]{2,4}$" placeholder="Telegram">
 
-                        <input type="text" id="message" name="message"  placeholder="Message (Optional)">
+                        <input type="text" id="message" name="message" data-reg=""  placeholder="Message (Optional)">
 
                         <input type="submit" class="btn" id="button" name="button" value="Send Job Offer">
 <!--                        <a class="btn" id="button" name="button">Send Job Offer</a>-->
@@ -354,7 +354,9 @@
     </div>
 </footer>
 
+
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

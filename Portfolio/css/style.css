@@ -910,13 +910,17 @@ a:active ~ nav {
   background: #efefef;
   border: none;
 }
-.contact_left input:focus {
+.contact_left input:focus:not(:last-child) {
   background-color: #f6fbff;
   border-color: #4169e1;
   outline: 0;
 }
 .contact_left .btn {
   height: 62px;
+}
+.contact_left .btn:focus {
+  color: #4169e1;
+  background: white;
 }
 .contact_right {
   width: 35%;
@@ -925,11 +929,6 @@ a:active ~ nav {
   height: 380px;
   border-radius: 5px;
   width: 100%;
-}
-
-#message:focus {
-  box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
-  background: #e8f0fe;
 }
 
 @media (max-width: 1024px) {

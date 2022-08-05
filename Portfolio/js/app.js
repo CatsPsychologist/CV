@@ -134,7 +134,6 @@ const button = document.getElementById("button");
 const inputArr = Array.from(inputs)
 const validInputArr = [];
 
-console.log(inputArr)
 
 inputArr.forEach(value => {
     if(value.hasAttribute("data-reg")){
@@ -143,7 +142,6 @@ inputArr.forEach(value => {
     }
 })
 
-console.log(2)
 
 inputs.addEventListener("input", inputHandler);
 button.addEventListener("click", buttonHandler);
@@ -162,16 +160,18 @@ function inputCheck(el){
         el.style.boxShadow = '0 0 0 0.25rem rgb(13 110 253 / 25%)';
         el.style.background = 'rgb(232, 240, 254)';
         el.setAttribute("is-valid", '1');
-    }else if(inputValue === ''){
+    }
+    else if(inputValue === ''){
         el.style.boxShadow = 'none';
         el.style.background = '#efefef';
     }
     else {
         el.style.boxShadow = '0 0 0 0.25rem rgb(255 0 0 / 25%)';
-        el.style.background = 'rgb(248 213 217)';
+        el.style.background = 'rgb(248,213,217)';
         el.setAttribute("is-valid", '0');
     }
 }
+
 
 function buttonHandler(e) {
     const isAllValid = [];
@@ -179,14 +179,56 @@ function buttonHandler(e) {
         isAllValid.push(value.getAttribute("is-valid"))
     })
 
+    isAllValid.length = 3;
+
     const isValid = isAllValid.reduce((a, b) =>{
         return +a + +b;
     })
 
     if(isValid !== 3){
+        alert('Make sure you filled everything correctly')
         e.preventDefault()
+    }else {
+        formSend ();
     }
 }
 
 
 
+function formSend (){
+    inputs.addEventListener('submit', function (e){
+        e.preventDefault();
+        let elem = e.target;
+
+        let formData = {
+            name: elem.querySelector('[name = "name"]').value,
+            email: elem.querySelector('[name = "email"]').value,
+            telegram: elem.querySelector('[name = "telegram"]').value,
+            message: elem.querySelector('[name = "message"]').value,
+        };
+        elem.reset()
+        inputArr.length = 4;
+        inputArr.forEach(value => {
+            value.style.boxShadow = 'none';
+            value.style.background = '#efefef';
+        })
+
+        console.log(formData)
+
+        // axios.post('???', {
+        //
+        //     'name' : formData.name,
+        //     'email' : formData.email,
+        //     'telegram' : formData.telegram,
+        //     'message' : formData.message,
+        // })
+        //     .then(function (response) {
+        //     console.log(response);
+        // })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
+    })
+}
+
+console.log(12)
