@@ -134,14 +134,12 @@ const button = document.getElementById("button");
 const inputArr = Array.from(inputs)
 const validInputArr = [];
 
-
 inputArr.forEach(value => {
     if(value.hasAttribute("data-reg")){
         value.setAttribute("is-valid", '0');
         validInputArr.push(value);
     }
 })
-
 
 inputs.addEventListener("input", inputHandler);
 button.addEventListener("click", buttonHandler);
@@ -172,63 +170,56 @@ function inputCheck(el){
     }
 }
 
-
 function buttonHandler(e) {
     const isAllValid = [];
     validInputArr.forEach(value => {
         isAllValid.push(value.getAttribute("is-valid"))
     })
-
     isAllValid.length = 3;
 
-    const isValid = isAllValid.reduce((a, b) =>{
+    let isValid = isAllValid.reduce((a, b) =>{
         return +a + +b;
     })
-
-    if(isValid !== 3){
-        alert('Make sure you filled everything correctly')
-        e.preventDefault()
-    }else {
+    if(isValid === 3){
+        button.disabled = false;
         formSend ();
+        console.log('успех');
+        document.querySelector('.contact_preload').style.display = 'flex';
+
+    }else{
+        formNotSend()
+        alert('Make sure you filled everything correctly');
     }
 }
 
-
+function formNotSend(){
+    button.disabled = true;
+    setTimeout(function (){
+        button.disabled = false;
+    },2000)
+}
 
 function formSend (){
     inputs.addEventListener('submit', function (e){
-        e.preventDefault();
         let elem = e.target;
-
         let formData = {
             name: elem.querySelector('[name = "name"]').value,
             email: elem.querySelector('[name = "email"]').value,
             telegram: elem.querySelector('[name = "telegram"]').value,
             message: elem.querySelector('[name = "message"]').value,
         };
-        elem.reset()
         inputArr.length = 4;
         inputArr.forEach(value => {
             value.style.boxShadow = 'none';
             value.style.background = '#efefef';
         })
-
         console.log(formData)
-
-        // axios.post('???', {
-        //
-        //     'name' : formData.name,
-        //     'email' : formData.email,
-        //     'telegram' : formData.telegram,
-        //     'message' : formData.message,
-        // })
-        //     .then(function (response) {
-        //     console.log(response);
-        // })
-        //     .catch(function (error) {
-        //         console.log(error);
-        //     });
+        offValid(inputArr)
     })
+}
+
+function offValid(arr){
+    return arr.map(value => value.setAttribute("is-valid", '0') )
 }
 
 console.log(12)
