@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.contact {
+  top: 100px;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  padding: 7% 0;
+}
+.contact_title {
+  width: 60%;
+  padding-bottom: 50px;
+}
+.contact p {
+  font-size: 22px;
+}
+.contact p a {
+  color: #4169e1;
+  text-decoration: none;
+}
+.contact h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #4169e1;
+}
+.contact h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.contact_input_group {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+.contact_left input {
+  transition: 1.5s;
+  padding: 15px 0 15px 25px;
+  border-radius: 5px;
+  background: #efefef;
+  border: none;
+}
+.contact_left input:focus:not(:last-child) {
+  background-color: #f6fbff;
+  border-color: #4169e1;
+  outline: 0;
+}
+.contact_left .btn {
+  background: #4169e1;
+  color: white;
+  padding: 17px 0;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  transition: 1.5s;
+  cursor: pointer;
+  border: 2px solid #4169e1;
+  height: 62px;
+}
+.contact_left .btn:hover {
+  color: #4169e1;
+  background: white;
+}
+.contact_left .btn:focus {
+  color: #4169e1;
+  background: white;
+}
+.contact_right {
+  width: 35%;
+}
+.contact_right img {
+  height: 380px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contact_left {
+    width: 60%;
+  }
+
+  .contact {
+    padding-top: 0;
+  }
+
+  .contact_right {
+    width: 35%;
+  }
+}
+@media (max-width: 767px) {
+  .contact_title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 567px) {
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact_right {
+    display: none;
+  }
+
+  .contact_left {
+    width: 100%;
+    height: 350px;
+  }
+}
+.contact_preload {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
