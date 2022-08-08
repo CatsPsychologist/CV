@@ -911,7 +911,7 @@ a:active ~ nav {
   border: none;
 }
 .contact_left input:focus:not(:last-child) {
-  background-color: #f6fbff;
+  background-color: #e3f6fd;
   border-color: #4169e1;
   outline: 0;
 }
@@ -919,9 +919,6 @@ a:active ~ nav {
   font-size: 14px;
   color: grey;
   padding-left: 25px;
-}
-.contact_left p:last-child {
-  padding-bottom: 20px;
 }
 .contact_left .btn {
   height: 62px;
@@ -971,14 +968,21 @@ a:active ~ nav {
     width: 100%;
     text-align: center;
   }
-}
-@media (max-width: 567px) {
-  .contact p {
-    font-size: 16px;
-  }
 
   .contact_right {
     display: none;
+  }
+
+  .contact_left {
+    width: 100%;
+  }
+  .contact_left p {
+    padding: 15px 0 15px 25px;
+  }
+}
+@media (max-width: 567px) {
+  .contact .contact_title p {
+    font-size: 16px;
   }
 
   .contact_left {

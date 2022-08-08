@@ -15,18 +15,28 @@
     width: 100%;
     text-align: center;
   }
-}
-
-@media (max-width: 567px) {
-  .contact{
-    p{
-      font-size: 16px;
-    }
-  }
   .contact_right{
     display: none;
   }
   .contact_left{
     width: 100%;
+    p{
+      padding: 15px 0 15px 25px;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .contact{
+    .contact_title{
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .contact_left{
+    width: 100%;
+
   }
 }
