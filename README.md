@@ -5,7 +5,7 @@ You are welcome to my CV
 1. Main Portfolio Web-Site:
 https://catspsychologist.github.io/CV/Portfolio/
 
-                     Layouts
+                    <b> Layouts</b>
 2. Layout made with : HTML,CSS,SCSS
 https://catspsychologist.github.io/CV/01_Layout/
 3. Layout made with : Bootstrap,HTML,CSS,SCSS
