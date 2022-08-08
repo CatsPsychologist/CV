@@ -917,7 +917,7 @@ a:active ~ nav {
 }
 .contact_left p {
   font-size: 14px;
-  color: grey;
+  color: #bebebe;
   padding-left: 25px;
 }
 .contact_left .btn {
@@ -931,7 +931,7 @@ a:active ~ nav {
   width: 35%;
 }
 .contact_right img {
-  height: 380px;
+  height: 100%;
   border-radius: 5px;
   width: 100%;
 }
