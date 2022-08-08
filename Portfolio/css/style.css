@@ -115,9 +115,9 @@ html {
 }
 
 .portfolio_items .portfolio_item_wrapper {
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .contact_left .btn, .about .right_download {
