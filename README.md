@@ -5,7 +5,7 @@ You are welcome to my CV
 1. Main Portfolio Web-Site:
 https://catspsychologist.github.io/CV/Portfolio/
 
-                    <b> Layouts</b>
+Layouts
 2. Layout made with : HTML,CSS,SCSS
 https://catspsychologist.github.io/CV/01_Layout/
 3. Layout made with : Bootstrap,HTML,CSS,SCSS
@@ -13,7 +13,7 @@ https://catspsychologist.github.io/CV/02_Bootstrap/
 4. Simple layout I made within 6 hours as an interview task
 https://catspsychologist.github.io/CV/03_InterviewTask/
 
-                     JavaScript
+JavaScript
 5. Calculator using JS
 
 6. ToDo List 
