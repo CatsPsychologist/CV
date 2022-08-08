@@ -6,6 +6,7 @@ You are welcome to my CV
 https://catspsychologist.github.io/CV/Portfolio/
 
 Layouts
+
 2. Layout made with : HTML,CSS,SCSS
 https://catspsychologist.github.io/CV/01_Layout/
 3. Layout made with : Bootstrap,HTML,CSS,SCSS
@@ -14,6 +15,7 @@ https://catspsychologist.github.io/CV/02_Bootstrap/
 https://catspsychologist.github.io/CV/03_InterviewTask/
 
 JavaScript
+
 5. Calculator using JS
 
 6. ToDo List 
