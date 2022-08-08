@@ -114,6 +114,12 @@ html {
   background: #4169e1;
 }
 
+.portfolio_items .portfolio_item_wrapper {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+}
+
 .contact_left .btn, .about .right_download {
   background: #4169e1;
   color: white;

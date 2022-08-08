@@ -48,6 +48,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .portfolio_item_wrapper{
+      @extend %portfolio_shadow;
       margin-bottom: 1%;
       position: relative;
       width: 24%;

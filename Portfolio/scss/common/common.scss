@@ -29,6 +29,11 @@ html{
   height: 2px;
   background: $main_page_color;
 }
+%portfolio_shadow{
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.13);
+}
 %btn{
   background: $main_page_color;
   color: $btn_color;
