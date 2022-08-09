@@ -17,10 +17,12 @@ button.addEventListener("click", buttonHandler);
 function inputHandler({target}){
     if(target.hasAttribute("data-reg")){
         inputCheck(target);
+        // console.log(target)
     }
 }
 
 function inputCheck(el){
+    // console.log(el)
     const inputValue = el.value;
     const inputReg = el.getAttribute("data-reg");
     const reg = new RegExp(inputReg);
