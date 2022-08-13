@@ -213,7 +213,7 @@ function formSend (){
             value.style.boxShadow = 'none';
             value.style.background = '#efefef';
         })
-        console.log(formData)
+
         offValid(inputArr)
     })
 }
@@ -222,4 +222,3 @@ function offValid(arr){
     return arr.map(value => value.setAttribute("is-valid", '0') )
 }
 
-console.log(12)
