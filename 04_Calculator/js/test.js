@@ -7,7 +7,7 @@ let finish = false;
 
 let numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 let operation = ['÷', '×', '-', '+', '+/-', '%'];
-
+const screenCheck = [];
 const screen = document.querySelector('.screen p')
 // console.log(screen)
 
@@ -30,12 +30,6 @@ document.querySelector('.buttons').onclick = (event) => {
     // document.getElementsByClassName('zero').onclick = null;
     // document.getElementsByClassName('zero').removeAttribute('onclick');
 
-
-    // if (screen.textContent === '0' && event.target.classList.contains('zero') && event.target.classList.contains('orange'))return;
-
-    // if(screen.textContent.length === 9){
-    //     return;
-    // }
     screen.textContent = '';
 
     const key = event.target.textContent;
@@ -45,12 +39,13 @@ document.querySelector('.buttons').onclick = (event) => {
 //         event.target.classList.contains('zero')).stopPropagation()
 // }
 
-
+    console.log(key)
     if (key.includes('0') && operator === '' && y === '' ){
         screen.textContent = '0';
         x = '';
         return;
     }
+
 
     // if (key.includes('0') && operator.includes(key) && numbers.includes(key) ){
     //     screen.textContent = '0';
@@ -73,10 +68,12 @@ document.querySelector('.buttons').onclick = (event) => {
             screen.textContent = y
         }
         console.log(x, y, operator)
+        screenCheck.push(x)
+
         return;
     }
 
-
+    console.log(screenCheck)
 
     if(operation.includes(key)){
         operator = key;

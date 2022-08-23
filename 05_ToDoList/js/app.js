@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if(!localStorage[STORE_ID]) return;
 
     const data = JSON.parse(localStorage[STORE_ID]);
-
+    console.log(data)
     data.forEach(function (item) {
         const template = createTemplate(item.heading, item.content, item.id, item.status);
         TODO_CONTAINER.prepend(template);
@@ -65,7 +65,6 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
     const heading = e.target.querySelector('input[name=title]');
     const content = e.target.querySelector('textarea[name=description]');
-
     if(!heading.value || !content.value) {
         alert('You probably forgot to fill the gap)');
         return;
