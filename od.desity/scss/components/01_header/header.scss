@@ -39,6 +39,10 @@
       line-height: 18px;
       display: flex;
       align-items: center;
+      transition: 1s;
+      &:hover{
+        color: $main_pageColor;
+      }
     }
     img{
       padding-left: 10px;
@@ -56,6 +60,7 @@
     @extend %btn;
     padding: 14px 40px;
     transition: 1s;
+
   }
 }
 

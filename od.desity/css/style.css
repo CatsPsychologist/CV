@@ -164,6 +164,10 @@ html {
   line-height: 18px;
   display: flex;
   align-items: center;
+  transition: 1s;
+}
+.header_nav a:hover {
+  color: #376AC5;
 }
 .header_nav img {
   padding-left: 10px;
