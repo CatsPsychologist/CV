@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "TT Firs Neue", sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header_btn {
+  font-weight: 700;
+  color: white;
+  background: #376AC5;
+  border: 2px solid #376AC5;
+  text-decoration: none;
+  border-radius: 47.5px;
+}
+.header_btn:hover {
+  background: white;
+  color: #376AC5;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.header_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 136px;
+}
+.header_logo {
+  display: flex;
+  justify-content: space-between;
+}
+.header_logo .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header_logo .img:nth-child(2) {
+  padding: 0 16px;
+}
+.header_nav {
+  position: relative;
+}
+.header_nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.header_nav li {
+  list-style: none;
+}
+.header_nav li:not(:last-child) {
+  padding-right: 40px;
+}
+.header_nav a {
+  color: #1B1B1F;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+.header_nav img {
+  padding-left: 10px;
+}
+.header .line {
+  background: #376AC5;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+.header_btn {
+  padding: 14px 40px;
+  transition: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */
