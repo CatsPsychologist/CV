@@ -1,0 +1,30 @@
+@media (max-width: 1250px){
+  .info{
+    padding-top: 170px;
+    .info_article{
+      width: 63%;
+    }
+  }
+  .info_img{
+    width: 35%;
+  }
+}
+@media (max-width: 1024px){
+  .info_wrapper{
+    display: block;
+  }
+  .info{
+    .info_article{
+      width: 100%;
+      padding-bottom: 40px;
+      div{
+        justify-content: space-between;
+      }
+    }
+    .info_img{
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+
+}

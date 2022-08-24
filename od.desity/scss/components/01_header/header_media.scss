@@ -1,0 +1,26 @@
+@media (max-width: 1250px){
+  .header_wrapper{
+    height: 110px;
+  }
+  .header_btn{
+    display: none;
+  }
+
+}
+
+@media (max-width: 1024px){
+  .header{
+    .logo{
+      display: none;
+    }
+    .img_media{
+      display: block;
+    }
+    .line{
+      margin-top: 15px;
+    }
+  }
+  .header_wrapper{
+    height: 95px;
+  }
+}
