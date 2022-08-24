@@ -89,7 +89,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.header_btn {
+.info .btn, .header_btn {
   font-weight: 700;
   color: white;
   background: #376AC5;
@@ -97,7 +97,7 @@ html {
   text-decoration: none;
   border-radius: 47.5px;
 }
-.header_btn:hover {
+.info .btn:hover, .header_btn:hover {
   background: white;
   color: #376AC5;
 }
@@ -183,6 +183,53 @@ html {
 .header_btn {
   padding: 14px 40px;
   transition: 1s;
+}
+
+.info {
+  padding-top: 85px;
+}
+.info_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info_article {
+  width: 54%;
+}
+.info_article h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #1B1B1F;
+}
+.info_article p {
+  color: #1B1B1F;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 15px 0 40px 0;
+}
+.info_article div {
+  display: flex;
+}
+.info .btn {
+  padding: 20px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 21px;
+  transition: 1s;
+  margin-right: 40px;
+}
+.info .detail {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1B1B1F;
+}
+.info span {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
