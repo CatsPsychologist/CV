@@ -156,6 +156,9 @@ html {
 .header_logo .img:nth-child(3) {
   padding: 0 16px;
 }
+.header .lang {
+  display: none;
+}
 .header_nav {
   position: relative;
 }
@@ -315,6 +318,10 @@ a:active ~ nav {
 
   .line {
     display: none;
+  }
+
+  .header .lang {
+    display: block;
   }
 }
 .info {
