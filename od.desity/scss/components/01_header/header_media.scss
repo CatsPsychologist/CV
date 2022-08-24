@@ -24,3 +24,19 @@
     height: 95px;
   }
 }
+
+@media (max-width: 767px){
+  .header_wrapper{
+    height: 80px;
+  }
+  .header_nav{
+    display: none;
+    position: absolute;
+  }
+  .menu-button-container{
+    display: flex;
+  }
+  .line{
+    display: none;
+  }
+}
