@@ -9,6 +9,16 @@ body{
 html{
     scroll-behavior: smooth;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 %btn{
     font-weight: 700;
     color: $btn_color;
@@ -25,4 +35,10 @@ html{
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+%h2{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: $text_color;
 }

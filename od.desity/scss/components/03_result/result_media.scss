@@ -1,0 +1,27 @@
+@media (max-width: 1024px){
+  .result{
+    .line{
+      margin: 0 25px;
+    }
+    .item{
+      width: 31%;
+    }
+  }
+}
+@media (max-width: 767px){
+  .result{
+    h2{
+      text-align: center;
+    }
+    nav{
+      display: none;
+    }
+    .line{
+      display: none;
+    }
+    .block_items{
+      width: 100%;
+    }
+  }
+
+}
