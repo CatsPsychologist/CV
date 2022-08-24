@@ -1,5 +1,6 @@
 body{
     font-family: "TT Firs Neue",sans-serif;
+    height: 5000px;
 }
 .container{
     max-width: 1250px;
@@ -19,4 +20,9 @@ html{
         background: $btn_hover;
         color: $main_pageColor;
     }
+}
+%shadow{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
 }

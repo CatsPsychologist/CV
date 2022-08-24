@@ -78,6 +78,7 @@ select {
 }
 body {
   font-family: "TT Firs Neue", sans-serif;
+  height: 5000px;
 }
 
 .container {
@@ -102,6 +103,12 @@ html {
   color: #376AC5;
 }
 
+.hide {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 1250px) {
   .container {
     max-width: 1024px;
@@ -122,6 +129,14 @@ html {
     width: 100%;
     padding: 0 10px;
   }
+}
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 1s;
 }
 .header_wrapper {
   align-items: center;
@@ -185,8 +200,12 @@ html {
   transition: 1s;
 }
 
+.hide {
+  background: white;
+}
+
 .info {
-  padding-top: 85px;
+  padding-top: 221px;
 }
 .info_wrapper {
   display: flex;
