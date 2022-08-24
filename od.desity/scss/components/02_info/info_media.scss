@@ -34,13 +34,15 @@
 @media (max-width: 767px){
   .info{
     padding-top: 130px;
-    h1{
-      font-size: 20px;
-      line-height: 28px;
-    }
-    p{
-      font-size: 15px;
-      line-height: 19px;
+    .info_article{
+      h1{
+        font-size: 20px;
+        line-height: 28px;
+      }
+      p{
+        font-size: 15px;
+        line-height: 19px;
+      }
     }
     .btn{
       padding: 15px 40px;
@@ -51,13 +53,15 @@
 
 @media (max-width: 567px){
   .info{
-    h1{
-      font-size: 14px;
-      line-height: 18px;
-    }
-    p{
-      font-size: 12px;
-      line-height: 15px;
+    .info_article{
+      h1{
+        font-size: 14px;
+        line-height: 18px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
     .btn{
       font-size: 14px;
