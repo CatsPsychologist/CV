@@ -542,6 +542,7 @@ a:active ~ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .result .item {
   width: 23%;
@@ -549,7 +550,7 @@ a:active ~ nav {
   box-shadow: 0 8px 24px rgba(127, 129, 182, 0.24);
   border-radius: 24px;
   text-align: center;
-  margin-bottom: 3%;
+  height: 30%;
 }
 .result h3 {
   padding-top: 24px;
@@ -573,26 +574,103 @@ a:active ~ nav {
   padding: 0 30px 24px;
 }
 
+.hide_slide {
+  display: none;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1B1B1F;
+  padding: 8px 0;
+  border: 1px solid #376AC5;
+  border-radius: 16px;
+  margin: 0 8px;
+}
+
+@media (max-width: 1250px) {
+  .result .item {
+    width: 31%;
+    height: 22.5%;
+  }
+
+  .result_info {
+    height: 1000px;
+  }
+}
 @media (max-width: 1024px) {
+  .hide_slide {
+    display: block;
+  }
+
+  .result h2 {
+    text-align: center;
+  }
+  .result h4 {
+    font-size: 18px;
+    line-height: inherit;
+  }
+  .result h3 {
+    font-size: 30px;
+    line-height: inherit;
+  }
   .result .line {
-    margin: 0 25px;
+    display: none;
+  }
+  .result .result_info nav {
+    display: none;
   }
   .result .item {
     width: 31%;
   }
-}
-@media (max-width: 767px) {
-  .result h2 {
-    text-align: center;
-  }
-  .result nav {
-    display: none;
-  }
-  .result .line {
-    display: none;
-  }
   .result .block_items {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .result .block_items {
+    width: 100%;
+  }
+  .result .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 3%;
+    height: 40%;
+  }
+  .result .show {
+    display: none;
+  }
+
+  .result_info {
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .result h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .result h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .result p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .result .item {
+    width: 47%;
+    margin-bottom: 6%;
+    height: 32%;
   }
 }
 

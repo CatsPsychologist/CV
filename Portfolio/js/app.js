@@ -4,7 +4,7 @@
 const header = document.querySelector('.header')
 let lastScroll = 0;
 const defaultOffset = header.clientHeight;
-
+console.log(defaultOffset)
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('hide');
 

@@ -13,3 +13,44 @@ window.addEventListener('scroll', () => {
     if(scrollPosition() === 0)header.classList.remove('hide');
     lastScroll = scrollPosition();
 })
+
+//swiper
+const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    grabCursor: true,
+    touchRatio: 1.25,
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+    mousewheel: {
+        invert: true,
+    },
+    slidesPerView: 1,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: true,
+    },
+    speed: 1500,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        450: {
+            slidesPerView: 1.3,
+        },
+        550: {
+            slidesPerView: 1.7,
+        },
+        767: {
+            slidesPerView: 2,
+        }
+    }
+});
+// const item = document.querySelector('.item')
+// const width = item.clientWidth;
+// console.log(width)
+//
+// item.style.height = width'px' ;
