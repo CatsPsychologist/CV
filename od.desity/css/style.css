@@ -792,7 +792,7 @@ a:active ~ .header_nav {
 }
 @media (max-width: 567px) {
   .news .news_item {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
   .news img {
     width: 45%;
