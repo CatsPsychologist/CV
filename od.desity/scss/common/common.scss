@@ -42,3 +42,20 @@ a{
     line-height: 34px;
     color: $text_color;
 }
+%more{
+    .more{
+        display: none;
+        justify-content: center;
+        a{
+            display: flex;
+            align-items: center;
+        }
+        .more_line{
+            width: 24px;
+            height: 4px;
+            background: $main_pageColor;
+            border-radius: 2px;
+            margin: 0 8px;
+        }
+    }
+}

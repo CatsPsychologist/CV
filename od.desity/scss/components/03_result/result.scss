@@ -42,6 +42,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  @extend %more;
   .item{
     width: 23%;
     background: #FFFFFF;
@@ -49,7 +50,6 @@
     border-radius: 24px;
     text-align: center;
     height: 30%;
-    //margin-bottom: 3.5%;
   }
   h3{
     padding-top: 24px;
@@ -76,6 +76,7 @@
 
 .hide_slide{
   display: none;
+  margin-bottom: 40px;
 }
 .swiper-slide{
   display: flex;
