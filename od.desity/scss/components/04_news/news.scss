@@ -12,7 +12,7 @@
   &_item{
     justify-content: space-between;
     display: flex;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
   .article{
     display: flex;
@@ -51,5 +51,16 @@
   }
   .news_show{
     display: none;
+  }
+
+  @extend %more;
+  .more{
+    display: flex;
+    a{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: $text_color;
+    }
   }
 }

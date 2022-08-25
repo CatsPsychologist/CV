@@ -2,7 +2,9 @@
 // and returning it back if you get to the top of the page
 
 const header = document.querySelector('.header')
+const header_wrp = document.querySelector('.header_wrapper')
 let lastScroll = 0;
+let lastScroll1 = 0;
 const defaultOffset = 70;
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -12,6 +14,15 @@ window.addEventListener('scroll', () => {
     if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) header.classList.add('hide');
     if(scrollPosition() === 0)header.classList.remove('hide');
     lastScroll = scrollPosition();
+})
+
+const scrollPosition2 = () => window.pageYOffset || document.documentElement.scrollTop;
+const fix_head = () => header.classList.contains('fix_head')
+
+window.addEventListener('scroll', () => {
+    if(scrollPosition2() > lastScroll1 && !fix_head() && scrollPosition2() > defaultOffset) header_wrp.classList.add('fix_head');
+    if(scrollPosition2() === 0)header_wrp.classList.remove('fix_head');
+    lastScroll1 = scrollPosition2();
 })
 
 //swiper

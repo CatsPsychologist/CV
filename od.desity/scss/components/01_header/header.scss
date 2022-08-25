@@ -6,6 +6,7 @@
   left: 0;
   transition: 1s;
   &_wrapper{
+    transition: 1s;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -78,6 +79,9 @@
 .hide{
   background: $header_bg;
   @extend %shadow;
+}
+.fix_head{
+  height: 112px;
 }
 .lang_media{
   display: none;
