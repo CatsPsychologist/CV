@@ -107,13 +107,11 @@ a {
   font-weight: 700;
   color: white;
   background: #376AC5;
-  border: 2px solid #376AC5;
   text-decoration: none;
   border-radius: 47.5px;
 }
 .info .btn:hover, .header_btn:hover {
-  background: white;
-  color: #376AC5;
+  background: #0B2B81;
 }
 
 .hide {
@@ -192,6 +190,9 @@ a {
 .header_logo .img:nth-child(3) {
   padding: 0 16px;
 }
+.header_logo .sign {
+  width: 24px;
+}
 .header_nav {
   position: relative;
 }
@@ -232,7 +233,7 @@ a {
   border-radius: 20px;
 }
 .header_btn {
-  padding: 14px 40px;
+  padding: 16px 40px;
   transition: 1s;
 }
 .header .img_media {
@@ -311,15 +312,11 @@ a {
   display: flex;
 }
 
-a:active ~ nav {
+a:active ~ .header_nav {
   display: none;
 }
 
 @media (max-width: 1250px) {
-  .header_wrapper {
-    height: 110px;
-  }
-
   .header_btn {
     display: none;
   }
@@ -336,7 +333,7 @@ a:active ~ nav {
   }
 
   .header_wrapper {
-    height: 95px;
+    height: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -361,7 +358,7 @@ a:active ~ nav {
     display: block;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .header {
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
@@ -695,9 +692,13 @@ a:active ~ nav {
     height: 32%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 567px) {
+  .result a {
+    font-size: 12px;
+    line-height: 15px;
+  }
   .result h2 {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 18px;
   }
 }

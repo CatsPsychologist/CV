@@ -23,12 +23,10 @@ a{
     font-weight: 700;
     color: $btn_color;
     background: $main_pageColor;
-    border: 2px solid $main_pageColor;
     text-decoration: none;
     border-radius: 47.5px;
     &:hover{
-        background: $btn_hover;
-        color: $main_pageColor;
+        background: $hover_color;
     }
 }
 %shadow{

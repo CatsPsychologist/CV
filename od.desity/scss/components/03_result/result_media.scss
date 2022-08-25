@@ -96,10 +96,14 @@
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 567px){
   .result{
+    a{
+      font-size: 12px;
+      line-height: 15px;
+    }
     h2{
-      font-size: 14px;
+      font-size: 18px;
       line-height: 18px;
     }
   }

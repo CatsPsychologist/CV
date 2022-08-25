@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     height: 136px;
+
   }
   &_logo{
     display: flex;
@@ -21,6 +22,9 @@
         &:nth-child(3){
           padding: 0 16px;
         }
+    }
+    .sign{
+      width: 24px;
     }
   }
   &_nav{
@@ -64,7 +68,7 @@
   }
   &_btn{
     @extend %btn;
-    padding: 14px 40px;
+    padding: 16px 40px;
     transition: 1s;
   }
   .img_media{
@@ -128,10 +132,10 @@
 #menu-toggle:checked + .header_wrapper nav{
   display: flex;
 }
-#menu-toggle:checked ~ nav  {
+#menu-toggle:checked ~ nav{
   display: flex;
 }
-a:active ~ nav {
+a:active ~ .header_nav {
   display: none;
 }
 
