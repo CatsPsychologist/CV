@@ -120,7 +120,7 @@ a {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-.result h2 {
+.news h2, .result h2 {
   font-weight: 700;
   font-size: 26px;
   line-height: 34px;
@@ -518,7 +518,7 @@ a:active ~ .header_nav {
   }
 }
 .result {
-  padding-top: 80px;
+  padding: 80px 0;
 }
 .result h2 {
   padding-bottom: 40px;
@@ -670,7 +670,7 @@ a:active ~ .header_nav {
     height: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 567px) {
   .result h3 {
     font-weight: 600;
     font-size: 16px;
@@ -691,8 +691,6 @@ a:active ~ .header_nav {
     margin-bottom: 6%;
     height: 32%;
   }
-}
-@media (max-width: 567px) {
   .result a {
     font-size: 12px;
     line-height: 15px;
@@ -700,6 +698,111 @@ a:active ~ .header_nav {
   .result h2 {
     font-size: 18px;
     line-height: 18px;
+  }
+}
+.news h2 {
+  padding-bottom: 60px;
+}
+.news_item {
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 80px;
+}
+.news .article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 49%;
+}
+.news .date {
+  display: flex;
+  width: 15%;
+  justify-content: end;
+}
+.news h3 {
+  color: #0B2B81;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+}
+.news h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1B1B1F;
+}
+.news p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1B1F;
+}
+.news .date {
+  color: #1B1B1F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.news .news_show {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .news h2 {
+    text-align: center;
+  }
+  .news .date {
+    display: none;
+  }
+  .news .news_hide {
+    display: none;
+  }
+  .news .news_show {
+    display: block;
+    font-weight: 700;
+  }
+  .news img {
+    width: 35%;
+  }
+}
+@media (max-width: 767px) {
+  .news img {
+    width: 40%;
+  }
+  .news h3 {
+    font-size: 20px;
+  }
+  .news h4 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 567px) {
+  .news .news_item {
+    padding-bottom: 50px;
+  }
+  .news img {
+    width: 45%;
+  }
+  .news h2 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 40px;
+  }
+  .news h3 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .news h4 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .news p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .news span {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
