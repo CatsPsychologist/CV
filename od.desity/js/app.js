@@ -3,18 +3,8 @@
 
 const header = document.querySelector('.header')
 const header_wrp = document.querySelector('.header_wrapper')
-let lastScroll = 0;
 let lastScroll1 = 0;
 const defaultOffset = 70;
-
-const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
-const containHide = () => header.classList.contains('hide');
-
-window.addEventListener('scroll', () => {
-    if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) header.classList.add('hide');
-    if(scrollPosition() === 0)header.classList.remove('hide');
-    lastScroll = scrollPosition();
-})
 
 const scrollPosition2 = () => window.pageYOffset || document.documentElement.scrollTop;
 const fix_head = () => header.classList.contains('fix_head')

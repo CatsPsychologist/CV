@@ -50,6 +50,12 @@
     }
     .more{
       display: flex;
+      a{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1B1B1F;
+      }
     }
     .item{
       display: flex;
@@ -72,7 +78,7 @@
 
 @media (max-width: 567px){
   .result{
-
+    padding: 40px 0;
     h3{
       font-weight: 600;
       font-size: 16px;
@@ -100,6 +106,10 @@
     h2{
       font-size: 18px;
       line-height: 18px;
+      padding-bottom: 16px;
+    }
+    .hide_slide{
+      margin-bottom: 32px;
     }
   }
 }
