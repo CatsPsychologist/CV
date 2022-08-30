@@ -43,6 +43,7 @@
   .item{
     display: flex;
     padding-bottom: 18px;
+    align-items: center;
     &:last-child{
       padding-bottom: 0 ;
     }

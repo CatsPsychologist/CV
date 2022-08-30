@@ -331,10 +331,6 @@ a:active ~ nav {
   display: none;
 }
 
-.hide_nav {
-  display: none;
-}
-
 @media (max-width: 576px) {
   .hide .header_wrapper nav {
     background: white;

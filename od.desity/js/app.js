@@ -2,7 +2,7 @@
 // and returning it back if you get to the top of the page
 
 const header = document.querySelector('.header')
-const header_wrp = document.querySelector('.header_wrapper')
+// const header_wrp = document.querySelector('.header_wrapper')
 let lastScroll1 = 0;
 const defaultOffset = 70;
 
@@ -10,8 +10,8 @@ const scrollPosition2 = () => window.pageYOffset || document.documentElement.scr
 const fix_head = () => header.classList.contains('fix_head')
 
 window.addEventListener('scroll', () => {
-    if(scrollPosition2() > lastScroll1 && !fix_head() && scrollPosition2() > defaultOffset) header_wrp.classList.add('fix_head');
-    if(scrollPosition2() === 0)header_wrp.classList.remove('fix_head');
+    if(scrollPosition2() > lastScroll1 && !fix_head() && scrollPosition2() > defaultOffset) header.classList.add('fix_head');
+    if(scrollPosition2() === 0)header.classList.remove('fix_head');
     lastScroll1 = scrollPosition2();
 })
 
@@ -50,8 +50,23 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
-// const item = document.querySelector('.item')
-// const width = item.clientWidth;
-// console.log(width)
-//
-// item.style.height = width'px' ;
+// up.style.display = "none";
+// down.style.display = 'block'
+const dropItems = document.querySelectorAll('.drop')
+const up = document.querySelectorAll('.desktop');
+const down = document.querySelectorAll('.down')
+const navigation = document.querySelectorAll('.mobile_nav')
+console.log(up)
+console.log(down)
+
+
+for (let i = 0; i < dropItems.length; i++) {
+    dropItems[i].addEventListener('click', evt => {
+        evt.preventDefault()
+    })
+}
+//     document.addEventListener('click',  () =>{
+//         // navigation[i].style.display = 'none';
+//         console.log(navigation[i])
+//     })
+// }
