@@ -52,21 +52,33 @@ const swiper = new Swiper('.swiper', {
 });
 // up.style.display = "none";
 // down.style.display = 'block'
-const dropItems = document.querySelectorAll('.drop')
-const up = document.querySelectorAll('.desktop');
-const down = document.querySelectorAll('.down')
-const navigation = document.querySelectorAll('.mobile_nav')
-console.log(up)
-console.log(down)
-
+const dropItems = document.querySelectorAll('a')
 
 for (let i = 0; i < dropItems.length; i++) {
     dropItems[i].addEventListener('click', evt => {
         evt.preventDefault()
     })
 }
-//     document.addEventListener('click',  () =>{
-//         // navigation[i].style.display = 'none';
-//         console.log(navigation[i])
-//     })
-// }
+
+
+
+
+const chProgram = document.querySelector('.checkbox_program')
+// const navProgram = document.querySelector('.mobile_nav_program')
+const chAbout = document.querySelector('.checkbox_about')
+// const navAbout = document.querySelector('.mobile_nav_about')
+const chLang = document.querySelector('.checkbox_language')
+const chLangMobile = document.querySelector('.checkbox_language_mobile')
+
+function dropDown (chBox){
+    window.addEventListener('click', e => {
+        if(e.target !== chBox){
+            chBox.checked = false
+        }
+    })
+}
+
+dropDown(chProgram);
+dropDown(chAbout);
+dropDown(chLang);
+dropDown(chLangMobile);

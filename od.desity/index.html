@@ -32,18 +32,26 @@
                     <img src="images/01_ed_media.svg" alt="odesa and odesity logo">
                 </a>
             </div>
-
-<!--            <div class="right_side">-->
+                <div class="header_mobile">
+                    <input id="drop_menu_language_mobile" type="checkbox" class="checkbox checkbox_language_mobile">
+                    <label class="drop_menu" for="drop_menu_language_mobile">
+                        <p>UKR</p>
+                        <div class="arrow"></div>
+                    </label>
+                    <nav class="mobile_nav_language_media">
+                        <a href="#">ENG</a>
+                        <a href="#">DEU</a>
+                        <a href="#">RUS</a>
+                    </nav>
+                </div>
                 <input id="menu-toggle" type="checkbox">
                 <label class="menu-button-container" for="menu-toggle">
                     <div class="menu-button"></div>
                 </label>
-<!--            </div>-->
-
             <nav class="header_nav">
                 <ul>
                     <li>
-                        <input id="drop_menu_program" type="checkbox">
+                        <input id="drop_menu_program" type="checkbox" class="checkbox checkbox_program">
                         <label class="drop_menu" for="drop_menu_program">
                             <p>ПРОГРАМИ</p>
                             <div class="arrow"></div>
@@ -55,7 +63,7 @@
                         </nav>
                     </li>
                     <li>
-                        <input id="drop_menu_about" type="checkbox">
+                        <input id="drop_menu_about" type="checkbox" class="checkbox checkbox_about">
                         <label class="drop_menu" for="drop_menu_about">
                             <p>ПРО ФОНДИ</p>
                             <div class="arrow"></div>
@@ -75,13 +83,34 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <img src="images/01_ukr.svg" alt="">
-                            <img src="images/01_arrow.svg" alt="arrow down image">
-                        </a>
+                        <div class="mobile_nav_social">
+                            <a href="">
+                                <img src="images/01_telegram.svg" alt="telegram image">
+                            </a>
+                            <a href="">
+                                <img src="images/01_instagram.svg" alt="instagram image">
+                            </a>
+                            <a href="">
+                                <img src="images/01_facebook.svg" alt="facebook image">
+                            </a>
+                        </div>
                     </li>
+                    <li>
+                        <input id="drop_menu_language" type="checkbox" class="checkbox checkbox_language">
+                        <label class="drop_menu" for="drop_menu_language">
+                            <p>UKR</p>
+                            <div class="arrow"></div>
+                        </label>
+                        <nav class="mobile_nav_language">
+                            <a href="#">ENG</a>
+                            <a href="#">DEU</a>
+                            <a href="#">RUS</a>
+                        </nav>
+                    </li>
+
                 </ul>
                 <div class="line"></div>
+
             </nav>
             <a href="" class="header_btn">
                 ДОПОМОГТИ
@@ -441,11 +470,11 @@
         <div class="footer_wrapper">
             <div class="footer_navigation">
                 <nav>
-                    <a href="" class="drop">
+                    <input id="drop_footer_program" type="checkbox" class="checkbox footer_checkbox_program">
+                    <label class="drop_menu" for="drop_footer_program">
                         <h2>ПРОГРАМИ</h2>
-                        <img src="images/06_arrow.svg" alt="">
-                    </a>
-                    <div class="media_line"></div>
+                        <div class="arrow"></div>
+                    </label>
                     <ul>
                         <li>
                             <a href="">
@@ -468,13 +497,14 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="media_line"></div>
                 </nav>
                 <nav>
-                    <a href="" class="drop">
-                        <h2>ПРО ФОНДИ</h2>
-                        <img src="images/06_arrow.svg" alt="">
-                    </a>
-                    <div class="media_line"></div>
+                    <input id="drop_footer_about" type="checkbox" class="checkbox footer_checkbox_about">
+                    <label class="drop_menu" for="drop_footer_about">
+                        <h2>ПРОГРАМИ</h2>
+                        <div class="arrow"></div>
+                    </label>
                     <ul>
                         <li>
                             <a href="">
@@ -507,8 +537,9 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="media_line"></div>
                 </nav>
-                <a href="">
+                <a href="" class="contact">
                     <h2>КОНТАКТИ</h2>
                 </a>
                 <div class="media_line"></div>
