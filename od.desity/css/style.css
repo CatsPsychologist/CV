@@ -504,7 +504,6 @@ a:active ~ .header_nav {
 
   .drop_menu {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .drop_menu p {
