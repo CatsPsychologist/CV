@@ -61,24 +61,29 @@ for (let i = 0; i < dropItems.length; i++) {
 }
 
 
+const single = document.querySelector(".drop_button")
+const all = document.querySelectorAll(".drop_button")
+const singleDrop = document.querySelector(".drop_navbar")
+const arrow = document.querySelector(".arrow")
+// console.log(single)
+console.log(all)
+console.log(singleDrop)
 
+window.onclick = function(event) {
 
-const chProgram = document.querySelector('.checkbox_program')
-// const navProgram = document.querySelector('.mobile_nav_program')
-const chAbout = document.querySelector('.checkbox_about')
-// const navAbout = document.querySelector('.mobile_nav_about')
-const chLang = document.querySelector('.checkbox_language')
-const chLangMobile = document.querySelector('.checkbox_language_mobile')
+    if(event.target === single){
+        arrow.classList.add('arrow_rotate')
+        console.log(event.target)
+        console.log(single)
+        singleDrop.classList.toggle("header_nav_show");
+    }
+    if (event.target !== single) {
+        if (singleDrop.classList.contains('header_nav_show')) {
+            singleDrop.classList.remove('header_nav_show');
 
-function dropDown (chBox){
-    window.addEventListener('click', e => {
-        if(e.target !== chBox){
-            chBox.checked = false
         }
-    })
+    }
 }
 
-dropDown(chProgram);
-dropDown(chAbout);
-dropDown(chLang);
-dropDown(chLangMobile);
+
+

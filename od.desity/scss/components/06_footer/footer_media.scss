@@ -95,7 +95,8 @@
       opacity: 1;
       visibility: visible;
     }
-    #drop_footer_program:checked ~ .drop_menu .arrow{
+    #drop_footer_program:checked ~ .drop_menu .arrow,
+    #drop_footer_about:checked ~ .drop_menu .arrow{
       transform: rotate(-135deg);
       -webkit-transform: rotate(-135deg);
       margin: 2px 0 0 10px;

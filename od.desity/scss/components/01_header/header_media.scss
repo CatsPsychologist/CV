@@ -37,7 +37,6 @@
     display: none;
     //display: flex;
     justify-content: end;
-
     position: absolute;
     top: 0;
     right: 0;
@@ -108,7 +107,7 @@
   .header_mobile{
     display: block;
     position: absolute;
-    right: 20%;
+    right: 10%;
   }
   .mobile_nav_social{
     display: flex;
@@ -119,6 +118,9 @@
         padding-right: 0;
       }
     }
+  }
+  .header_wrapper{
+    position: relative;
   }
 }
 @media (max-width: 576px){
@@ -132,6 +134,13 @@
     }
     .mobile_nav_language_media{
       margin-top: 20px;
+    }
+    .header_mobile{
+      right: 0;
+      margin-right: 52px;
+    }
+    .menu-button, .menu-button::before, .menu-button::after{
+      width: 24px;
     }
   }
   .header_wrapper{
