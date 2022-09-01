@@ -224,6 +224,42 @@ a {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .pop_up p {
+    width: 100%;
+  }
+  .pop_up .pop_up_items {
+    height: 100%;
+  }
+  .pop_up .item {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .pop_up .item:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 567px) {
+  .pop_up img {
+    width: 24px;
+  }
+  .pop_up .pop_up_wrapper {
+    padding: 24px;
+  }
+  .pop_up h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .pop_up p {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 4px 0 16px 0;
+  }
+  .pop_up .item a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .header {
   z-index: 10;
   position: fixed;
