@@ -61,28 +61,33 @@ for (let i = 0; i < dropItems.length; i++) {
 }
 
 
-const single = document.querySelector(".drop_button")
-const all = document.querySelectorAll(".drop_button")
-const singleDrop = document.querySelector(".drop_navbar")
-const arrow = document.querySelector(".arrow")
-// console.log(single)
-console.log(all)
-console.log(singleDrop)
-
+const allBtn = document.querySelectorAll(".drop_button")
+const allDrop = document.querySelectorAll(".drop_navbar")
+const allArrows = document.querySelectorAll(".header_arrow")
+console.log(allBtn)
+console.log(allDrop)
+console.log(allArrows)
 window.onclick = function(event) {
 
-    if(event.target === single){
-        arrow.classList.add('arrow_rotate')
-        console.log(event.target)
-        console.log(single)
-        singleDrop.classList.toggle("header_nav_show");
-    }
-    if (event.target !== single) {
-        if (singleDrop.classList.contains('header_nav_show')) {
-            singleDrop.classList.remove('header_nav_show');
-
+    for (let i = 0; i < allDrop.length; i++) {
+        // console.log(event.target.classList.contains('header_arrow')) - дает true, но на 74 строке не работает почему-то хз
+        for (let j = 0; j < allBtn.length; j++) {
+            if(event.target === allBtn[i]){
+                allDrop[i].classList.toggle("header_nav_show");
+            }
+            if (event.target !== allBtn[i]) {
+                if (allDrop[i].classList.contains('header_nav_show')) {
+                    allDrop[i].classList.remove('header_nav_show');
+                }
+            }
+        }
+        if(allDrop[i].classList.contains('header_nav_show')){
+            allArrows[i].classList.add('arrow_rotate')
+        }else{
+            allArrows[i].classList.remove('arrow_rotate')
         }
     }
+
 }
 
 

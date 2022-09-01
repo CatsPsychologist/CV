@@ -295,6 +295,13 @@ a {
 .header input {
   display: none;
 }
+.header .drop_language {
+  right: 0;
+}
+.header .drop_language a {
+  font-size: 14px;
+  line-height: 18px;
+}
 
 .fix_head {
   padding: 30px 0;
@@ -396,13 +403,13 @@ a:active ~ .header_nav {
   }
 
   .header_nav {
-    margin-top: 80px;
+    margin-top: 64px;
     display: none;
     justify-content: end;
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     transition: 1s;
     background: rgba(0, 0, 0, 0.2);
@@ -434,18 +441,6 @@ a:active ~ .header_nav {
     justify-content: end;
     font-weight: 700;
   }
-  .header_nav .mobile_nav_program,
-.header_nav .mobile_nav_about {
-    padding: 0;
-    margin: 0;
-    position: static;
-    display: none;
-    box-shadow: none;
-  }
-  .header_nav .mobile_nav_program a,
-.header_nav .mobile_nav_about a {
-    padding: 12px 0 0;
-  }
 
   .menu-button-container {
     display: flex;
@@ -457,6 +452,22 @@ a:active ~ .header_nav {
 
   .header {
     padding: 16px 0;
+  }
+  .header .drop_navbar {
+    position: static;
+    display: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  .header .drop_navbar a {
+    padding: 12px 0 0;
+  }
+  .header .drop_button {
+    font-weight: 700;
+  }
+  .header .header_nav_show {
+    display: block;
   }
   .header .lang {
     display: block;
@@ -495,9 +506,7 @@ a:active ~ .header_nav {
   .header {
     padding: 0;
   }
-  .header .mobile_nav_about a,
-.header .mobile_nav_program a,
-.header .mobile_nav_language a {
+  .header .drop_navbar a {
     font-size: 14px;
     line-height: 18px;
   }
