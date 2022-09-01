@@ -501,6 +501,29 @@ a:active ~ .header_nav {
   .header_wrapper {
     position: relative;
   }
+
+  .drop_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop_menu p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #drop_menu_language_mobile:checked ~ .mobile_nav_language_media {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #drop_menu_language_mobile:checked ~ .drop_menu .arrow {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin: 2px 0 0 10px;
+  }
 }
 @media (max-width: 576px) {
   .header {

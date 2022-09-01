@@ -52,13 +52,9 @@ const swiper = new Swiper('.swiper', {
 });
 // up.style.display = "none";
 // down.style.display = 'block'
-const dropItems = document.querySelectorAll('a')
+// const dropItems = document.querySelectorAll('a')
+//
 
-for (let i = 0; i < dropItems.length; i++) {
-    dropItems[i].addEventListener('click', evt => {
-        evt.preventDefault()
-    })
-}
 
 
 const allBtn = document.querySelectorAll(".drop_button")
@@ -67,8 +63,13 @@ const allArrows = document.querySelectorAll(".header_arrow")
 console.log(allBtn)
 console.log(allDrop)
 console.log(allArrows)
-window.onclick = function(event) {
 
+for (let i = 0; i < allBtn.length; i++) {
+    allBtn[i].addEventListener('click', e => {
+        e.preventDefault()
+    })
+}
+window.onclick = function(event) {
     for (let i = 0; i < allDrop.length; i++) {
         // console.log(event.target.classList.contains('header_arrow')) - дает true, но на 74 строке не работает почему-то хз
         for (let j = 0; j < allBtn.length; j++) {
