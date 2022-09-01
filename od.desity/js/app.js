@@ -60,9 +60,6 @@ const swiper = new Swiper('.swiper', {
 const allBtn = document.querySelectorAll(".drop_button")
 const allDrop = document.querySelectorAll(".drop_navbar")
 const allArrows = document.querySelectorAll(".header_arrow")
-console.log(allBtn)
-console.log(allDrop)
-console.log(allArrows)
 
 for (let i = 0; i < allBtn.length; i++) {
     allBtn[i].addEventListener('click', e => {
@@ -88,8 +85,24 @@ window.onclick = function(event) {
             allArrows[i].classList.remove('arrow_rotate')
         }
     }
-
 }
 
+
+const helpBtn = document.querySelectorAll('.btn')
+console.log(helpBtn)
+
+
+
+for (let i = 0; i < helpBtn.length; i++) {
+    helpBtn[i].addEventListener('click', e => {
+        e.preventDefault()
+        if(e.target === helpBtn[i]){
+            document.querySelector('.pop_up').classList.add('pop_up_show')
+        }
+        if (document.getElementById('pop_up_check').checked === true) {
+            document.querySelector('.pop_up').classList.remove('pop_up_show')
+        }
+    })
+}
 
 

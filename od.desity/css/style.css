@@ -159,6 +159,128 @@ a {
     padding: 0 10px;
   }
 }
+#pop_up_check {
+  display: none;
+}
+
+.pop_up {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+.pop_up_wrapper {
+  background: white;
+  padding: 56px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 24px rgba(127, 129, 182, 0.24);
+}
+.pop_up_article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop_up_article input {
+  display: none;
+}
+.pop_up h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1B1B1F;
+}
+.pop_up p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1B1F;
+  width: 52%;
+  padding: 16px 0 36px 0;
+}
+.pop_up .pop_up_items {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pop_up .item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.pop_up .item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1B1F;
+  padding-left: 24px;
+}
+
+.pop_up_label {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop_up_menu,
+.pop_up_menu:before,
+.pop_up_menu:after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: 1.5s;
+  border-radius: 2px;
+  margin-top: 0;
+  transform: rotate(405deg);
+}
+
+.pop_up_menu:before {
+  content: "";
+  margin-top: -8px;
+}
+
+.pop_up_menu:after {
+  content: "";
+  margin-top: 8px;
+}
+
+.pop_up_menu:before {
+  margin-top: 0;
+  transform: rotate(180deg);
+}
+
+.pop_up_menu:after {
+  margin-top: 0;
+  transform: rotate(90deg);
+}
+
+.pop_up_menu {
+  background: rgba(255, 255, 255, 0);
+  right: 0;
+}
+
+#pop_up_check:checked ~ .pop_up {
+  display: none;
+}
+
+.pop_up_show {
+  display: flex;
+}
+
 .header {
   z-index: 10;
   position: fixed;
@@ -891,7 +1013,7 @@ a:active ~ .header_nav {
     line-height: 15px;
   }
   .result h2 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
     padding-bottom: 16px;
   }
@@ -992,7 +1114,7 @@ a:active ~ .header_nav {
     width: 45%;
   }
   .news h2 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
     padding-bottom: 16px;
   }
