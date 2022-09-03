@@ -192,7 +192,7 @@ a {
   line-height: 34px;
   color: #1B1B1F;
 }
-.pop_up p {
+.pop_up .text {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -212,7 +212,7 @@ a {
   display: flex;
   align-items: center;
 }
-.pop_up .item a {
+.pop_up .item p {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
@@ -225,8 +225,8 @@ a {
 }
 
 @media (max-width: 767px) {
-  .pop_up p {
-    width: 100%;
+  .pop_up .text {
+    width: 90%;
   }
   .pop_up .pop_up_items {
     height: 100%;
@@ -250,7 +250,7 @@ a {
     font-size: 14px;
     line-height: 18px;
   }
-  .pop_up p {
+  .pop_up .text {
     font-size: 12px;
     line-height: 15px;
     padding: 4px 0 16px 0;

@@ -1,7 +1,7 @@
 @media (max-width: 767px){
   .pop_up{
-    p{
-      width: 100%;
+    .text{
+      width: 90%;
     }
     .pop_up_items{
       height: 100%;
@@ -27,7 +27,7 @@
       font-size: 14px;
       line-height: 18px;
     }
-    p{
+    .text{
       font-size: 12px;
       line-height: 15px;
       padding: 4px 0 16px 0;
