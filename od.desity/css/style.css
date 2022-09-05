@@ -104,14 +104,14 @@ a {
   text-decoration: none;
 }
 
-.help .item a, .info .btn, .header_btn {
+.help .item .btn, .info .btn, .header_btn {
   font-weight: 700;
   color: white !important;
   background: #376AC5;
   text-decoration: none;
   border-radius: 47.5px;
 }
-.help .item a:hover, .info .btn:hover, .header_btn:hover {
+.help .item .btn:hover, .info .btn:hover, .header_btn:hover {
   background: #0B2B81;
 }
 
@@ -1169,7 +1169,7 @@ a:active ~ .header_nav {
   line-height: 18px;
   padding: 8px 0 32px;
 }
-.help .item a {
+.help .item .btn {
   transition: 1s;
   font-size: 14px;
   line-height: 18px;
@@ -1239,7 +1239,7 @@ a:active ~ .header_nav {
     line-height: 15px;
     padding: 4px 0 8px;
   }
-  .help .help_items .item a {
+  .help .help_items .item .btn {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -1468,6 +1468,42 @@ a:active ~ .header_nav {
   .footer .footer_language a {
     font-size: 12px;
     line-height: 15px;
+  }
+}
+.help_page {
+  padding-top: 176px;
+}
+.help_page .help_items {
+  padding-top: 0;
+}
+.help_page h1 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 41px;
+  color: #0B2B81;
+  padding-bottom: 40px;
+}
+.help_page span {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1B1B1F;
+  padding-bottom: 4px;
+}
+.help_page a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1B1B1F;
+}
+.help_page .item p {
+  padding: 8px 0 16px 0;
+}
+
+@media (max-width: 1250px) {
+  .help .item {
+    padding: 30px 15px;
   }
 }
 
