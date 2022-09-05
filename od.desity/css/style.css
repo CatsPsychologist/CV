@@ -1066,10 +1066,6 @@ a:active ~ .header_nav {
   .news .news_hide {
     display: none;
   }
-  .news .news_show {
-    display: block;
-    font-weight: 700;
-  }
   .news img {
     width: 35%;
   }
@@ -1505,6 +1501,66 @@ a:active ~ .header_nav {
   .help .item {
     padding: 30px 15px;
   }
+}
+@media (max-width: 767px) {
+  .help_page {
+    padding-top: 104px;
+  }
+  .help_page h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .help_page {
+    padding-top: 84px;
+  }
+  .help_page span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .help_page a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .help_page h1 {
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 16px;
+  }
+}
+.bank_data_info {
+  box-shadow: 0 8px 24px rgba(127, 129, 182, 0.24);
+  border-radius: 15px;
+  display: flex;
+  padding: 48px 0 48px 48px;
+}
+.bank_data .line {
+  border-radius: 12px;
+  background: #376AC5;
+  width: 8px;
+  margin: 0 40px;
+}
+.bank_data h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1B1B1F;
+}
+.bank_data p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 24px;
+  color: #1B1B1F;
+}
+.bank_data p:nth-child(3) {
+  padding-bottom: 56px;
+}
+.bank_data p:last-child {
+  padding-bottom: 0;
+}
+.bank_data_numbers p {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

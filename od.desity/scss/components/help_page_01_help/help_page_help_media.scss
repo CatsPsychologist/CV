@@ -5,6 +5,29 @@
     }
   }
 }
+@media (max-width: 767px){
+  .help_page{
+    padding-top: 104px;
+    h1{
+      font-size: 25px;
+    }
+  }
+}
 @media (max-width: 576px){
-  
+  .help_page{
+    padding-top: 84px;
+    span{
+      font-size: 12px;
+      line-height: 15px;
+    }
+    a{
+      font-size: 12px;
+      line-height: 15px;
+    }
+    h1{
+      font-size: 16px;
+      line-height: 21px;
+      padding-bottom: 16px;
+    }
+  }
 }
