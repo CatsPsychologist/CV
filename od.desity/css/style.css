@@ -78,7 +78,6 @@ select {
 }
 body {
   font-family: "TT Firs Neue", sans-serif;
-  height: 5000px;
   transition: 1.5s;
 }
 
@@ -115,7 +114,7 @@ a {
   background: #0B2B81;
 }
 
-.help h2, .news h2, .result h2 {
+.bank_data h2, .help h2, .news h2, .result h2 {
   font-weight: 700;
   font-size: 26px;
   line-height: 34px;
@@ -1528,6 +1527,9 @@ a:active ~ .header_nav {
     padding-bottom: 16px;
   }
 }
+.bank_data {
+  padding: 24px 0;
+}
 .bank_data_info {
   box-shadow: 0 8px 24px rgba(127, 129, 182, 0.24);
   border-radius: 15px;
@@ -1540,11 +1542,8 @@ a:active ~ .header_nav {
   width: 8px;
   margin: 0 40px;
 }
-.bank_data h1 {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 34px;
-  color: #1B1B1F;
+.bank_data h2 {
+  padding-bottom: 40px;
 }
 .bank_data p {
   font-weight: 300;
@@ -1561,6 +1560,43 @@ a:active ~ .header_nav {
 }
 .bank_data_numbers p {
   font-weight: 500;
+}
+.bank_data span {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bank_data .bank_data_info {
+    padding: 0;
+    box-shadow: none;
+  }
+  .bank_data .bank_data_numbers {
+    display: none;
+  }
+  .bank_data span {
+    display: initial;
+  }
+  .bank_data p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 20px;
+  }
+  .bank_data p:nth-child(3) {
+    padding-bottom: 20px;
+  }
+  .bank_data h2 {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 32px;
+  }
+  .bank_data .blue {
+    font-weight: 500;
+    color: #0B2B81;
+  }
+  .bank_data .block {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
