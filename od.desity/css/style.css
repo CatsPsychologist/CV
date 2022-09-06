@@ -1478,13 +1478,8 @@ a:active ~ .header_nav {
   color: #0B2B81;
   padding-bottom: 40px;
 }
-.help_page span {
-  display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #1B1B1F;
-  padding-bottom: 4px;
+.help_page .item p {
+  padding: 8px 0 16px 0;
 }
 .help_page a {
   font-weight: 700;
@@ -1492,8 +1487,13 @@ a:active ~ .header_nav {
   line-height: 26px;
   color: #1B1B1F;
 }
-.help_page .item p {
-  padding: 8px 0 16px 0;
+.help_page span {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1B1B1F;
+  padding-bottom: 4px;
 }
 
 @media (max-width: 1250px) {
@@ -1597,6 +1597,41 @@ a:active ~ .header_nav {
   .bank_data .block {
     display: block;
   }
+}
+.history {
+  padding-top: 176px;
+}
+.history h2 {
+  color: #0B2B81;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 41px;
+}
+.history .logo {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 88px 0;
+}
+.history .sign {
+  padding: 0 48px;
+}
+.history .article {
+  box-shadow: 0 8px 24px rgba(127, 129, 182, 0.24);
+  border-radius: 16px;
+  padding: 48px 65px 48px 48px;
+}
+.history h3 {
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1B1F;
+}
+.history p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1B1F;
 }
 
 /*# sourceMappingURL=style.css.map */

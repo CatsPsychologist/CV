@@ -53,22 +53,14 @@ window.onclick = function(event) {
     }
 }
 
-
 const helpBtn = document.querySelectorAll('.btn')
-console.log(helpBtn)
-
-
 
 for (let i = 0; i < helpBtn.length; i++) {
     helpBtn[i].addEventListener('click', e => {
         e.preventDefault()
-        console.log(2)
         if(e.target === helpBtn[i]){
             document.querySelector('.pop_up').classList.add('pop_up_show')
         }
-        // if(e.target === document.querySelector('.pop_up_label')){
-        //     console.log(1)
-        // }
     })
 }
 

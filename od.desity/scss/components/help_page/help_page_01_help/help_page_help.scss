@@ -10,6 +10,18 @@
     color: $hover_color;
     padding-bottom: 40px;
   }
+
+  .item{
+    p{
+      padding: 8px 0 16px 0;
+    }
+  }
+  a{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: $text_color;
+  }
   span{
     display: block;
     font-weight: 400;
@@ -18,16 +30,4 @@
     color: $text_color;
     padding-bottom: 4px;
   }
-  a{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    color: $text_color;
-  }
-  .item{
-    p{
-      padding: 8px 0 16px 0;
-    }
-  }
-
 }
