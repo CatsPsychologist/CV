@@ -1634,4 +1634,47 @@ a:active ~ .header_nav {
   color: #1B1B1F;
 }
 
+@media (max-width: 1024px) {
+  .history {
+    padding-top: 150px;
+  }
+  .history .logo {
+    padding: 32px 0;
+  }
+  .history img {
+    width: 200px;
+  }
+  .history .sign {
+    width: 130px;
+  }
+}
+@media (max-width: 567px) {
+  .history {
+    padding-top: 100px;
+  }
+  .history h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .history img {
+    min-width: 60px;
+  }
+  .history .sign {
+    width: 80px;
+    padding: 0 20px;
+  }
+  .history .article {
+    padding: 24px;
+  }
+  .history h3 {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 12px;
+  }
+  .history p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
