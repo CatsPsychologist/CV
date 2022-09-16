@@ -1,0 +1,6 @@
+.logo{
+  fill: var(--primary_color);
+  &:hover{
+    fill: var(--logo_hover);
+  }
+}

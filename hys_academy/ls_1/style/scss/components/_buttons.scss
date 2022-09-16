@@ -1,0 +1,48 @@
+.button_first{
+  @include button(var(--primary_color),var(--text_color_secondary));
+  &:hover{
+    background:var(--primary_color_hover) ;
+  }
+  &:active{
+    background:var(--primary_color_active) ;
+  }
+}
+
+.button_second{
+  @include button(var(--primary_second_color),var(--text_color));
+  &:hover{
+    background:var(--primary_second_hover) ;
+  }
+  &:active{
+    background:var(--primary_second_active);
+  }
+}
+.button_third{
+  @include button(none,var(--text_color_secondary));
+  &:hover{
+    background: rgba(255, 255, 255, 0.15);
+  }
+  &:active{
+    background: rgba(255, 255, 255, 0.15);
+    outline: 2px solid var(--text_color_secondary);
+  }
+
+  outline: 1px solid var(--text_color_secondary);
+
+}
+.button_fourth{
+  @include button(var(--form_send_bg),var(--text_color_secondary));
+  &:hover{
+    background:var(--form_send_bg_hover);
+    box-shadow: 0 10px 16px 4px rgba(52, 210, 142, 0.58);
+  }
+  &:active{
+    background:var(--form_send_bg_active);
+    box-shadow: 0 4px 16px rgba(75, 202, 103, 0.58);
+  }
+
+  //width: 100%;
+
+  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  padding: 14px 44px;
+}
