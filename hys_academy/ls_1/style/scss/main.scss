@@ -5,6 +5,13 @@
 @import "base/typography";
 
 @import "layout/header";
+@import "layout/container";
+
+// it's only 1 page layout so instead of pages I have separate blocks
+@import "blocks/home";
+@import "blocks/categories";
+@import "blocks/course";
 
 @import "components/buttons";
 @import "components/logo";
+@import "components/line";

@@ -24,6 +24,7 @@
   font-style: normal;
 }
 body{
+  transition: 1s;
   font-family: Montserrat;
   color: var(--text_color);
 }
@@ -33,7 +34,6 @@ body{
   line-height: 1.33;
 }
 a{
-  text-decoration: none;
   color: var(--text_color);
 }
 h1{
@@ -41,7 +41,8 @@ h1{
   font-size: 36px;
   line-height: 1.22;
 }
-h2{
+h2,
+nav a{
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
@@ -55,10 +56,104 @@ h3,
 h4{
   font-weight: 500;
   font-size: 12px;
+  line-height: 1.0;
 }
 h5,
 .h5{
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
+}
+// FEATURED word
+h6{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.4em;
+
+  color: var(--featured_color);
+}
+p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+
+  color: var(--text_color_paragraph);
+}
+.new_price,
+.color{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.old_price{
+  text-decoration: line-through;
+}
+.course{
+  .old_price,
+  p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+input{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.44;
+  color: var(--text_color_input);
+}
+.navigation_links{
+  h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--text_color_footer);
+  }
+}
+footer{
+  a{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--text_color_footer);
+  }
+}
+.caption_primary{
+  color: var(--primary_color);
+}
+.price span{
+  color: var( --text_color_secondary);
+}
+.color_first{
+  color: var(--text_color_first);
+}
+.color_second{
+  color: var(--text_color_second);
+}
+.color_third{
+  color: var(--text_color_third);
+}
+.conference_wrapper h3,
+.degrees_wrapper h3, {
+  color: var(--text_color_secondary);
+}
+.get_started_wrapper{
+  h5,.h2, h2,p{
+    color: var(--text_color_secondary);
+  }
+}
+.button_num{
+  color: var(--text_color_fourth);
+}
+.blog_wrapper h5, {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+
+  color: var(--text_color_fourth);
 }
