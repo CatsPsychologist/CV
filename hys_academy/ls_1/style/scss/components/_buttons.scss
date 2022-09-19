@@ -41,8 +41,37 @@
     box-shadow: 0 4px 16px rgba(75, 202, 103, 0.58);
   }
 
-  //width: 100%;
-
   box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
   padding: 14px 44px;
+}
+
+.swipe_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 0 4px 16px var(--swipe_btn_shadow);
+  border-radius: 20px;
+  background: var(--swipe_btn_bg);
+  &:hover{
+    background: var(--swipe_btn_color) ;
+    svg{
+      stroke:var(--swipe_btn_bg) ;
+    }
+  }
+  &:active{
+    background: var(--swipe_btn_active) ;
+    svg{
+      stroke:var(--swipe_btn_bg) ;
+    }
+  }
+  svg{
+    stroke: var(--swipe_btn_color);
+  }
 }

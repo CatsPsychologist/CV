@@ -1,0 +1,31 @@
+.description{
+  background-image: url("../../images/05description_bg.png");
+  padding: 80px 0 120px ;
+  &_video{
+
+    //min-height: 300px;
+    //img{
+      position: absolute;
+    //  left: 0;
+    //}
+  }
+  .caption{
+    display: flex;
+    align-items: baseline;
+
+    padding: 6px 0 24px;
+  }
+  .p{
+    padding: 12px 0 16px;
+  }
+  ul{
+    padding: 0 0 24px 16px;
+  }
+  li{
+    padding-left: 20px;
+    list-style: url("../../images/05description_dot.svg");
+    &:first-child{
+      padding-bottom: 12px;
+    }
+  }
+}
