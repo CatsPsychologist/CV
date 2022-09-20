@@ -1,0 +1,43 @@
+.get_started{
+  background-image: url("../../images/09get_started_bluebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  h5{
+    padding: 40px 0 8px;
+  }
+  .h2{
+    padding-bottom: 24px;
+  }
+  .text_first{
+    padding-bottom: 12px;
+  }
+  .text_second{
+    padding-bottom: 32px;
+  }
+  .list_items{
+    padding: 56px 0 40px;
+    h2{
+      padding-bottom: 24px;
+    }
+  }
+  a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+  .get_started_line{
+    height: 1px;
+    width: 100%;
+    background: #FFFFFF;
+    opacity: 0.2;
+  }
+  li{
+    padding-bottom: 12px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,13 +1,16 @@
 .description{
-  background-image: url("../../images/05description_bg.png");
   padding: 80px 0 120px ;
   &_video{
-
-    //min-height: 300px;
-    //img{
-      position: absolute;
-    //  left: 0;
-    //}
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .play_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  svg{
+    transform: translate(2px)
   }
   .caption{
     display: flex;

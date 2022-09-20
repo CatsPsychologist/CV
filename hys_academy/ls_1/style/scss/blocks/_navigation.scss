@@ -1,0 +1,26 @@
+.navigation{
+  &_item{
+    padding-top: 20px;
+  }
+  h4{
+    padding-bottom: 16px;
+  }
+  li{
+    padding-bottom: 12px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+  .social{
+    h4{
+      padding-bottom: 24px;
+    }
+    ul{
+      display: flex;
+      gap: 18px;
+    }
+    li{
+      padding: 0;
+    }
+  }
+}

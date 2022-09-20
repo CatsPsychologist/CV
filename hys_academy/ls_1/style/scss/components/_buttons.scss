@@ -41,11 +41,14 @@
     box-shadow: 0 4px 16px rgba(75, 202, 103, 0.58);
   }
 
-  box-shadow: 0px 4px 16px rgba(75, 202, 103, 0.58);
+  box-shadow: 0 4px 16px rgba(75, 202, 103, 0.58);
   padding: 14px 44px;
 }
 
-.swipe_btn{
+.swipe_btn,
+.play_btn,
+.button_num
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +58,8 @@
 
   border: none;
   cursor: pointer;
-
+}
+.swipe_btn{
   box-shadow: 0 4px 16px var(--swipe_btn_shadow);
   border-radius: 20px;
   background: var(--swipe_btn_bg);
@@ -73,5 +77,49 @@
   }
   svg{
     stroke: var(--swipe_btn_color);
+  }
+}
+.play_btn{
+  border-radius: 20px;
+
+  background: var(--swipe_btn_color);
+  outline: 2px solid var(--swipe_btn_bg);
+  box-shadow: 0 4px 16px rgba(75, 202, 103, 0.56);
+  &:hover{
+    outline: none;
+  }
+  &:active{
+    background: var(--swipe_btn_active) ;
+  }
+}
+
+.customer_btn{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+
+  border: none;
+  cursor: pointer;
+  background: var(--customer_btn_bg);
+}
+.customer_active{
+  background: var(--customer_btn_bg_active);
+}
+.button_num{
+  background: var(--button_num_bg);
+  border-radius: 50%;
+  &:hover{
+    box-shadow: 0 4px 16px 0 #E2EDFB;
+  }
+  &:active{
+    box-shadow: 0 4px 16px 0 #E2EDFB;
+    outline: 1px solid var(--button_num_bg_active);
+  }
+}
+.number_bar{
+  .active{
+    box-shadow: 0 4px 16px 0 #E2EDFB;
+    outline: 1px solid var(--button_num_bg_active);
   }
 }

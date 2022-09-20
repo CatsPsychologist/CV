@@ -107,7 +107,7 @@ input{
   line-height: 1.44;
   color: var(--text_color_input);
 }
-.navigation_links{
+.navigation{
   h4{
     font-weight: 700;
     font-size: 16px;
@@ -148,9 +148,12 @@ footer{
   color: var(--text_color_secondary);
 }
 .get_started_wrapper{
-  h5,.h2, h2,p{
+  h5, h2,p{
     color: var(--text_color_secondary);
   }
+}
+.get_started_wrapper .h2{
+  color: var(--primary_second_color);
 }
 .button_num{
   color: var(--text_color_fourth);

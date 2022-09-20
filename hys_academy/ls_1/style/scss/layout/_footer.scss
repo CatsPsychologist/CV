@@ -1,0 +1,19 @@
+.footer{
+  padding: 40px 0 24px;
+  &_left{
+    padding: 40px 0 24px;
+  }
+  li{
+    padding-bottom: 20px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+  &_line{
+    width: 100%;
+    height: 1px;
+
+    background: #5C5C5C;
+    opacity: 0.1;
+  }
+}

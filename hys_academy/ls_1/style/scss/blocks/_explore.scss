@@ -1,4 +1,7 @@
 .explore{
+  &_schedule{
+    padding: 0 24px;
+  }
   .caption{
     display: flex;
     align-items: baseline;
@@ -11,23 +14,81 @@
     background: #5C5C5C;
     opacity: 0.1;
   }
-  li{
-    padding-bottom: 40px;
-  }
+
   .text{
     display: flex;
     flex-wrap: wrap;
     padding: 16px 0 24px;
   }
+  .explore_schedule{
+    li{
+      padding-bottom: 40px;
+    }
+    p{
+      display: flex;
+      align-items: center;
+      &:nth-child(1){
+        padding-right: 24px;
+      }
+      &:nth-child(3){
+        padding-top: 8px;
+      }
+    }
+  }
+  svg{
+    margin-right: 8px;
+  }
+  .explore_featured{
+    background: var(--featured_bg);
+    padding: 0 24px;
+  }
+  h6{
+    padding: 40px 0;
+  }
+  .time{
+    display: flex;
+
+    gap: 48px;
+    padding-bottom: 24px;
+  }
+  .conference_img{
+    width: 328px;
+
+  }
+  .conference{
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .conference_wrapper{
+    position: absolute;
+
+    width: 280px;
+    margin: 0 24px;
+    padding: 24px 16px 40px;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    background: rgba(0, 0, 0, 0.8);
+    li:first-child{
+      padding-bottom: 8px;
+    }
+  }
+  .btn{
+    position: absolute;
+    transform: translateY(-50%);
+  }
   p{
     display: flex;
     align-items: center;
-    &:nth-child(1){
-      padding-right: 24px;
-    }
-    &:nth-child(3){
-      padding-top: 8px;
-    }
+  }
+  h3{
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
 }
