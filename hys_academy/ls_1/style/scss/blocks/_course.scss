@@ -8,13 +8,13 @@
   h2{
     padding: 6px 0 54px;
   }
-  .swiper-wrapper{
+  &_swiper-wrapper{
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .swiper-slide{
     position: relative;
-    background: #00000033;
   }
   .profile{
     position: absolute;
@@ -43,10 +43,19 @@
     align-items: center;
 
     width: 100%;
-    padding: 16px 24px 24px 16px;
+    padding: 16px 14px 20px 16px;
+  }
+  .star_group{
+    display: flex;
+    gap: 2px;
   }
   .right{
     display: flex;
+    align-items: center;
+  }
+  .left{
+    display: flex;
+    gap: 10px;
     align-items: center;
   }
   p{
@@ -55,11 +64,17 @@
   h3{
     padding: 8px 0 16px 16px;
   }
-  h4{
-    padding-left: 16px;
+  .swiper-slide{
+     h4{
+      padding-left: 16px;
+    }
   }
   img{
     border-radius: 8px;
+    &:first-child{
+      min-height: 364px;
+      min-width: 260px;
+    }
   }
   .hide{
     display: none;

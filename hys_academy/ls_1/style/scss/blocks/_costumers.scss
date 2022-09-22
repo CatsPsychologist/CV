@@ -1,5 +1,5 @@
 .costumers{
-  padding-bottom: 100px;
+  padding-bottom: 94px;
   .hide_mobile{
     display: none;
   }
@@ -12,8 +12,8 @@
       position: absolute;
 
       max-width: 270px;
-      top: 54px;
-      left: 54px;
+      top: 45px;
+      left: 55px;
     }
   }
   .blue_bg{
@@ -26,45 +26,50 @@
   .caption{
     display: flex;
     align-items: end;
+    justify-content: space-between;
   }
   h2{
-    max-width: 250px;
+    width: 70vw;
   }
   .line{
     margin-bottom: 12px;
   }
   svg{
-    margin: 48px 0 32px;
+    margin: 48px 0 28px;
   }
   p{
-    padding-bottom: 16px;
+    padding-bottom: 12px;
   }
   h5{
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
   .costumers_article_text{
     padding: 0 24px;
   }
   .costumers_article {
-    padding-top: 24px;
+    padding-top: 20px;
 
     position: relative;
   }
   .img_group{
     height: 400px;
     position: absolute;
-    right: 0px;
-    left: -80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
     top: 150px;
-    img:first-child{
-      position: absolute;
-      z-index: -2;
-    }
-    img:nth-child(2){
-      position: absolute;
-      z-index: -1;
-    }
+    overflow: hidden;
   }
-
+  .img_light{
+    position: absolute;
+    z-index: -2;
+    transform: translate(-70px, 5px);
+    min-width: 550px;
+  }
+  .img_dark{
+    position: absolute;
+    z-index: -1;
+    transform: translate(-60px, 25px);
+  }
 
 }

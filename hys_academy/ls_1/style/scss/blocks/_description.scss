@@ -19,16 +19,19 @@
     padding: 6px 0 24px;
   }
   .p{
-    padding: 12px 0 16px;
+    padding: 12px 0 10px;
   }
   ul{
-    padding: 0 0 24px 16px;
+    padding: 0 0 24px 20px;
   }
   li{
-    padding-left: 20px;
+    padding-left: 16px;
     list-style: url("../../images/05description_dot.svg");
     &:first-child{
       padding-bottom: 12px;
     }
+  }
+  .button_first{
+    padding: 12px 20px;
   }
 }

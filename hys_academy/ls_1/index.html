@@ -15,8 +15,8 @@
         <div class="header_wrapper">
             <input class="mobile" id="menu-toggle" type="checkbox">
             <div class="logo_burger">
-                <label class="menu-button-container mobile" for="menu-toggle">
-                    <div class="menu-button"></div>
+                <label class="menu-button-container  mobile" for="menu-toggle">
+                    <div class="menu-button burger"></div>
                 </label>
                 <a href="">
                     <svg class="logo" width="54" height="24">
@@ -29,12 +29,15 @@
                 <ul>
                     <li>
                         <a  href="#categories">Categories</a>
+                        <div class="header_line"></div>
                     </li>
                     <li>
                         <a href="#course">Course</a>
+                        <div class="header_line"></div>
                     </li>
                     <li>
                         <a href="#explore">Explore</a>
+                        <div class="header_line"></div>
                     </li>
                     <li>
                         <a href="#degrees">Degrees</a>
@@ -44,6 +47,10 @@
             </nav>
 
             <button class="button_first btn mobile">Explore</button>
+
+            <label class="menu-button-close mobile-close" for="menu-toggle">
+                <div class="menu-button close"></div>
+            </label>
         </div>
     </div>
 </header>
@@ -57,7 +64,10 @@
                     <h1>Education is the most powerfull weapon</h1>
                     <p>A bank is a financial institution accepts deposits from public and creates credit. For all of your needs.</p>
                     <button class="button_first btn">Read More</button>
-                    <button class="button_second btn">Get started</button>
+                    <a href="#form">
+                        <button class="button_second btn">Get started</button>
+                    </a>
+
                 </div>
 
                 <div class="image_group">
@@ -136,8 +146,8 @@
                 <h4 class="caption_primary">MOST POPULAR COURSES</h4>
                 <h2>2000+ Online courses</h2>
 
-                <div class="swiper">
-                    <div class="swiper-wrapper">
+                <div class="course_swiper">
+                    <div class="course_swiper-wrapper">
                         <button class="swipe_btn">
                             <svg width="9" height="14">
                                 <use href="images/00_sprite.svg#arrow_left"></use>
@@ -156,21 +166,23 @@
                                         <span class="old_price">$360</span>
                                     </div>
                                     <div class="right">
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_not"></use>
-                                        </svg>
+                                        <div class="star_group">
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_not"></use>
+                                            </svg>
+                                        </div>
                                         <p>(4)</p>
                                     </div>
                                 </div>
@@ -189,21 +201,23 @@
                                         <span class="old_price">$360</span>
                                     </div>
                                     <div class="right">
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_not"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_not"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_not"></use>
-                                        </svg>
+                                        <div class="star_group">
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_not"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_not"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_not"></use>
+                                            </svg>
+                                        </div>
                                         <p>(4)</p>
                                     </div>
                                 </div>
@@ -222,21 +236,23 @@
                                         <span class="old_price">$360</span>
                                     </div>
                                     <div class="right">
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
-                                        <svg width="9" height="10">
-                                            <use href="images/00_sprite.svg#star_active"></use>
-                                        </svg>
+                                        <div class="star_group">
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                            <svg width="9" height="10">
+                                                <use href="images/00_sprite.svg#star_active"></use>
+                                            </svg>
+                                        </div>
                                         <p>(4)</p>
                                     </div>
                                 </div>
@@ -267,7 +283,7 @@
             <div class="description_wrapper">
 
                 <div class="description_article">
-                    <h4 class="caption_primary">UNIVERSITY DESCRIPTION</h4>
+                    <h4 class="caption_primary">UNIVERSOTY DESCRIPTION</h4>
                     <div class="caption">
                         <h2>Take a tour</h2>
                         <div class="line"></div>
@@ -401,56 +417,59 @@
                     </ul>
                 </div>
                 <div class="explore_featured">
-                    <h6>
-                        FEATURED
-                    </h6>
-                    <div class="time">
-                        <p>
-                            <span class="color color_first">$213</span>
-                            Days
-                        </p>
-                        <p>
-                            <span class="color color_second">23</span>
-                            Hours
-                        </p>
-                        <p>
-                            <span class="color color_third">59</span>
-                            Min
-                        </p>
-                    </div>
-                    <div class="conference">
-                        <img class="conference_img" src="images/04course_design.jpg" alt="conference image">
-                        <div class="conference_wrapper">
-                            <h3>International Conference...</h3>
-                            <ul>
-                                <li>
-                                    <p>
-                                        <svg width="20" height="20">
-                                            <use href="images/00_sprite.svg#icon-calendar"></use>
-                                        </svg>
-                                        July 8, 2018
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <svg width="20" height="20">
-                                            <use href="images/00_sprite.svg#icon-clock"></use>
-                                        </svg>
-                                        5pm - 7pm
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <svg width="20" height="20">
-                                            <use href="images/00_sprite.svg#icon-map"></use>
-                                        </svg>
-                                        United States
-                                    </p>
-                                </li>
-                            </ul>
+                    <div class="explore_featured_wrapper">
+                        <h6>
+                            FEATURED
+                        </h6>
+                        <div class="time">
+                            <p>
+                                <span class="color color_first">$213</span>
+                                Days
+                            </p>
+                            <p>
+                                <span class="color color_second">23</span>
+                                Hours
+                            </p>
+                            <p>
+                                <span class="color color_third">59</span>
+                                Min
+                            </p>
                         </div>
+                        <div class="conference">
+                            <img class="conference_img" src="images/04course_design.jpg" alt="conference image">
+                            <div class="conference_wrapper">
+                                <h3>International Conference...</h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <svg width="20" height="20">
+                                                <use href="images/00_sprite.svg#icon-calendar"></use>
+                                            </svg>
+                                            July 8, 2018
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <svg width="20" height="20">
+                                                <use href="images/00_sprite.svg#icon-clock"></use>
+                                            </svg>
+                                            5pm - 7pm
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <svg width="20" height="20">
+                                                <use href="images/00_sprite.svg#icon-map"></use>
+                                            </svg>
+                                            United States
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="button_first btn">Become a Sponsor</button>
                     </div>
-                    <button class="button_first btn">Become a Sponsor</button>
+
                 </div>
             </div>
 <!--        </div>-->
@@ -464,8 +483,8 @@
                     <div class="line"></div>
                 </div>
                 <p>Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
+                <div class="degrees_swiper">
+                    <div class="degrees_swiper-wrapper">
                         <button class="swipe_btn">
                             <svg width="9" height="14">
                                 <use href="images/00_sprite.svg#arrow_left"></use>
@@ -516,15 +535,15 @@
                 </div>
                 <div class="costumers_article">
                     <div class="img_group">
-                        <img src="images/08costumers_light_green_bg.png" alt="green background">
-                        <img src="images/08costumers_dark_green_bg.png" alt="green background">
+                        <img class="img_light" src="images/08costumers_light_green_bg.png" alt="green background" width="786">
+                        <img class="img_dark" src="images/08costumers_dark_green_bg.png" alt="green background" width="516">
                     </div>
                     <div class="costumers_article_text">
                         <div class="caption">
                             <h2>Our great customers</h2>
                             <div class="line"></div>
                         </div>
-                        <svg width="32" height="32">
+                        <svg width="38" height="30">
                             <use href="images/00_sprite.svg#icon-quotes"></use>
                         </svg>
                         <p>
@@ -564,7 +583,9 @@
                 <p class="text_second">
                     Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </p>
-                <button class="button_second btn">Apply Now</button>
+                <a href="#form">
+                    <button class="button_second btn">Apply Now</button>
+                </a>
                 <button class="button_third btn">Request Service</button>
                 <div class="list_items">
                     <h2>
@@ -662,7 +683,7 @@
                         <button class="button_num">5</button>
                     </div>
                 </div>
-                <form class="blog_form">
+                <form class="blog_form" id="form">
                     <input type="text" placeholder="Name Surname">
                     <input type="tel" placeholder="Phone">
                     <input type="email" placeholder="Enter your email...">
@@ -675,7 +696,7 @@
     <div class="navigation">
         <div class="container">
             <div class="navigation_wrapper">
-                <a href="">
+                <a class="nav_logo" href="">
                     <svg class="logo" width="72" height="32">
                         <use href="images/00_sprite.svg#icon-header_logo"></use>
                     </svg>

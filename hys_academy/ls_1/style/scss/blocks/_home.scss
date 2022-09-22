@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
 
-    min-height: 440px;
+    min-height: 425px;
     position: relative;
     img{
       position: absolute;
@@ -23,13 +23,18 @@
     }
   }
   .article{
-    padding: 0 20px;
+    padding: 0 24px;
   }
   .logo_group{
     display: flex;
     flex-wrap: wrap;
 
-    padding:40px 20px 0;
+    padding:40px 23px 0;
+    gap: 16px 0;
+    a{
+      display: flex;
+      align-items: center;
+    }
   }
   p{
     max-width: 300px;
@@ -37,6 +42,6 @@
     padding: 32px 0 40px;
   }
   .button_first{
-    margin-right: 24px;
+    margin-right: 20px;
   }
 }

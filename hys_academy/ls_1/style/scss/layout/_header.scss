@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   .desktop, nav{
     display: none;
@@ -16,73 +17,32 @@
   .logo_burger{
     display: flex;
     align-items: center;
+    position: relative;
+    gap: 18px;
+    z-index: 1;
     a{
       display: flex;
       align-items: center;
     }
   }
-}
+  nav{
+    //display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    padding: 150px 24px 65px;
+    background: white;
+  }
+  ul{
+    width: 100%;
+  }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after{
-  background:black ;
-  transition: 1.5s;
+  &_line{
+    background: var(--header_line);
+    height: 1px;
+    opacity: 0.2;
+    width: 100%;
+    margin: 32px 0;
+  }
 }
-
-#menu-toggle {
-  display: none;
-}
-.menu-button-container {
-  display: flex;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: black;
-  position: absolute;
-  height: 3px;
-  width: 18px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -6px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 6px;
-}
-
-#menu-toggle:checked + .logo_burger .menu-button-container .menu-button::before {
-  margin-top: 0;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .logo_burger .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .logo_burger .menu-button-container .menu-button::after {
-  margin-top: 0;
-  transform: rotate(-405deg);
-}
-
-#menu-toggle:checked ~  .header_wrapper nav {
-  display: flex;
-}
-#menu-toggle:checked ~  nav {
-  display: flex;
-}
-

@@ -19,8 +19,15 @@
   }
   .item{
     padding-bottom: 20px;
+    &:nth-child(2){
+      padding-bottom: 40px;
+    }
     &:last-child{
       padding-bottom: 0;
     }
+  }
+  svg{
+    display: flex;
+    margin: 0 auto;
   }
 }

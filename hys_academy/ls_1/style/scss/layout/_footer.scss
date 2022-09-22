@@ -1,12 +1,15 @@
 .footer{
   padding: 40px 0 24px;
   &_left{
-    padding: 40px 0 24px;
+    padding: 20px 0 16px;
   }
   li{
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     &:last-child{
       padding-bottom: 0;
+    }
+    a:hover{
+    color: #1B63F0;
     }
   }
   &_line{
