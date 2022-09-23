@@ -41,5 +41,15 @@
     padding-bottom: 12px;
     display: flex;
   }
+}
+@media (min-width: 576px) {
+  .navigation_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav_logo{
+    width: 100%;
+  }
 
 }

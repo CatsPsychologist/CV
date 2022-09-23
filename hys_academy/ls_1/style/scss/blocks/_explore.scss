@@ -4,12 +4,9 @@
   }
   .caption{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 
     padding-bottom: 32px;
-    .line{
-      margin-top: 8px;
-    }
   }
   .explore_line{
     width: 100%;
@@ -84,6 +81,8 @@
   }
   .explore_featured{
     ul{
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 8px 24px;
       padding-top: 16px;
@@ -92,11 +91,15 @@
       text-align: center;
     }
   }
-  ul{
-    display: flex;
-    flex-wrap: wrap;
-  }
   .btn{
     padding: 12px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .explore{
+    .explore_schedule{
+      max-width: 75%;
+      margin: 0 auto;
+    }
   }
 }

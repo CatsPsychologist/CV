@@ -56,3 +56,18 @@
     gap: 8px;
   }
 }
+@media (min-width: 768px) {
+  .get_started{
+    &_wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+    }
+    .article{
+      width: 48%;
+    }
+    .list_items{
+      width: 48%;
+    }
+  }
+}

@@ -82,3 +82,36 @@
     }
 
 }
+@media (min-width: 768px) {
+  .blog{
+    &_wrapper{
+      max-width: 100%;
+    }
+    &_cards{
+      display: flex;
+      justify-content: space-between;
+    }
+    .number_bar{
+      padding-top: 0;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item:first-child{
+      padding-bottom: 0;
+    }
+    .blog_img{
+      top: 0;
+    }
+    .item_info{
+      margin-top: 24px;
+    }
+    &_form{
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .btn{
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -20,3 +20,31 @@
     opacity: 0.1;
   }
 }
+@media (min-width: 576px) {
+  .footer{
+    padding-bottom: 0;
+  }
+  .footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      gap: 10px;
+    }
+    li{
+      padding-bottom: 0;
+    }
+  }
+  .footer_left,
+  .footer_right{
+    padding: 40px 0 ;
+  }
+}
+@media (min-width: 768px) {
+  .footer_wrapper{
+    ul{
+      gap: 20px;
+    }
+  }
+}

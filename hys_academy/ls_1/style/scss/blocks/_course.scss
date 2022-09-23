@@ -6,21 +6,24 @@
     text-align: center;
   }
   h2{
-    padding: 6px 0 54px;
+    padding: 6px 0 30px;
   }
   &_swiper-wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 16px;
+
   }
   .swiper-slide{
     position: relative;
+    padding-top: 24px;
   }
   .profile{
     position: absolute;
     top: 0;
     left: 16px;
-    transform: translateY(-50%);
+    //transform: translateY(-50%);
   }
   .article{
     position: absolute;
@@ -76,7 +79,17 @@
       min-width: 260px;
     }
   }
-  .hide{
+  .hide_mobile{
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .course{
+    .hide_mobile{
+     display: initial;
+    }
+    .hide_tablet{
+      display: none;
+    }
   }
 }
