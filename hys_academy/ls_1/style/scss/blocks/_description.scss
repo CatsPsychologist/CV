@@ -3,11 +3,17 @@
   &_video{
     position: relative;
     padding-bottom: 40px;
+    img{
+      max-width: none
+    }
+  }
+  &_article{
+    padding: 0 24px;
   }
   .play_btn{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 45%;
   }
   svg{
     transform: translate(2px)
@@ -34,4 +40,35 @@
   .button_first{
     padding: 12px 20px;
   }
+}
+@media (min-width: 1024px) {
+  .description{
+    img{
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .description{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 64px 0 100px;
+    &_video{
+      padding: 0 116px 0 0;
+    }
+    &_article{
+      padding:56px 0 0 ;
+      max-width: 415px;
+    }
+    .play_btn{
+      top: 44%;
+      left: 60%;
+    }
+    li:first-child{
+      padding-bottom: 10px;
+    }
+
+  }
+
 }

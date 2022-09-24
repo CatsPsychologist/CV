@@ -53,3 +53,21 @@
   }
 
 }
+@media (min-width: 1024px){
+  .navigation{
+    .navigation_wrapper{
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .nav_logo{
+      width: initial;
+      padding-right: 45px;
+    }
+    h4{
+      padding-bottom: 23px;
+    }
+    .footer_right{
+      padding: 55px 0;
+    }
+  }
+}

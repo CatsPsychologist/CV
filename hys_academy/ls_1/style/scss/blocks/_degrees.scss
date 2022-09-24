@@ -19,7 +19,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 20px;
+   gap: 18px;
  }
   .swiper-slide{
     position: relative;
@@ -86,9 +86,20 @@
       justify-content: center;
     }
     p{
-      max-width: 70%;
+      max-width: 60%;
       text-align: center;
       margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .degrees{
+    padding: 80px 0 180px;
+    .hide_tablet{
+      display: initial;
+    }
+    p{
+      padding-bottom: 52px;
     }
   }
 }

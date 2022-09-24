@@ -60,7 +60,7 @@
       display: none;
     }
     .desktop{
-      display: initial;
+      display: inherit;;
     }
     .about_items{
       justify-content: space-between;
@@ -72,10 +72,27 @@
 }
 
 @media (min-width: 1024px) {
-  .categories{
-    &_wrapper{
+  .categories {
+    padding-bottom: 120px;
+    &_wrapper {
       max-width: 850px;
-      margin:  0 auto;
+      margin: 0 auto;
+    }
+
+    .item {
+      width: 100%;
+      max-width: 415px;
+
+      &:nth-child(2) {
+        padding-bottom: 62px;
+        p {
+          max-width: 90%;
+          margin: 0;
+        }
+      }
+    }
+    h3{
+      padding: 10px 0 6px;
     }
   }
 }

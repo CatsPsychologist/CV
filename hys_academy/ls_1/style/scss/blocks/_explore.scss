@@ -38,6 +38,7 @@
     max-width: 328px;
     margin: 0 auto;
     position: relative;
+    padding-bottom: 60px;
   }
   h6{
     padding: 40px 0;
@@ -51,10 +52,10 @@
   .conference_img{
     width: 328px;
     height: 380px;
+    border-radius: 8px;
   }
   .conference{
     position: relative;
-    padding-bottom: 60px;
   }
   .conference_wrapper{
     position: absolute;
@@ -64,7 +65,7 @@
     padding: 24px 16px 40px;
     left: 0;
     right: 0;
-    bottom: 60px;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.8);
   }
   .btn{
@@ -100,6 +101,56 @@
     .explore_schedule{
       max-width: 75%;
       margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .explore{
+    max-width: 1440px;
+    margin: 0 auto;
+    &_wrapper{
+      display: flex;
+    }
+    .explore_schedule{
+      max-width: none;
+      width: 56.7%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .explore_featured{
+      max-width: none;
+      padding: 0;
+      width: 43.3%;
+    }
+    .explore_featured_wrapper{
+      max-width: none;
+      padding: 0 0 76px 87px;
+    }
+    .time{
+      padding: 160px 0 40px;
+    }
+    .conference{
+      margin: 0 ;
+    }
+    h6{
+      position: absolute;
+      left: 16px;
+      padding-top: 60px;
+      font-size: 50px;
+      line-height: 73px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .explore{
+    h6{
+      font-size: 60px;
+    }
+    .explore_line{
+      width: 120%;
     }
   }
 }

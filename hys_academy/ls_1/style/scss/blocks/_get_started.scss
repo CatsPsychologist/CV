@@ -71,3 +71,22 @@
     }
   }
 }
+@media (min-width: 1024px) {
+  .get_started{
+    .get_started_wrapper{
+      padding: 33px 0;
+    }
+    .article{
+      max-width: 415px;
+    }
+    .list_items{
+      max-width: 415px;
+      h2{
+        padding-bottom: 20px;
+      }
+    }
+    h5{
+      padding: 30px 0 8px;
+    }
+  }
+}

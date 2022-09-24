@@ -1,8 +1,8 @@
 .header{
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
-
+  z-index: 2;
   padding-top: 24px;
   &_wrapper{
     display: flex;
@@ -45,7 +45,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .header{
+  .header_wrapper{
     max-width: 850px;
     margin: 0 auto;
   }

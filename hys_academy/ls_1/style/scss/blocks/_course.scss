@@ -8,7 +8,7 @@
   h2{
     padding: 6px 0 30px;
   }
-  &_swiper-wrapper{
+  &_swiper_wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +90,22 @@
     }
     .hide_tablet{
       display: none;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .course{
+    h2{
+      padding-bottom: 55px;
+    }
+    .hide_mobile{
+      display: initial;
+    }
+    .profile{
+      left: 20px;
+    }
+    &_swiper_wrapper{
+      gap: 20px;
     }
   }
 }

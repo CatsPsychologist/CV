@@ -74,10 +74,15 @@
     .image_group{
       position: absolute;
       right: 0;
+      //max-width: 1440px;
+      //left: 0;
       img:first-child{
         max-width: 100%;
         padding: 0;
         transform: translate(-47px, 65px);
+      }
+      img:last-child{
+        padding: 0;
       }
     }
     .article{
