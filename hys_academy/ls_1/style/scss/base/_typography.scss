@@ -164,3 +164,17 @@ footer{
 
   color: var(--text_color_fourth);
 }
+
+@media (min-width: 768px) {
+  .header{
+    a{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.33;
+      color: var(--text_color_secondary);
+      &:hover{
+        color: var(--primary_color);
+      }
+    }
+  }
+}

@@ -44,6 +44,34 @@
     margin: 32px 0;
   }
 }
+@media (min-width: 768px){
+  .header{
+    .mobile,
+    .mobile_close,
+    .header_line{
+      display: none;
+    }
+    .desktop{
+      display: initial;
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      position: initial;
+      width: 100%;
+      padding: 0;
+      background: none;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+      padding-right: 40px;
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   .header_wrapper{
     max-width: 850px;

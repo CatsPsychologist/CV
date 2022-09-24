@@ -1,5 +1,4 @@
 .costumers{
-  padding-bottom: 94px;
 
   .costumers_img{
     position: relative;
@@ -43,8 +42,8 @@
     padding: 0 24px;
   }
   .costumers_article {
-    padding-top: 67px;
-
+    padding: 67px 0 94px;
+    overflow: hidden;
     position: relative;
   }
   .img_group{
@@ -81,21 +80,25 @@
     }
   }
 
+
+}
+@media (min-width: 768px) {
   .costumers{
-    &_wrapper{
+    .costumers_wrapper{
       display: flex;
       justify-content: center;
       gap: 50px;
     }
-    &_article{
+    .costumers_article{
       width: 50%;
+      overflow: initial;
+      padding-top: 0;
     }
     .img_group{
       transform: translate(-100%, -40%);
     }
   }
 }
-
 @media (min-width: 1024px) {
   .costumers{
     padding-bottom: 160px;
@@ -115,7 +118,10 @@
     }
     .costumers_article_text{
       padding: 0 0 0 10px;
-      max-width: 415px
+      max-width: 415px;
+      svg{
+        margin: 48px 0 24px;
+      }
     }
     .img_group{
       scale: 1;

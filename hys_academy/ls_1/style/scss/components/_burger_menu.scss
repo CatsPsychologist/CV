@@ -9,7 +9,7 @@
 #menu-toggle {
   display: none;
 }
-.mobile-close{
+.mobile_close{
   display: none;
 }
 .menu-button-container {
@@ -75,7 +75,7 @@
 #menu-toggle:checked ~  nav {
   display: flex;
 }
-#menu-toggle:checked ~  .mobile-close {
+#menu-toggle:checked ~  .mobile_close {
   display: flex;
 }
 .close{
