@@ -3,12 +3,10 @@
     max-width: 400px;
     margin: 0 auto;
   }
-
   &_cards{
     padding:48px 0 80px;
   }
   padding: 80px 0;
-
   .item{
     position: relative;
     &:first-child{
@@ -16,14 +14,15 @@
     }
   }
   .item_info{
-    background: var(--blog_bg);
-    height: 264px;
-    margin-top: 20px;
-    border-radius: 16px 16px 0 16px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 264px;
+    margin-top: 20px;
+
+    border-radius: 16px 16px 0 16px;
+
+    background: var(--blog_bg);
   }
   .blog_img{
     position: absolute;
@@ -38,8 +37,8 @@
   }
   .article{
     display: flex;
-    padding: 0 0 16px 12px;
     justify-content: space-between;
+    padding: 0 0 16px 12px;
   }
   .article_img{
     height: 48px;
@@ -54,7 +53,6 @@
   .number_bar{
     display: flex;
     justify-content: space-around;
-
     padding-top: 28px;
   }
   &_form{
@@ -63,17 +61,18 @@
   }
   input {
     padding: 14px 12px;
+    margin-bottom: 12px;
+
     border: none;
     border-radius: 22px;
 
     background: var(--input_bg);
-    margin-bottom: 10px;
     &:focus-visible{
       outline: 2px solid #1B63F0;
     }
     }
     input[type=email]{
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
 
 }
@@ -87,9 +86,9 @@
       justify-content: space-between;
     }
     .number_bar{
-      padding-top: 0;
       flex-direction: column;
       justify-content: space-between;
+      padding-top: 0;
     }
     .item:first-child{
       padding-bottom: 0;

@@ -2,8 +2,9 @@
   padding: 80px 0 120px ;
   &_video{
     position: relative;
-    padding-bottom: 40px;
     overflow: hidden;
+
+    padding-bottom: 40px;
     img{
       max-width: none
     }
@@ -49,16 +50,18 @@
 }
 @media (min-width: 1200px) {
   .description{
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
+
+    margin: 0 auto;
+    max-width: 1440px;
+
     padding: 64px 0 100px;
     &_video{
       padding: 0 116px 0 0;
     }
     &_article{
-      padding:56px 0 0 ;
       max-width: 415px;
+      padding:56px 0 0 ;
     }
     .play_btn{
       top: 44%;
@@ -73,21 +76,25 @@
     .description_article::before{
       content: '';
       position: absolute;
-      width: 40px;
-      height: 40px;
-      background: var(--description_before_bg);
-      border-radius: 8px;
       right: -31%;
       bottom: 47%;
+
+      width: 40px;
+      height: 40px;
+
+      background: var(--description_before_bg);
+      border-radius: 8px;
     }
     .description_article::after{
       content: '';
       position: absolute;
+      right: 2%;
+
       width: 32px;
       height: 32px;
+
       background: var(--description_after_bg);
       border-radius: 50%;
-      right: 2%;
     }
   }
 

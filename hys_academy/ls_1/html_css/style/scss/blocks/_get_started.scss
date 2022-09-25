@@ -21,13 +21,11 @@
       padding-bottom: 24px;
     }
   }
-  //sass --watch html_css/style/scss/main.scss:html_css/style/css/style.min.css --style=compressed
   li{
     a{
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-
       gap: 12px;
     }
   }
@@ -35,7 +33,9 @@
   .get_started_line{
     height: 1px;
     width: 100%;
+
     background: #FFFFFF;
+
     opacity: 0.2;
   }
   li{

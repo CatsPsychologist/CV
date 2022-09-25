@@ -59,24 +59,34 @@
   border: none;
   cursor: pointer;
 }
+.button_arrow{
+  border: solid var(--swipe_btn_color);
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  border-radius: 2px;
+}
 .swipe_btn{
   box-shadow: 0 4px 16px var(--swipe_btn_shadow);
   border-radius: 20px;
   background: var(--swipe_btn_bg);
+
   &:hover{
     background: var(--swipe_btn_color) ;
-    svg{
-      stroke:var(--swipe_btn_bg) ;
+    .button_arrow{
+      border: solid var(--swipe_btn_bg) ;
+      border-width: 0 3px 3px 0;
     }
   }
   &:active{
     background: var(--swipe_btn_active) ;
-    svg{
-      stroke:var(--swipe_btn_bg) ;
-    }
   }
-  svg{
-    stroke: var(--swipe_btn_color);
+  .left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   }
 }
 .play_btn{
