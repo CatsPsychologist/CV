@@ -1,0 +1,125 @@
+.blog{
+  &_wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &_cards{
+    padding:48px 0 80px;
+  }
+  padding: 80px 0;
+
+  .item{
+    position: relative;
+    &:first-child{
+      padding-bottom: 24px;
+    }
+  }
+  .item_info{
+    background: var(--blog_bg);
+    height: 264px;
+    margin-top: 20px;
+    border-radius: 16px 16px 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .blog_img{
+    position: absolute;
+    right: 0;
+    top: -20px;
+
+    height: 160px;
+    width: 259px;
+  }
+  h5{
+    padding: 24px 0 0 24px;
+  }
+  .article{
+    display: flex;
+    padding: 0 0 16px 12px;
+    justify-content: space-between;
+  }
+  .article_img{
+    height: 48px;
+  }
+  .article_text{
+    padding-left: 8px;
+    max-width: 270px;
+  }
+  h3{
+    padding: 0 28px 12px 0;
+  }
+  .number_bar{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 28px;
+  }
+  &_form{
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    padding: 14px 12px;
+    border: none;
+    border-radius: 22px;
+
+    background: var(--input_bg);
+    margin-bottom: 10px;
+    &:focus-visible{
+      outline: 2px solid #1B63F0;
+    }
+    }
+    input[type=email]{
+      margin-bottom: 32px;
+    }
+
+}
+@media (min-width: 768px) {
+  .blog{
+    &_wrapper{
+      max-width: 100%;
+    }
+    &_cards{
+      display: flex;
+      justify-content: space-between;
+    }
+    .number_bar{
+      padding-top: 0;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item:first-child{
+      padding-bottom: 0;
+    }
+    .blog_img{
+      top: 0;
+    }
+    .item_info{
+      margin-top: 24px;
+    }
+    &_form{
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .btn{
+      max-width: 120px;
+      margin: 0 auto;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .blog{
+    padding: 101px 0 82px;
+    .blog_img{
+      width: 100%;
+
+    }
+    .item_info{
+
+      width: 415px;
+    }
+  }
+}

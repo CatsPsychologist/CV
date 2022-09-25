@@ -1,0 +1,127 @@
+.costumers{
+
+  .costumers_img{
+    position: relative;
+    max-width: 273px;
+    max-height: 273px;
+    margin: 0 24px;
+    img{
+      transform: translate(20%, 15%);
+    }
+  }
+  .blue_bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: var(--costumer_bg);
+    border-radius: 24px;
+  }
+  h2{
+    width: 70vw;
+  }
+  .line{
+    margin-bottom: 12px;
+  }
+  .costumers_article_text{
+    svg{
+      margin: 48px 0 28px;
+    }
+  }
+  p{
+    padding-bottom: 12px;
+  }
+  h5{
+    padding-bottom: 56px;
+  }
+  .costumers_article_text{
+    padding: 0 24px;
+  }
+  .costumers_article {
+    padding: 67px 0 94px;
+    overflow: hidden;
+    position: relative;
+  }
+  .img_group{
+    z-index: -2;
+    position: absolute;
+    scale: 0.7;
+    transform: translate(-34%, 10%);
+    //height: 400px;
+
+    //right: 0;
+    //left: 0;
+    //bottom: 0;
+    //top: 150px;
+
+    //overflow: hidden;
+  }
+  //.img_light{
+  //  position: absolute;
+  //  z-index: -2;
+  //  transform: translate(-70px, 5px);
+  //  min-width: 550px;
+  //}
+  //.img_dark{
+  //  position: absolute;
+  //  z-index: -1;
+  //  transform: translate(-60px, 25px);
+  //}
+
+}
+@media (min-width: 576px) {
+  .costumers{
+    h2{
+      width: initial;
+    }
+  }
+
+
+}
+@media (min-width: 768px) {
+  .costumers{
+    .costumers_wrapper{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    .costumers_article{
+      width: 50%;
+      overflow: initial;
+      padding-top: 0;
+    }
+    .img_group{
+      transform: translate(-100%, -40%);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .costumers{
+    padding-bottom: 160px;
+    .costumers_wrapper{
+      max-width: 1024px;
+      margin: 0 auto;
+      justify-content: space-between;
+      gap: 0;
+    }
+    .costumers_img{
+      max-width: 100%;
+      max-height: 344px;
+      margin: 0 0 56px;
+    }
+    .costumers_article{
+      padding: 0;
+    }
+    .costumers_article_text{
+      padding: 0 0 0 10px;
+      max-width: 415px;
+      svg{
+        margin: 48px 0 24px;
+      }
+    }
+    .img_group{
+      scale: 1;
+      transform: translate(-91%, -18%);
+    }
+  }
+}
