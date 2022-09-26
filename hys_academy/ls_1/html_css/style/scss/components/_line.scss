@@ -13,3 +13,9 @@
   background: var(--primary_color);
 
 }
+//.caption_double{
+//  width: 100%;
+//}
+.caption_double::after{
+  right: 0;
+}

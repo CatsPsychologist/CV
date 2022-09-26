@@ -1,5 +1,4 @@
 .costumers{
-
   .costumers_img{
     position: relative;
 
@@ -23,6 +22,9 @@
   }
   h2{
     width: 70vw;
+  }
+  .caption::after{
+    right: 0;
   }
   .line{
     margin-bottom: 12px;
@@ -60,9 +62,22 @@
     h2{
       width: initial;
     }
+    .caption::after{
+      display: none;
+    }
+    .caption_double::after{
+      content: "";
+      position: absolute;
+      right: initial;
+
+      width: 60px;
+      height: 2px;
+      bottom: 12px;
+      margin-left: 24px;
+
+      background: var(--primary_color);
+    }
   }
-
-
 }
 @media (min-width: 768px) {
   .costumers{

@@ -74,7 +74,6 @@
     input[type=email]{
       margin-bottom: 28px;
     }
-
 }
 @media (min-width: 768px) {
   .blog{
@@ -113,11 +112,28 @@
   .blog{
     padding: 101px 0 82px;
     .blog_img{
-      width: 100%;
-
+      width: 328px;
+    }
+    .article{
+      justify-content: initial;
+      padding: 0 0 19px 16px;
+    }
+    .article_text{
+      padding-left: 24px;
+    }
+    .blog_cards{
+      justify-content: initial;
+    }
+    .item:nth-child(1){
+      margin-right: 20px;
+    }
+    .item:nth-child(2){
+      margin-right: 108px;
+    }
+    h5{
+      padding: 21px 0 0 32px;
     }
     .item_info{
-
       width: 415px;
     }
   }
