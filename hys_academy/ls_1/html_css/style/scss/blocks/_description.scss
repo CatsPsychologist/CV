@@ -5,50 +5,32 @@
     overflow: hidden;
 
     padding-bottom: 40px;
-    img{
+    .description_bg{
       max-width: none
     }
-  }
-  &_article{
-    padding: 0 24px;
   }
   .play_btn{
     position: absolute;
     top: 35%;
     left: 45%;
   }
-  svg{
-    transform: translate(2px)
-  }
-  .caption{
-    margin: 6px 0 24px;
-  }
-  .p{
-    padding: 12px 0 10px;
-  }
-  ul{
-    padding: 0 0 24px 20px;
-  }
-  li{
+  .article_list_item{
     padding-left: 16px;
     list-style: url("../../../assets/images/05description_dot.svg");
     &:first-child{
       padding-bottom: 12px;
     }
   }
-  .button_first{
-    padding: 12px 20px;
-  }
+  .btn_bg       {  transform: translate(2px)  }
+  .info         {  padding: 12px 0 10px;  }
+  .caption      {  margin: 6px 0 24px;  }
+  &_article     {  padding: 0 24px;  }
+  .article_list {  padding: 0 0 24px 20px;  }
 }
-@media (min-width: 1024px) {
-  .description{
-    img{
-      width: 100%;
-    }
-
-  }
+@media (min-width: $media_lg) {
+  .description .description_bg    {  width: 100%;  }
 }
-@media (min-width: 1200px) {
+@media (min-width: $media_xl) {
   .description{
     display: flex;
 
@@ -67,35 +49,31 @@
       top: 44%;
       left: 60%;
     }
-    li:first-child{
-      padding-bottom: 10px;
-    }
-    .description_article{
-      position: relative;
-    }
-    .description_article::before{
+    .description_article::before,
+    .description_article::after{
       content: '';
       position: absolute;
+
+      background: var(--description_before_bg);
+    }
+    .description_article::before{
       right: -31%;
       bottom: 47%;
 
       width: 40px;
       height: 40px;
 
-      background: var(--description_before_bg);
       border-radius: 8px;
     }
     .description_article::after{
-      content: '';
-      position: absolute;
       right: 2%;
 
       width: 32px;
       height: 32px;
 
-      background: var(--description_after_bg);
       border-radius: 50%;
     }
+    .description_article             {  position: relative;  }
+    .article_list_item:first-child   {  padding-bottom: 10px;  }
   }
-
 }

@@ -1,36 +1,23 @@
-.button_first{
+.button_primary{
   @include button(var(--primary_color),var(--text_color_secondary));
-  &:hover{
-    background:var(--primary_color_hover) ;
-  }
-  &:active{
-    background:var(--primary_color_active) ;
-  }
+  &:hover   {  background:var(--primary_color_hover);  }
+  &:active  {  background:var(--primary_color_active);  }
 }
-
-.button_second{
-  @include button(var(--primary_second_color),var(--text_color));
-  &:hover{
-    background:var(--primary_second_hover) ;
-  }
-  &:active{
-    background:var(--primary_second_active);
-  }
+.button_secondary{
+  @include button(var(--secondary_color),var(--text_color));
+  &:hover   {  background:var(--secondary_hover);  }
+  &:active  {  background:var(--secondary_active);  }
 }
-.button_third{
+.button_accent{
   @include button(none,var(--text_color_secondary));
-  &:hover{
-    background: rgba(255, 255, 255, 0.15);
-  }
+  &:hover {  background: rgba(255, 255, 255, 0.15);  }
   &:active{
     background: rgba(255, 255, 255, 0.15);
     outline: 2px solid var(--text_color_secondary);
   }
-
   outline: 1px solid var(--text_color_secondary);
-
 }
-.button_fourth{
+.button_submit{
   @include button(var(--form_send_bg),var(--text_color_secondary));
   &:hover{
     background:var(--form_send_bg_hover);
@@ -44,7 +31,6 @@
   box-shadow: 0 4px 16px rgba(75, 202, 103, 0.58);
   padding: 14px 44px;
 }
-
 .swipe_btn,
 .play_btn,
 .button_num
@@ -102,7 +88,6 @@
     background: var(--swipe_btn_active) ;
   }
 }
-
 .customer_btn{
   width: 10px;
   height: 10px;
@@ -132,4 +117,7 @@
     box-shadow: 0 4px 16px 0 #E2EDFB;
     outline: 1px solid var(--button_num_bg_active);
   }
+}
+.btn{
+  transition: $transition;
 }

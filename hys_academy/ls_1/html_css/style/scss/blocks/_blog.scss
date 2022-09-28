@@ -1,12 +1,9 @@
 .blog{
+  padding: 82px 0;
   &_wrapper{
     max-width: 400px;
     margin: 0 auto;
   }
-  &_cards{
-    padding:48px 0 80px;
-  }
-  padding: 80px 0;
   .item{
     position: relative;
     &:first-child{
@@ -24,7 +21,7 @@
 
     background: var(--blog_bg);
   }
-  .blog_img{
+  &_img{
     position: absolute;
     right: 0;
     top: -20px;
@@ -32,23 +29,14 @@
     height: 160px;
     width: 259px;
   }
-  h5{
-    padding: 24px 0 0 24px;
-  }
   .article{
     display: flex;
     justify-content: space-between;
     padding: 0 0 16px 12px;
   }
-  .article_img{
-    height: 48px;
-  }
   .article_text{
     padding-left: 8px;
     max-width: 270px;
-  }
-  h3{
-    padding: 0 28px 12px 0;
   }
   .number_bar{
     display: flex;
@@ -59,7 +47,7 @@
     display: flex;
     flex-direction: column;
   }
-  input {
+  .form_item {
     padding: 14px 12px;
     margin-bottom: 12px;
 
@@ -67,19 +55,18 @@
     border-radius: 22px;
 
     background: var(--input_bg);
-    &:focus-visible{
-      outline: 2px solid #1B63F0;
+      &:focus-visible{
+        outline: 2px solid #1B63F0;
+      }
     }
-    }
-    input[type=email]{
-      margin-bottom: 28px;
-    }
+  .article_img        {  height: 48px;  }
+  .card_name          {  padding: 24px 0 0 24px;  }
+  .card_info          {  padding: 0 28px 12px 0;  }
+  &_cards             {  padding:48px 0 80px;  }
+  .form_email         {  margin-bottom: 28px;  }
 }
-@media (min-width: 768px) {
+@media (min-width: $media_md) {
   .blog{
-    &_wrapper{
-      max-width: 100%;
-    }
     &_cards{
       display: flex;
       justify-content: space-between;
@@ -89,52 +76,30 @@
       justify-content: space-between;
       padding-top: 0;
     }
-    .item:first-child{
-      padding-bottom: 0;
-    }
-    .blog_img{
-      top: 0;
-    }
-    .item_info{
-      margin-top: 24px;
-    }
     &_form{
       max-width: 420px;
       margin: 0 auto;
     }
-    .btn{
-      max-width: 120px;
-      margin: 0 auto;
-    }
+    .btn                {  margin: 0 auto;  }
+    .blog_img           {  top: 0;  }
+     &_wrapper          {  max-width: 100%;  }
+    .item_info          {  margin-top: 24px;  }
+    .item:first-child   {  padding-bottom: 0;  }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: $media_lg) {
   .blog{
     padding: 101px 0 82px;
-    .blog_img{
-      width: 328px;
-    }
     .article{
       justify-content: initial;
       padding: 0 0 19px 16px;
     }
-    .article_text{
-      padding-left: 24px;
-    }
-    .blog_cards{
-      justify-content: initial;
-    }
-    .item:nth-child(1){
-      margin-right: 20px;
-    }
-    .item:nth-child(2){
-      margin-right: 108px;
-    }
-    h5{
-      padding: 21px 0 0 32px;
-    }
-    .item_info{
-      width: 415px;
-    }
+    .blog_img           {  width: 328px;  }
+    .article_text       {  padding-left: 24px;  }
+    .blog_cards         {  justify-content: initial;  }
+    .card_name          {  padding: 21px 0 0 32px;  }
+    .item_info          {  width: 415px;  }
+    .item:nth-child(1)  {  margin-right: 20px;  }
+    .item:nth-child(2)  {  margin-right: 108px;  }
   }
 }

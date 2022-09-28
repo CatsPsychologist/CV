@@ -42,7 +42,7 @@ h1{
   line-height: 1.22;
 }
 h2,
-nav a{
+.header_navigation .header_list_link{
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
@@ -80,6 +80,8 @@ p{
 
   color: var(--text_color_paragraph);
 }
+.explore_schedule .item_group   {  color: var(--text_color_paragraph_primary);  }
+.explore_featured .item_group   {  color: var(--text_color_paragraph_secondary);  }
 .new_price,
 .color{
   font-weight: 700;
@@ -91,37 +93,39 @@ p{
 }
 .course_swiper{
   .old_price,
-  p{
+  .star_count{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
     color: var(--text_color_secondary) ;
   }
-  h4,h3{
+  .course_name,
+  .course_description{
     color: var(--text_color_secondary);
   }
 }
-input{
+.form_item{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.44;
   color: var(--text_color_input);
 }
 .navigation{
-  h4{
+  .navigation_caption,
+  .navigation_caption_social{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
   }
-  a{
+  .list_link{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
     color: var(--text_color_footer);
   }
 }
-footer{
-  a{
+.footer{
+  .footer_list_link{
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -131,43 +135,44 @@ footer{
 .caption_primary{
   color: var(--primary_color);
 }
-.price span{
+.price .new_price, .old_price{
   color: var( --text_color_secondary);
 }
-.color_first{
-  color: var(--text_color_first);
+.color_day{
+  color: var(--text_color_day);
 }
-.color_second{
-  color: var(--text_color_second);
+.color_hour{
+  color: var(--text_color_hour);
 }
-.color_third{
-  color: var(--text_color_third);
+.color_minute{
+  color: var(--text_color_minute);
 }
-.conference_wrapper h3,
-.degrees_wrapper h3, {
+.conference_wrapper .list_caption,
+.degrees_wrapper .item_name, {
   color: var(--text_color_secondary);
 }
 .get_started_wrapper{
-  h5, h2,p{
+ .small_caption,
+ .get_started_caption,
+  p{
     color: var(--text_color_secondary);
   }
-}
-.get_started_wrapper .h2{
-  color: var(--primary_second_color);
+  .primary{
+    color: var(--secondary_color);
+  }
 }
 .button_num{
-  color: var(--text_color_fourth);
+  color: var(--button_num_color);
 }
-.blog_wrapper h5, {
+.blog_wrapper .card_name {
   writing-mode: vertical-lr;
   text-orientation: upright;
 
-  color: var(--text_color_fourth);
+  color: var(--text_color_card_name);
 }
-
 @media (min-width: 768px) {
   .header{
-    a{
+    .header_list_link{
       font-weight: 600;
       font-size: 12px;
       line-height: 1.33;

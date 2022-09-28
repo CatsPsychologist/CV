@@ -3,13 +3,17 @@
   &_left{
     padding: 20px 0 16px;
   }
-  li{
+  .footer_list{
+
     padding-bottom: 12px;
     &:last-child{
       padding-bottom: 0;
     }
-    a:hover{
-    color: #1B63F0;
+    .footer_list_link{
+      transition: $transition;
+      &:hover{
+        color: #1B63F0;
+      }
     }
   }
   &_line{
@@ -29,11 +33,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    ul{
+    .footer_list_wrapper{
       display: flex;
       gap: 10px;
     }
-    li{
+    .footer_list{
       padding-bottom: 0;
     }
   }
@@ -43,9 +47,5 @@
   }
 }
 @media (min-width: 768px) {
-  .footer_wrapper{
-    ul{
-      gap: 20px;
-    }
-  }
+  .footer_wrapper .footer_list_wrapper  {  gap: 20px;  }
 }

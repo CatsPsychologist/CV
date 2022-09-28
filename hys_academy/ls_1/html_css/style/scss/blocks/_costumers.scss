@@ -5,7 +5,7 @@
     max-width: 273px;
     max-height: 273px;
     margin: 0 24px;
-    img{
+    .customers_photo{
       transform: translate(20%, 15%);
     }
   }
@@ -20,29 +20,6 @@
 
     border-radius: 24px;
   }
-  h2{
-    width: 70vw;
-  }
-  .caption::after{
-    right: 0;
-  }
-  .line{
-    margin-bottom: 12px;
-  }
-  .costumers_article_text{
-    svg{
-      margin: 48px 0 28px;
-    }
-  }
-  p{
-    padding-bottom: 12px;
-  }
-  h5{
-    padding-bottom: 56px;
-  }
-  .costumers_article_text{
-    padding: 0 24px;
-  }
   .costumers_article {
     position: relative;
     overflow: hidden;
@@ -56,16 +33,17 @@
     scale: 0.7;
     transform: translate(-34%, 10%);
   }
+  .text                         {  padding-bottom: 12px;  }
+  .caption_secondary            {  inline-size: 75%;  }
+  .costumer_name                {  padding-bottom: 56px;  }
+  .line                         {  margin-bottom: 12px;  }
+  .caption::after               {  right: 0;  }
+  .costumers_article_text       {  padding: 0 24px;  }
+  .costumers_article_text .icon_quote {  margin: 48px 0 28px;  }
  }
-@media (min-width: 576px) {
+@media (min-width: $media_sm) {
   .costumers{
-    h2{
-      width: initial;
-    }
-    .caption::after{
-      display: none;
-    }
-    .caption_double::after{
+    .caption_secondary::after{
       content: "";
       position: absolute;
       right: initial;
@@ -77,9 +55,11 @@
 
       background: var(--primary_color);
     }
+    .caption_secondary  {  width: initial;  }
+    .caption::after     {  display: none;  }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: $media_md) {
   .costumers{
     .costumers_wrapper{
       display: flex;
@@ -91,12 +71,10 @@
       overflow: initial;
       padding-top: 0;
     }
-    .img_group{
-      transform: translate(-100%, -40%);
-    }
+    .img_group  {  transform: translate(-100%, -40%);  }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: $media_lg) {
   .costumers{
     padding-bottom: 160px;
     .costumers_wrapper{
@@ -110,13 +88,10 @@
       max-height: 344px;
       margin: 0 0 56px;
     }
-    .costumers_article{
-      padding: 0;
-    }
     .costumers_article_text{
       padding: 0 0 0 10px;
       max-width: 415px;
-      svg{
+      .icon_quote{
         margin: 48px 0 24px;
       }
     }
@@ -124,5 +99,6 @@
       scale: 1;
       transform: translate(-91%, -18%);
     }
+    .costumers_article  {  padding: 0;  }
   }
 }

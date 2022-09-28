@@ -1,16 +1,9 @@
 .course{
-  h4, h2{
-    text-align: center;
-  }
-  h2{
-    padding: 6px 0 30px;
-  }
   &_swiper_wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-
   }
   .swiper-slide{
     position: relative;
@@ -47,17 +40,11 @@
     display: flex;
     align-items: center;
   }
-  .left{
-    gap: 10px;
-  }
-  p{
-    padding-left: 4px;
-  }
-  h3{
+  .course_description{
     display: flex;
     padding: 8px 0 16px 16px;
   }
-  h3::after{
+  .course_description::after{
     content: '';
     position: absolute;
     bottom: 60px;
@@ -71,11 +58,11 @@
     opacity: 0.3;
   }
   .swiper-slide{
-     h4{
+     .course_name{
       padding-left: 16px;
     }
   }
-  img{
+  .course_bg{
     border-radius: 8px;
     &:first-child{
       min-height: 364px;
@@ -85,42 +72,30 @@
   .hide_mobile{
     display: none;
   }
+  .left           {  gap: 10px;  }
+  .star_count     {  padding-left: 4px;  }
+  .course_intro   {  padding: 6px 0 30px;  }
+  .course_intro,
+  .course_name,
+  .caption_primary{  text-align: center;  }
 }
-@media (min-width: 768px) {
+@media (min-width: $media_md) {
   .course{
-    .hide_mobile{
-     display: initial;
-    }
-    .hide_tablet{
-      display: none;
-    }
+    .hide_mobile  {  display: initial;  }
+    .hide_tablet  {  display: none;  }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: $media_lg) {
   .course{
     background-image: url("../../../assets/images/04_course_bg.png");
     background-repeat: no-repeat;
     background-position-x: -100%;
-    h2{
-      padding-bottom: 55px;
-    }
-    .hide_mobile{
-      display: initial;
-    }
-    .profile{
-     left: 24px;
-    }
-    &_swiper_wrapper{
-      gap: 20px;
-    }
-    .price{
-      padding: 16px 25px 20px 16px;
-    }
-    .star_group{
-      gap: 3px;
-    }
-    h3{
-      padding: 9px 0 16px 17px;
-    }
+    .price                {  padding: 16px 25px 20px 16px;  }
+    .profile              {  left: 24px;  }
+    .hide_mobile          {  display: initial;  }
+    .star_group           {  gap: 3px;  }
+    .course_intro         {  padding-bottom: 55px;  }
+    &_swiper_wrapper      {  gap: 20px;  }
+    .course_description   {  padding: 9px 0 16px 17px;  }
   }
 }

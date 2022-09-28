@@ -7,13 +7,12 @@
   padding: 24px 0;
 
   background: var( --header_bg);
+
+  transition: $transition;
   &_wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .desktop, nav{
-    display: none;
   }
   .logo_burger{
     z-index: 1;
@@ -22,39 +21,35 @@
     align-items: center;
     position: relative;
     gap: 18px;
-
-    a{
+    .logo_link{
       display: flex;
       align-items: center;
     }
   }
-
-  nav{
+  .header_navigation{
     position: absolute;
     top: 0;
     left: 0;
 
     width: 100vw;
-    padding: 150px 24px 65px;
+    padding: 150px 24px 0;
 
+    box-shadow: 0 4px 8px 0 rgb(34 60 80 / 47%);
     background: var(--header_nav_bg);
   }
-  ul{
+  .header_list{
     width: 100%;
-  }
-  ul{
     display: flex;
     flex-direction: column;
     gap: 33px;
   }
-  li{
+  .header_list_item{
     position: relative;
 
     display: flex;
     flex-direction: column;
-    padding-bottom: 32px;
   }
-  li::after{
+  .header_list_item::after{
     position: absolute;
     content: '';
     bottom: 0;
@@ -66,37 +61,28 @@
 
     opacity: 0.2;
   }
-  li:last-child::after{
-    display: none;
+  .header_list_link {
+    padding-bottom: 32px;
+
+    transition: $transition;
   }
+  &_primary                            {  padding: 12px 0;  }
+  .desktop, .header_navigation         {  display: none;  }
+  .header_list_item:last-child::after  {  display: none;  }
 }
-@media (min-width: 768px){
+@media (min-width: $media_md){
   .header{
-    .mobile,
-    .mobile_close,
-    .header_line,
-    .close{
-      display: none;
-    }
-    .desktop{
-      display: initial;
-    }
-    nav{
+    .header_navigation{
       display: flex;
       align-items: center;
       position: initial;
       width: 100%;
       padding: 0;
 
+      box-shadow: none;
       background: none;
     }
-    li{
-      padding: 0;
-    }
-    li::after{
-      display: none;
-    }
-    ul{
+    .header_list{
       display: flex;
       align-items: center;
       flex-direction: row;
@@ -104,10 +90,20 @@
       gap: 20px;
       padding-right: 40px;
     }
+    .header_wrapper{
+      .menu-button,
+      .mobile,
+      .mobile_close,
+      .header_line,
+      .close      {  display: none;  }
+    }
+    .desktop                  {  display: initial;  }
+    .header_list_link         {  padding: 0;  }
+    .header_list_item::after  {  display: none;  }
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $media_lg) {
   .header_wrapper{
     max-width: 850px;
     margin: 0 auto;
