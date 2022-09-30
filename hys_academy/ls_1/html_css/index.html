@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header_wrapper">
             <input class="mobile" id="menu-toggle" type="checkbox">
@@ -25,8 +25,8 @@
                 </a>
             </div>
 
-            <nav class="header_navigation" id="header_nav">
-                <ul class="header_list">
+            <nav class="header_navigation" >
+                <ul class="header_list" id="header_list">
                     <li class="header_list_item">
                         <a class="header_list_link" href="#categories">Categories</a>
                     </li>
@@ -139,7 +139,7 @@
 
                 <div class="course_swiper">
                     <div class="course_swiper_wrapper">
-                        <button class="swipe_btn">
+                        <button class="swipe_btn btn">
                             <div class="button_arrow left"></div>
                         </button>
                         <div class="swiper-slide">
@@ -247,7 +247,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="swipe_btn">
+                        <button class="swipe_btn btn">
                             <div class="button_arrow right"></div>
                         </button>
                     </div>
@@ -260,7 +260,7 @@
     <section  class="description">
         <div class="description_video">
             <img class="description_bg" src="../assets/images/05description_bg.png" alt="two girls image">
-            <button class="play_btn">
+            <button class="play_btn btn">
                 <svg class="btn_bg" width="14" height="18">
                     <use href="../assets/images/00_sprite.svg#play_btn"></use>
                 </svg>
@@ -289,6 +289,7 @@
     </section >
 
     <section  class="explore" id="explore">
+        <div class="explore_external_bg"></div>
         <div class="explore_wrapper">
             <div class="explore_schedule">
                 <div class="explore_schedule_wrapper">
@@ -457,7 +458,7 @@
                 <p class="degree_article">Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 <div class="degrees_swiper">
                     <div class="degrees_swiper-wrapper">
-                        <button class="swipe_btn">
+                        <button class="swipe_btn btn">
                             <div class="button_arrow left"></div>
                         </button>
                         <a href="#" class="swiper-slide">
@@ -480,7 +481,7 @@
                             <div class="background bg_education"></div>
                             <h3 class="item_name">Education</h3>
                         </a>
-                        <button class="swipe_btn">
+                        <button class="swipe_btn btn">
                             <div class="button_arrow right"></div>
                         </button>
                     </div>
@@ -522,11 +523,11 @@
                         Stephanie Magion
                     </h5>
                     <div class="sircles_group">
-                        <button class="customer_btn"></button>
-                        <button class="customer_btn"></button>
-                        <button class="customer_btn customer_active"></button>
-                        <button class="customer_btn"></button>
-                        <button class="customer_btn"></button>
+                        <button class="customer_btn btn"></button>
+                        <button class="customer_btn btn"></button>
+                        <button class="customer_btn customer_active btn"></button>
+                        <button class="customer_btn btn"></button>
+                        <button class="customer_btn btn"></button>
                     </div>
                 </div>
             </div>
@@ -640,11 +641,11 @@
                         </div>
                     </div>
                     <div class="number_bar">
-                        <button class="button_num">1</button>
-                        <button class="button_num">2</button>
-                        <button class="button_num active">3</button>
-                        <button class="button_num">4</button>
-                        <button class="button_num">5</button>
+                        <button class="button_num btn">1</button>
+                        <button class="button_num btn">2</button>
+                        <button class="button_num active btn">3</button>
+                        <button class="button_num btn">4</button>
+                        <button class="button_num btn">5</button>
                     </div>
                 </div>
                 <form class="blog_form" id="form">
@@ -652,7 +653,7 @@
                     <label for="user_name"></label>
                     <input class="form_item" id="user_phone" name="user_phone" type="tel" placeholder="Phone">
                     <label for="user_phone"></label>
-                    <input class="form_item form_email" id="user_phone" name="user_email"  type="email" placeholder="Enter your email...">
+                    <input class="form_item form_email" id="user_email" name="user_email"  type="email" placeholder="Enter your email...">
                     <label for="user_phone"></label>
                     <button class="button_submit btn" type="submit">Send</button>
                 </form>
@@ -664,7 +665,7 @@
         <div class="container">
             <div class="navigation_wrapper">
                 <a class="nav_logo" href="">
-                    <svg class="logo" width="72" height="32">
+                    <svg class="logo" width="54" height="24">
                         <use href="../assets/images/00_sprite.svg#icon-header_logo"></use>
                     </svg>
                 </a>

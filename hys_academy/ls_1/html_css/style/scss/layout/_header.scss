@@ -6,8 +6,6 @@
 
   padding: 24px 0;
 
-  background: var( --header_bg);
-
   transition: $transition;
   &_wrapper{
     display: flex;
@@ -37,12 +35,7 @@
     box-shadow: 0 4px 8px 0 rgb(34 60 80 / 47%);
     background: var(--header_nav_bg);
   }
-  .header_list{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 33px;
-  }
+
   .header_list_item{
     position: relative;
 
@@ -62,11 +55,16 @@
     opacity: 0.2;
   }
   .header_list_link {
-    padding-bottom: 32px;
+    padding: 32px 0;
 
     transition: $transition;
   }
-  &_primary                            {  padding: 12px 0;  }
+  &_primary {
+    padding: 12px 0;
+
+    background: var( --header_bg);
+  }
+  .header_list                         {  width: 100%;  }
   .desktop, .header_navigation         {  display: none;  }
   .header_list_item:last-child::after  {  display: none;  }
 }

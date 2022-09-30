@@ -41,7 +41,7 @@
   .home{
     .image_group{
       justify-content: end;
-      width: 100%;
+      width: 135%;
     }
     .article_text         { max-width: 100%; }
     .article              {  padding: 100px 0 0 24px;  }
@@ -60,6 +60,8 @@
     .image_group{
       position: absolute;
       right: 0;
+
+      width: 100%;
       .home_bg:first-child{
         max-width: 100%;
         padding: 0;

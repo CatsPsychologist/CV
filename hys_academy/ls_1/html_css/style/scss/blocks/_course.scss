@@ -7,12 +7,18 @@
   }
   .swiper-slide{
     position: relative;
-    padding-top: 24px;
+
+    transition: $transition;
+    &:hover{
+      box-shadow: 0 6px 20px 0 #1B63F066;
+      border-radius: 8px;
+    }
   }
   .profile{
     position: absolute;
     top: 0;
     left: 16px;
+    transform: translateY(-50%);
   }
   .article{
     position: absolute;
@@ -94,7 +100,7 @@
     .profile              {  left: 24px;  }
     .hide_mobile          {  display: initial;  }
     .star_group           {  gap: 3px;  }
-    .course_intro         {  padding-bottom: 55px;  }
+    .course_intro         {  padding-bottom: 80px;  }
     &_swiper_wrapper      {  gap: 20px;  }
     .course_description   {  padding: 9px 0 16px 17px;  }
   }

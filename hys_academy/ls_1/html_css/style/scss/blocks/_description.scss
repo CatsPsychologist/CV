@@ -28,23 +28,24 @@
   .article_list {  padding: 0 0 24px 20px;  }
 }
 @media (min-width: $media_lg) {
-  .description .description_bg    {  width: 100%;  }
+  //.description .description_bg    {  width: 100%;  }
+  .description{
+    display: flex;
+    &_article{
+      padding:56px 0 0 ;
+      max-width: 415px;
+    }
+    &_bg  {  width: 90%;  }
+  }
 }
 @media (min-width: $media_xl) {
   .description{
-    display: flex;
+    overflow: hidden;
 
     margin: 0 auto;
     max-width: 1440px;
 
     padding: 64px 0 100px;
-    &_video{
-      padding: 0 116px 0 0;
-    }
-    &_article{
-      max-width: 415px;
-      padding:56px 0 0 ;
-    }
     .play_btn{
       top: 44%;
       left: 60%;
@@ -73,7 +74,9 @@
 
       border-radius: 50%;
     }
-    .description_article             {  position: relative;  }
+    &_bg                             {  width: 100%;  }
+    &_video                          {  padding: 0 116px 0 0;  }
+    &_article                        {  position: relative;  }
     .article_list_item:first-child   {  padding-bottom: 10px;  }
   }
 }
