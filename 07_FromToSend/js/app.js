@@ -17,7 +17,7 @@ button.addEventListener("click", buttonHandler);
 function inputHandler({target}){
     if(target.hasAttribute("data-reg")){
         inputCheck(target);
-        // console.log(target)
+        console.log(target)
     }
 }
 
@@ -43,6 +43,7 @@ function inputCheck(el){
 }
 
 function buttonHandler(e) {
+
     const isAllValid = [];
     validInputArr.forEach(value => {
         isAllValid.push(value.getAttribute("is-valid"))

@@ -5,7 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link rel="stylesheet" href="style/css/style.min.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -138,120 +141,236 @@
                 <h2 class="course_intro">2000+ Online courses</h2>
 
                 <div class="course_swiper">
+<!--                    <button class="swipe_btn btn ">-->
+<!--                        <div class="button_arrow left"></div>-->
+<!--                    </button>-->
                     <div class="course_swiper_wrapper">
-                        <button class="swipe_btn btn">
-                            <div class="button_arrow left"></div>
-                        </button>
                         <div class="swiper-slide">
-                            <img class="course_bg" src="../assets/images/04course_design.jpg" alt="design course image" width="271">
-                            <img class="profile" src="../assets/images/04course_design_small_img.png" alt="profile image" width="49">
-                            <div class="article">
-                                <h4 class="course_name">DESIGN</h4>
-                                <h3 class="course_description">Learn Photoshop title</h3>
-                                <div class="line_solid"></div>
-                                <div class="price">
-                                    <div class="left">
-                                        <span class="new_price">$260</span>
-                                        <span class="old_price">$360</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="star_group">
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_not"></use>
-                                            </svg>
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_design.jpg" alt="design course image" width="271">
+                                <img class="profile" src="../assets/images/04course_design_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">DESIGN</h4>
+                                    <h3 class="course_description">Learn Photoshop title</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
                                         </div>
-                                        <p class="star_count">(4)</p>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide hide_mobile">
-                            <img class="course_bg" src="../assets/images/04course_marketing.jpg" alt="marketing course image" width="271">
-                            <img class="profile" src="../assets/images/04course_marketing_small_img.png" alt="profile image" width="49">
-                            <div class="article">
-                                <h4 class="course_name">Marketing</h4>
-                                <h3 class="course_description">Learn Photoshop title trun...</h3>
-                                <div class="line_solid"></div>
-                                <div class="price">
-                                    <div class="left">
-                                        <span class="new_price">$260</span>
-                                        <span class="old_price">$360</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="star_group">
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_not"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_not"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_not"></use>
-                                            </svg>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_marketing.jpg" alt="marketing course image" width="271">
+                                <img class="profile" src="../assets/images/04course_marketing_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">Marketing</h4>
+                                    <h3 class="course_description">Learn Photoshop title trun...</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
                                         </div>
-                                        <p class="star_count">(4)</p>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide hide_mobile hide_tablet">
-                            <img class="course_bg" src="../assets/images/04course_web_design.jpg" alt="web design course image" width="271">
-                            <img class="profile" src="../assets/images/04course_web_small_img.png" alt="profile image" width="49">
-                            <div class="article">
-                                <h4 class="course_name">Web design</h4>
-                                <h3 class="course_description">Learn Photoshop</h3>
-                                <div class="line_solid"></div>
-                                <div class="price">
-                                    <div class="left">
-                                        <span class="new_price">$260</span>
-                                        <span class="old_price">$360</span>
-                                    </div>
-                                    <div class="right">
-                                        <div class="star_group">
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
-                                            <svg width="9" height="10">
-                                                <use href="../assets/images/00_sprite.svg#star_active"></use>
-                                            </svg>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_web_design.jpg" alt="web design course image" width="271">
+                                <img class="profile" src="../assets/images/04course_web_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">Web design</h4>
+                                    <h3 class="course_description">Learn Photoshop</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
                                         </div>
-                                        <p class="star_count">(4)</p>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="swipe_btn btn">
-                            <div class="button_arrow right"></div>
-                        </button>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_design.jpg" alt="design course image" width="271">
+                                <img class="profile" src="../assets/images/04course_design_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">DESIGN</h4>
+                                    <h3 class="course_description">Learn Photoshop title</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
+                                        </div>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_marketing.jpg" alt="marketing course image" width="271">
+                                <img class="profile" src="../assets/images/04course_marketing_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">Marketing</h4>
+                                    <h3 class="course_description">Learn Photoshop title trun...</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
+                                        </div>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_not"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrapper">
+                                <img class="course_bg" src="../assets/images/04course_web_design.jpg" alt="web design course image" width="271">
+                                <img class="profile" src="../assets/images/04course_web_small_img.png" alt="profile image" width="49">
+                                <div class="article">
+                                    <h4 class="course_name">Web design</h4>
+                                    <h3 class="course_description">Learn Photoshop</h3>
+                                    <div class="line_solid"></div>
+                                    <div class="price">
+                                        <div class="left">
+                                            <span class="new_price">$260</span>
+                                            <span class="old_price">$360</span>
+                                        </div>
+                                        <div class="right">
+                                            <div class="star_group">
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                                <svg width="9" height="10">
+                                                    <use href="../assets/images/00_sprite.svg#star_active"></use>
+                                                </svg>
+                                            </div>
+                                            <p class="star_count">(4)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
+<!--                    <button class="swipe_btn btn">-->
+<!--                        <div class="button_arrow right"></div>-->
+<!--                    </button>-->
                 </div>
             </div>
         </div>
@@ -456,41 +575,24 @@
                 </div>
 
                 <p class="degree_article">Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                <div class="degrees_swiper">
-                    <div class="degrees_swiper-wrapper">
-                        <button class="swipe_btn btn">
-                            <div class="button_arrow left"></div>
-                        </button>
-                        <a href="#" class="swiper-slide">
-                            <img class="item_bg" src="../assets/images/07degrees_graphic_design.jpg" alt="graphic design image" width="200" height="200">
-                            <div class="background bg_graphic"></div>
-                            <h3 class="item_name">Graphic Design</h3>
-                        </a>
-                        <a href="#" class="swiper-slide hide_mobile">
-                            <img class="item_bg" src="../assets/images/07degrees_web_design.jpg" alt="graphic design image" width="200" height="200">
-                            <div class="background bg_web"></div>
-                            <h3 class="item_name">Web Design</h3>
-                        </a>
-                        <a href="#" class="swiper-slide hide_mobile hide_tablet">
-                            <img class="item_bg" src="../assets/images/07degrees_marketing.jpg" alt="graphic design image" width="200" height="200">
-                            <div class="background bg_marketing"></div>
-                            <h3 class="item_name">Marketing</h3>
-                        </a>
-                        <a href="#" class="swiper-slide hide_mobile hide_tablet">
-                            <img class="item_bg" src="../assets/images/07degrees_education.jpg" alt="graphic design image" width="200" height="200">
-                            <div class="background bg_education"></div>
-                            <h3 class="item_name">Education</h3>
-                        </a>
-                        <button class="swipe_btn btn">
-                            <div class="button_arrow right"></div>
-                        </button>
-                    </div>
+                <div class="degrees_select">
+                    <button class="degrees_btn" id="degrees_btn" onclick="showHide()">Label <span class="degrees_arrow" id="degrees_arrow"></span></button>
+                    <ul class="select_menu" id="select_menu"  onclick="showHide()">
 
+                    </ul>
+                </div>
+                <div class="degrees_slider">
+                    <button class="swipe_btn btn" id="btn_prev">
+                        <div class="button_arrow left"></div>
+                    </button>
+                    <div class="degrees_slider_wrapper" id="degrees_slider_wrapper">
+
+                    </div>
+                    <button class="swipe_btn btn"  id="btn_next">
+                        <div class="button_arrow right"></div>
+                    </button>
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev btn"></div>
-                    <div class="swiper-button-next btn"></div>
                 </div>
             </div>
         </div>
@@ -610,52 +712,21 @@
             <div class="blog_wrapper">
                 <h2 class="caption">Latest Blog</h2>
                 <div class="blog_cards">
-                    <div class="item">
-                        <img class="blog_img" src="../assets/images/10blog_item2.jpg" alt="design image" width="328">
-                        <div class="item_info">
-                            <h5 class="card_name">DESIGN</h5>
-                            <div class="article">
-                                <img class="article_img" src="../assets/images/10blog_small.png" alt="man image" width="48">
-                                <div class="article_text">
-                                    <h3 class="card_info">
-                                        International Conference on Bussiness
-                                    </h3>
-                                    <a href="" class="h5">Read Now</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="blog_items" id="blog_items">
+
                     </div>
-                    <div class="item">
-                        <img class="blog_img" src="../assets/images/10blog_item1.jpg" alt="design image" width="328">
-                        <div class="item_info">
-                            <h5 class="card_name">DESIGN</h5>
-                            <div class="article">
-                                <img class="article_img" src="../assets/images/10blog_small1.png" alt="man image" width="48">
-                                <div class="article_text">
-                                    <h3 class="card_info">
-                                        International Conference on Bussiness
-                                    </h3>
-                                    <a href="" class="h5">Read Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="number_bar">
-                        <button class="button_num btn">1</button>
-                        <button class="button_num btn">2</button>
-                        <button class="button_num active btn">3</button>
-                        <button class="button_num btn">4</button>
-                        <button class="button_num btn">5</button>
+                    <div class="number_bar" id="number_bar">
+
                     </div>
                 </div>
                 <form class="blog_form" id="form">
                     <input class="form_item" id="user_name" name="user_name" type="text" placeholder="Name Surname">
                     <label for="user_name"></label>
-                    <input class="form_item" id="user_phone" name="user_phone" type="tel" placeholder="Phone">
+                    <input class="form_item" id="user_phone" name="user_phone" type="tel" placeholder="Phone" pattern="^(0|[0-9][0-9]*)$" minlength="9">
                     <label for="user_phone"></label>
                     <input class="form_item form_email" id="user_email" name="user_email"  type="email" placeholder="Enter your email...">
                     <label for="user_phone"></label>
-                    <button class="button_submit btn" type="submit">Send</button>
+                    <button class="button_submit btn" id="submit_btn" type="submit" >Send</button>
                 </form>
             </div>
         </div>
@@ -791,7 +862,12 @@
     </div>
 </footer>
 
-<script src="../js/mobile-menu.js"></script>
-<script src="../js/header-feature.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="js/selector-click.js"></script>
+
+<script src="js/index.js" type="module"></script>
+
 </body>
 </html>

@@ -33,7 +33,8 @@
 }
 .swipe_btn,
 .play_btn,
-.button_num
+.button_num,
+.slick-arrow
 {
   display: flex;
   justify-content: center;
@@ -45,13 +46,18 @@
   border: none;
   cursor: pointer;
 }
+.slick-arrow{
+  font-size: 0;
+  padding: 20px;
+}
 .button_arrow{
   border: solid var(--swipe_btn_color);
   border-width: 0 3px 3px 0;
   padding: 3px;
   border-radius: 2px;
 }
-.swipe_btn{
+.swipe_btn,
+.slick-arrow{
   box-shadow: 0 4px 16px var(--swipe_btn_shadow);
   border-radius: 20px;
   background: var(--swipe_btn_bg);
@@ -118,6 +124,19 @@
     outline: 1px solid var(--button_num_bg_active);
   }
 }
-.btn{
+.btn,
+.slick-arrow{
   transition: $transition;
 }
+.degrees_btn {
+  position: relative;
+  text-align: start;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+  background: var(--degree_btn_bg);
+}
+
+
