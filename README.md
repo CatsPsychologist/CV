@@ -2,26 +2,24 @@ Hello!
 
 My name is Artem Cherednychenko and you are welcome to my projects!
 
-1. Previous Portfolio Web-Site I made it before joining HYS Academy:
+Previous Portfolio Web-Site I made it before joining HYS Academy:
 https://catspsychologist.github.io/CV/Portfolio/
 
 Layouts
 
-2. Layout made with : HTML,CSS,SCSS
+1. Layout made with : HTML,CSS,SCSS
 https://catspsychologist.github.io/CV/01_Layout/
-3. Layout made with : Bootstrap,HTML,CSS,SCSS
+2. Layout made with : Bootstrap,HTML,CSS,SCSS
 https://catspsychologist.github.io/CV/02_Bootstrap/
-4. Simple layout I made within 6 hours as an interview task
+3. Simple layout I made within 6 hours as an interview task
 https://catspsychologist.github.io/CV/03_InterviewTask/
 
 JavaScript/Angular
 
-5. Calculator using JS
+4. Project made with : HTML,SCSS,TS,WEBPACK
+https://catspsychologist.github.io/CV/04_Hys_Project/
 
-6. ToDo List 
+5. Angular Project I am currently working at while stydying at 
+HYS Academy
+https://github.com/CatsPsychologist/Hys_Angular
 
-7. Slider made using "Swiper" technology
-https://catspsychologist.github.io/CV/06_Slider/
-8. Feedback form that sends user information to your email
-https://catspsychologist.github.io/CV/07_FromToSend/
-9. Web API
