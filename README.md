@@ -19,7 +19,7 @@ JavaScript/Angular
 4. Project made with : HTML,SCSS,TS,WEBPACK
 https://catspsychologist.github.io/CV/04_Hys_Project/
 
-5. Angular Project I am currently working at while stydying at 
+5. Angular Project I am currently working at while studying at 
 HYS Academy
 https://github.com/CatsPsychologist/Hys_Angular
 
