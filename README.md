@@ -2,7 +2,7 @@ Hello!
 
 My name is Artem Cherednychenko and you are welcome to my projects!
 
-1. Main Portfolio Web-Site:
+1. Previous Portfolio Web-Site I made it before joining HYS Academy:
 https://catspsychologist.github.io/CV/Portfolio/
 
 Layouts
@@ -14,7 +14,7 @@ https://catspsychologist.github.io/CV/02_Bootstrap/
 4. Simple layout I made within 6 hours as an interview task
 https://catspsychologist.github.io/CV/03_InterviewTask/
 
-JavaScript
+JavaScript/Angular
 
 5. Calculator using JS
 
