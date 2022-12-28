@@ -1,6 +1,6 @@
 Hello!
 
-You are welcome to my CV
+My name is Artem Cherednychenko and you are welcome to my projects!
 
 1. Main Portfolio Web-Site:
 https://catspsychologist.github.io/CV/Portfolio/
