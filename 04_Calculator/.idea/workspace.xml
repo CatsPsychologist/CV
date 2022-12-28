@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14fa430d-4fda-4733-b377-3a5125cff2fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05_ToDoList/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../05_ToDoList/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05_ToDoList/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../05_ToDoList/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05_ToDoList/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Portfolio/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio/js/app.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2C9p0aaz9evokR4HbdliqCip1yn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Portfolio" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14fa430d-4fda-4733-b377-3a5125cff2fb" name="Default Changelist" comment="" />
+      <created>1658224433051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658224433051</updated>
+      <workItem from="1658224434146" duration="6640000" />
+      <workItem from="1658246449910" duration="6154000" />
+      <workItem from="1658293783706" duration="1835000" />
+      <workItem from="1658305952005" duration="86000" />
+      <workItem from="1658306098599" duration="27000" />
+      <workItem from="1658345695286" duration="5915000" />
+      <workItem from="1658385943041" duration="65000" />
+      <workItem from="1658832326717" duration="943000" />
+      <workItem from="1658846216336" duration="10000" />
+      <workItem from="1659700242196" duration="1620000" />
+      <workItem from="1659934722154" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
