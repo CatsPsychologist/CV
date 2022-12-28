@@ -1,0 +1,12 @@
+.caption       {  position: relative;  }
+.caption::after{
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 2px;
+  bottom: 8px;
+  margin-left: 24px;
+
+  background: var(--primary_color);
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("./../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Semi Bold"), local("Montserrat-SemiBold"), url("./../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("./../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("./../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  transition: 1s;
+  font-family: Montserrat;
+  color: var(--text_color);
+}
+.btn{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+}
+a{
+  color: var(--text_color);
+}
+h1{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+h2,
+.header_navigation .header_list_link{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+}
+h3,
+.button_num{
+  font-weight: 600;
+  font-size: 16px;
+  line-height:1.5;
+}
+h4{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.0;
+}
+h5,
+.blog_link{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+}
+// FEATURED word
+h6{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.4em;
+
+  color: var(--featured_color);
+}
+p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+
+  color: var(--text_color_paragraph);
+}
+.explore_schedule .item_group   {  color: var(--text_color_paragraph_primary);  }
+.explore_featured .item_group   {  color: var(--text_color_paragraph_secondary);  }
+.new_price,
+.color{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.old_price{
+  text-decoration: line-through;
+}
+.course_swiper{
+  .old_price,
+  .star_count{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--text_color_secondary) ;
+  }
+  .course_name,
+  .course_description{
+    color: var(--text_color_secondary);
+  }
+}
+.form_item{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.44;
+  color: var(--text_color_input);
+}
+.navigation{
+  .navigation_caption,
+  .navigation_caption_social{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .list_link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--text_color_footer);
+  }
+}
+.footer{
+  .footer_list_link{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--text_color_footer);
+  }
+}
+.caption_primary{
+  color: var(--primary_color);
+}
+.price .new_price, .old_price{
+  color: var( --text_color_secondary);
+}
+.color_day{
+  color: var(--text_color_day);
+}
+.color_hour{
+  color: var(--text_color_hour);
+}
+.color_minute{
+  color: var(--text_color_minute);
+}
+.conference_wrapper .list_caption,
+.degrees_wrapper .item_name, {
+  color: var(--text_color_secondary);
+}
+.get_started_wrapper{
+ .small_caption,
+ .get_started_caption,
+  p{
+    color: var(--text_color_secondary);
+  }
+  .primary{
+    color: var(--secondary_color);
+  }
+}
+.button_num{
+  color: var(--button_num_color);
+}
+.blog_wrapper .card_name {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+
+  color: var(--text_color_card_name);
+}
+@media (min-width: 768px) {
+  .header{
+    .header_list_link{
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.33;
+      color: var(--text_color_secondary);
+      &:hover{
+        color: var(--primary_color);
+      }
+    }
+  }
+}
+.degrees_btn {
+  color: var(--text_color_paragraph);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.select_menu .select_item {
+  color: var(--degree_select_color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
