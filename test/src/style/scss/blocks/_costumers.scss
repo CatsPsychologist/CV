@@ -1,0 +1,104 @@
+.costumers{
+  .costumers_img{
+    position: relative;
+
+    max-width: 273px;
+    max-height: 273px;
+    margin: 0 24px;
+    .customers_photo{
+      transform: translate(20%, 15%);
+    }
+  }
+  .blue_bg{
+    position: absolute;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    background: var(--costumer_bg);
+
+    border-radius: 24px;
+  }
+  .costumers_article {
+    position: relative;
+    overflow: hidden;
+
+    padding: 67px 0 94px;
+  }
+  .img_group{
+    position: absolute;
+    z-index: -2;
+
+    scale: 0.7;
+    transform: translate(-34%, 10%);
+  }
+  .text                         {  padding-bottom: 12px;  }
+  .caption_secondary            {  inline-size: 75%;  }
+  .costumer_name                {  padding-bottom: 56px;  }
+  .line                         {  margin-bottom: 12px;  }
+  .caption::after               {  right: 0;  }
+  .costumers_article_text       {  padding: 0 24px;  }
+  .costumers_article_text .icon_quote {  margin: 48px 0 28px;  }
+ }
+@media (min-width: $media_sm) {
+  .costumers{
+    .caption_secondary::after{
+      content: "";
+      position: absolute;
+      right: initial;
+
+      width: 60px;
+      height: 2px;
+      bottom: 12px;
+      margin-left: 24px;
+
+      background: var(--primary_color);
+    }
+    .caption_secondary  {  width: initial;  }
+    .caption::after     {  display: none;  }
+  }
+}
+@media (min-width: $media_md) {
+  .costumers{
+    .costumers_wrapper{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    .costumers_article{
+      width: 50%;
+      overflow: initial;
+      padding-top: 0;
+    }
+    .img_group  {  transform: translate(-100%, -40%);  }
+  }
+}
+@media (min-width: $media_lg) {
+  .costumers{
+    padding-bottom: 160px;
+    .costumers_wrapper{
+      justify-content: space-between;
+      max-width: 1024px;
+      margin: 0 auto;
+      gap: 0;
+    }
+    .costumers_img{
+      max-width: 100%;
+      max-height: 344px;
+      margin: 0 0 56px;
+    }
+    .costumers_article_text{
+      padding: 0 0 0 10px;
+      max-width: 415px;
+      .icon_quote{
+        margin: 48px 0 24px;
+      }
+    }
+    .img_group{
+      scale: 1;
+      transform: translate(-91%, -18%);
+    }
+    .costumers_article  {  padding: 0;  }
+  }
+}

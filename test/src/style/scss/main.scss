@@ -1,0 +1,28 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/media_variables";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/container";
+@import "layout/footer";
+
+// it's only 1 page layout so instead of pages I have separate blocks
+@import "blocks/home";
+@import "blocks/categories";
+@import "blocks/course";
+@import "blocks/description";
+@import "blocks/explore";
+@import "blocks/degrees";
+@import "blocks/costumers";
+@import "blocks/get_started";
+@import "blocks/_blog";
+@import "blocks/navigation";
+
+@import "components/buttons";
+@import "components/logo";
+@import "components/line";
+@import "components/burger_menu";
+
