@@ -1,0 +1,18 @@
+:root{
+    --header-bg:  #181818;
+    --header-burger-color: #DADADA;
+
+    --primary-color: #FFC700;
+
+    --text-color: #FFFFFF;
+    --secondary-text-color: #272727;
+
+    --btn-text-color:#0D0C11;
+    --btn-active-bg: #DADADA;
+    --btn-active-color: #8E8E8E;
+
+    --product-text-color:#181818;
+    --product-text-bg:#F3F3F2CC;
+
+    --foter-color:#FFFFFF80;
+}
