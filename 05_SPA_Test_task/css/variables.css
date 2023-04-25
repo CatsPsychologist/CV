@@ -7,12 +7,22 @@
     --text-color: #FFFFFF;
     --secondary-text-color: #272727;
 
-    --btn-text-color:#0D0C11;
+    --btn-text-color: #0D0C11;
     --btn-active-bg: #DADADA;
     --btn-active-color: #8E8E8E;
 
-    --product-text-color:#181818;
-    --product-text-bg:#F3F3F2CC;
+    --product-text-color: #181818;
+    --product-text-bg: #F3F3F2CC;
 
-    --foter-color:#FFFFFF80;
+    --foter-color: #FFFFFF80;
+
+    --quiz-item-bg: #f2f300;
+    --quiz-btn-bg: #DADADA;
+    --quiz-btn-color: #8E8E8E;
+    --quiz-active-bg: #FFC700;
+    --quiz-radio-active-bg: #2950C2;
+
+    --quiz-result-primary: #3BDE7C;
+    --quiz-result-bg: #1C2741;
+    --quiz-result-btn: #EB1B00;
 }
