@@ -263,3 +263,34 @@
         bottom: -70px;
     }
 }
+.result_list{
+    max-width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}
+.result_item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+
+    color: var(--text-color);
+}
+.result_name{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.result_value{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}

@@ -12,26 +12,25 @@ const data = [
             'От 29 до 35', 'От 36'
         ]
     },
-    // {
-    //     question: 'Выберите лишнее:',
-    //     answers:[
-    //         'Дом', 'Шалаш',
-    //         'Бунгало', 'Скамейка',
-    //         'Хижина'
-    //     ]
-    // },
-    // {
-    //     question: 'Продолжите числовой ряд: 18 20 24 32',
-    //     answers:[
-    //         '62', '48', '74',
-    //         '57', '60', '77',
-    //     ]
-    // },
+    {
+        question: 'Выберите лишнее:',
+        answers:[
+            'Дом', 'Шалаш',
+            'Бунгало', 'Скамейка',
+            'Хижина'
+        ]
+    },
+    {
+        question: 'Продолжите числовой ряд: 18 20 24 32',
+        answers:[
+            '62', '48', '74',
+            '57', '60', '77',
+        ]
+    },
 ]
 let questionIndex = 0;
 let progressBarStep = 100 / (data.length + 1);
 
-console.log(document.location)
 
 setTimeout(function init(){
     const nextBtn = document.getElementById('testBtn')
@@ -39,7 +38,6 @@ setTimeout(function init(){
     checkRadio(quiz, nextBtn)
 
     document.getElementById('progress_bar').value = progressBarStep;
-
 },100)
 
 function checkRadio(selector, btn){
@@ -55,7 +53,9 @@ function checkRadio(selector, btn){
 
         if (data.length - 1 === questionIndex){
             document.querySelector('.test_results').classList.remove('hide');
-            showResult()
+            showResult();
+            countdown( "count_down", 10, 0 );
+
             return
         }
         questionIndex ++;
@@ -84,7 +84,7 @@ function getMarkUp(dataArr){
                     <input type="radio" name="radio" class="input_radio">
                     <span class="checkmark"></span>
                 </label>
-                
+
             </li>
        `
         }).join('')
@@ -95,7 +95,7 @@ function showResult(){
     setTimeout(()=>{
         document.querySelector('.test_results').classList.add('hide');
         document.querySelector('.footer_test').classList.remove('hide')
-    },3000)
+    },1)
 
     const parentMarkUp = document.querySelector('.test_wrapper');
 
@@ -116,13 +116,95 @@ function showResult(){
             </p>
             <p class="result_timer">
                 Звоните скорее, запись доступна всего
-                <span class="timer">10:00</span> минут
+                <span class="timer" id="count_down">10:00</span> минут
             </p>
-            <button class="result_call">
-                <img src="../images/button_call.svg" alt="phone call image">
+            <button class="result_call" onclick="getRequest('https://swapi.dev/api/people/1/')">
+                <img src="images/button_call.svg" alt="phone call image">
                 Позвонить и прослушать
                 результат
             </button>`
 
     parentMarkUp.innerHTML = childMarkUp;
 }
+function countdown( elementName, minutes, seconds )
+{
+    let element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "Time is up!";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+function getRequest(url){
+    const request = new Request(url);
+    fetch(request)
+        .then(response => {
+            if (response.status === 200) {
+                return response.json();
+            } else {
+                throw new Error('Что-то пошло не так на API сервере.');
+            }
+        })
+        .then(response => {
+            // console.debug(response);
+            getMarkUpResults(response)
+        }).catch(error => {
+        console.error(error);
+    });
+}
+
+function getMarkUpResults(data){
+    console.log(data)
+    const parentMarkUp = document.querySelector('.test_wrapper');
+
+    const childMarkUp = `
+            <ul class="result_list">
+                <li class="result_item">
+                    <p class="result_name">Name:</p>
+                    <p class="result_value">${data.name}</p>
+                </li>
+                <li class="result_item">
+                    <p class="result_name">Birth Year:</p>
+                    <p class="result_value">${data.birth_year}</p>
+                </li>
+                <li class="result_item">
+                    <p class="result_name">Eye color:</p>
+                    <p class="result_value">${data.eye_color}</p>
+                </li>
+                <li class="result_item">
+                    <p class="result_name">Gender:</p>
+                    <p class="result_value">${data.gender}</p>
+                </li>
+                <li class="result_item">
+                    <p class="result_name">Height:</p>
+                    <p class="result_value">${data.height}</p>
+                </li>
+                <li class="result_item">
+                    <p class="result_name">Skin color:</p>
+                    <p class="result_value">${data.skin_color}</p>
+                </li>
+            </ul>
+    `
+
+    parentMarkUp.innerHTML = childMarkUp
+}
+
