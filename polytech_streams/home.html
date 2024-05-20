@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header_wrapper">
+                <img class="header_logo" src="images/logo_1.png" alt="Logo">
+
+                <ul class="header_nav">
+                    <a href="" class="nav_link">Новини</a>
+                    <a href="" class="nav_link">Трансляції</a>
+                    <a href="" class="nav_link">Головний сайт</a>
+                </ul>
+                <div class="header_btn_link">
+                    <a href="index.html" class="nav_btn">Вхід</a>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  <main>
+    <div class="events">
+        <div class="container">
+            <div class="events_wrapper">
+                <div class="events_heading">
+                    <h1 class="heading">Майбутні події</h1>
+                    <h2 class="article">Доєднуйтесь до майбутніх подій та дізнайтесь багато корисної інформації</h2>
+                </div>
+                <div class="events_news">
+                    <div class="event_info">
+                        <img src="images/news_16210.jpg" alt="Картинка для новин">
+                        <div class="event_date">
+                            <p class="event_day">20 Квітня, 2024</p>
+                            <p class="event_time">12:00</p>
+                        </div>
+                        <h3 class="event_name">Запрошення нових студентів до навчання в новому році</h3>
+                        <div class="event_place">
+                            <img src="images/Vector.svg" alt="Булавка">
+                            <p class="event_city">Одеса ДУОП Одеська політехніка</p>
+                        </div>
+                    </div>
+                    <div class="event_info">
+                        <img src="images/news_16210.jpg" alt="Картинка для новин">
+                        <div class="event_date">
+                            <p class="event_day">20 Квітня, 2024</p>
+                            <p class="event_time">12:00</p>
+                        </div>
+                        <h3 class="event_name">Запрошення нових студентів до навчання в новому році</h3>
+                        <div class="event_place">
+                            <img src="images/Vector.svg" alt="Булавка">
+                            <p class="event_city">Одеса ДУОП Одеська політехніка</p>
+                        </div>
+                    </div>
+                    <div class="event_info">
+                        <img src="images/news_16210.jpg" alt="Картинка для новин">
+                        <div class="event_date">
+                            <p class="event_day">20 Квітня, 2024</p>
+                            <p class="event_time">12:00</p>
+                        </div>
+                        <h3 class="event_name">Запрошення нових студентів до навчання в новому році</h3>
+                        <div class="event_place">
+                            <img src="images/Vector.svg" alt="Булавка">
+                            <p class="event_city">Одеса ДУОП Одеська політехніка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="events_more">
+                    <a class="events_more_btn">Більше подій</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="streams">
+        <div class="container">
+            <div class="streams_wrapper">
+                <div class="events_heading">
+                    <h1 class="heading">Прямі трансляції</h1>
+                    <h2 class="article">Переглядайте контент у прямому етері та навчайтесь новому</h2>
+                </div>
+                <div id="filters">
+                  <!-- <label for="category-select">Оберіть категорію:</label> -->
+                  <div class="category_select" id="category-select">
+                    <button class="category_btn" value="">Всі</button>
+                    <button class="category_btn" value="509670">Наука і технології</button>
+                    <button class="category_btn" value="27471">Minecraft</button>
+                    <button class="category_btn" value="">TEST</button>
+                    <button class="category_btn" value="">TEST</button>
+                    
+                  </div>
+                  
+                  <!-- <select id="category-select">
+                    
+                    <option value="874321">Всі</option>
+                    <option value="509670">Наука и технології</option>
+                    <option value="456789">Мистецтво та дизайн</option>
+                    <option value="509670">Освіта</option>
+                  </select>
+                 -->
+                    <div class="filter_data">
+                        <input type="text" id="channel-filter" placeholder="Пошук за імʼям ">
+                        <input type="number" id="viewers-filter" placeholder="Кількість переглядів">
+                    </div>
+                    
+                  <div class="streams_list" id="streams-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</main>
+
+</body>
+
+<script src="script.js"></script>
+</html>
