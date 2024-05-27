@@ -18,29 +18,28 @@
         <div class="container">
             <div class="registr_wrapper">
                 <div class="heading">
-                    <h2 class="registr_heading">Реєстрація</h2>
-                    <p class="registr_article">Використовуйте тільки корпоративну пошту</p>
-                    <a class="registr_site" href="https://op.edu.ua">Я не маю корпоративну пошти</a>
+                    <h2 class="registr_heading">Створення прямої трансляції</h2>
+                    <p class="registr_article">Будьте уважні при заповенні даних</p>
                 </div>
                 <form action="home.html" id="loginForm">
                     <div class="form">
-                        <label for="email">Пошта</label>
-                        <input type="email" id="email" name="email" placeholder="Введіть пошту">
-                        
+                        <label>Введіть назву трансляції</label>
+                        <input type="text"  placeholder="Імʼя або назва">
                     </div>
-                    <span id="emailError" class="error"></span>
                     <div class="form">
-                        <label for="password">Пароль</label>
-                        <input type="password" id="password" name="password" placeholder="Введіть пароль">
-                        
+                        <label>Опис</label>
+                        <input type="text"  placeholder="Опишіть чим будете займатись">
                     </div>
-                    <span id="passwordError" class="error"></span>
-                    <button type="submit" id="submitBtn">Реєстрація</button>
+                    <div class="form">
+                        <label>Оберіть категорію</label>
+                        <select>
+                            <option>Наука і техніка</option>
+                            <option>Програмування</option>
+                            <option>Дизайн</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submitBtn">Створити трансляцію</button>
                 </form>
-                <div class="already">
-                    <p class="already_article">Вже маєте акаунт?</p>
-                    <a href="home.html" class="already_button">Вхід</a>
-                </div>
             </div>
         </div>
     </div>
