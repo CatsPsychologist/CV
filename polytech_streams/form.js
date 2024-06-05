@@ -28,3 +28,5 @@ function validatePassword(password) {
 
     return password.length >= 6;
 }
+
+console.log(document.getElementById("loginForm"));
