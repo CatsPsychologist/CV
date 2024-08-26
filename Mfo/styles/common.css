@@ -1,0 +1,45 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container_lg{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px ) {
+.container{
+    max-width: 1024px;
+}
+}
+@media (max-width: 1024px) {
+.container{
+    max-width: 767px;
+}
+}
+@media (max-width: 767px ) {
+.container{
+    max-width: 567px;
+}
+}
+@media (max-width: 576px) {
+.container{
+    width: 100%;
+    padding: 0 20px;
+}
+}
+
+.primary_text{
+    color: var(--primary-text-color);
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+.secondary_text{
+    color: var(--secondary-text-color);
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+
+.primary{
+    color: var(--primary);
+}

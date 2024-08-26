@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container_lg container">
+            <div class="header_wrapper">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="LikeCredit logo">
+                </a>
+
+                <input id="menu-toggle" type="checkbox">
+                <label class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
+                <nav class="header_nav">
+                    <ul class="header_nav_list">
+                        <li class="header_nav_item">
+                            <a href="" class="header_nav_link primary_text">Як взяти</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="" class="header_nav_link primary_text">Як повернути</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="" class="header_nav_link primary_text">Про компанію</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="" class="header_nav_link primary_text">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="" class="header_btn btn primary_text">Оформити кредит</a>
+            </div>
+        </div>
+    </header>   
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <div class="hero_wrapper">
+                    <div class="hero_calculator">
+                        <div class="hero_article ">
+                            <h1 class="hero_heading primary_text">Отримайте кредит на картку тут і зараз!</h1>
+                            <p class="hero_text primary_text">Можливість отримати фінансову допомогу у будь-якому місці у будь-який час</p>
+                        </div>
+                        <div class="calculator_count">
+                            <h3 class="count_heading primary_text">Розрахуйте позику тут і зараз</h3>
+                            <div class="calculator_ranges">
+                                <div class="range">
+                                    <p class="range_text primary_text">Сума кредиту</p>
+                                    <div class="range_item">
+                                        <div class="range_wrapper">
+                                            <input type="range" min="1" max="100" step="1" class="range_input range_money range">
+                                            <div class="range_numbers">
+                                                <p class="range_price_min primary_text">1</p>
+                                                <p class="range_price_max primary_text">100</p>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="input_right input_money primary_text">
+                                    </div>
+                                    <div class="range_item">
+                                        <div class="range_wrapper">
+                                            <input type="range" min="1" max="30" step="1" class="range_input range_input_days range">
+                                            <div class="range_numbers">
+                                                <p class="range_price_min primary_text">1</p>
+                                                <p class="range_price_max primary_text">30</p>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="input_right input_days primary_text">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="calculator_btn primary_text">Детальний розрахунок</a>
+                        </div>
+                    </div>
+                    <div class="calculator_result">
+                        <div class="background"></div> 
+                        <div class="result_wrapper">
+                            <div class="result_heading">
+                                <img src="assets/images/EMV Chip.svg" alt="Evm chip" class="result_chip">
+                                <img src="assets/images/likelogo.svg" alt="Like credit logo" class="result_logo">
+                            </div>
+                            <div class="result_info">
+                                <p class="info_name secondary_text">Імʼя Призвіще</p>
+                                <div class="info_images">
+                                    <img src="assets/images/Master Card.svg" alt="Mastercard logo" class="">
+                                    <img src="assets/images/visa.svg" alt="Visa logo" class="">
+                                </div>
+                            </div>
+                            <div class="result_return">
+                                <p class="return_text secondary_text">Повернути до:</p>
+                                <p class="return_date secondary_text">31.08.2024</p>
+                            </div>
+                            <div class="result_sum">
+                                <p class="sum_text secondary_text">Тіло кредиту:</p>
+                                <p class="sum secondary_text">800 ₴</p>
+                            </div>
+                            <div class="result_percents">
+                                <p class="percents_text secondary_text">Відсотки</p>
+                                <p class="percent secondary_text">150 ₴</p>
+                            </div>
+                            <a href="" class=" btn secondary_text">Оформити кредит</a>
+                        </div>                               
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="container">
+                <div class="steps_wrapper">
+                    <div class="steps_article">
+                        <h2 class="steps_heading primary_text">Як взяти кредит?</h2>
+                        <p class="steps_text primary_text">Все легко та швидко! Процес оформлення кредиту займає <span class="primary">не більше 15 хвилин</span></p>
+                    </div>
+                    <ul class="steps_list">
+                        <li class="steps_item">
+                            <div class="item_logo">
+                                <img src="assets/images/01.svg" alt="">
+                                 <div class="item_numbers">
+                                    <p class="current_item primary_text primary">01 </p>
+                                    <p class="number_of_items primary_text"> / 04</p>
+                                 </div>
+                            </div>
+                            <h4 class="item_heading primary_text">Оформити заявку на сайті</h4>
+                            <p class="item_article primary_text">Оберіть потрібну суму та термін пільгового періоду і зареєструйтеся в особистому кабінеті.</p>
+                        </li>
+                        <li class="steps_item">
+                            <div class="item_logo">
+                                <img src="assets/images/02.svg" alt="">
+                                 <div class="item_numbers">
+                                    <p class="current_item primary_text primary">02 </p>
+                                    <p class="number_of_items primary_text"> / 04</p>
+                                 </div>
+                            </div>
+                            <h4 class="item_heading primary_text">Заповнити необхідні дані</h4>
+                            <p class="item_article primary_text">Вкажіть Ваші особисті дані та пройдіть верифікацію через BankID.   </p>
+                        </li>
+                        <li class="steps_item">
+                            <div class="item_logo">
+                                <img src="assets/images/03.svg" alt="">
+                                 <div class="item_numbers">
+                                    <p class="current_item primary_text primary">03 </p>
+                                    <p class="number_of_items primary_text"> / 04</p>
+                                 </div>
+                            </div>
+                            <h4 class="item_heading primary_text">Пройти скрінінг</h4>
+                            <p class="item_article primary_text">Очікуйте на затвердження Вашої заявки та підтвердіть оформлення онлайн-підписом через СМС.</p>
+                        </li>
+                        <li class="steps_item">
+                            <div class="item_logo">
+                                <img src="assets/images/04.svg" alt="">
+                                 <div class="item_numbers">
+                                    <p class="current_item primary_text primary">04 </p>
+                                    <p class="number_of_items primary_text"> / 04</p>
+                                 </div>
+                            </div>
+                            <h4 class="item_heading primary_text">Отримати кошти</h4>
+                            <p class="item_article primary_text">Після підписання договору отримайте гроші миттєво на свою банківську карту.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html> 
